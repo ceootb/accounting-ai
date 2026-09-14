@@ -1,0 +1,100 @@
+# Cara Kerja Sistem Akuntansi (untuk User & Perusahaan)
+
+> Panduan praktik: **bagaimana software akuntansi disiapkan dan bekerja**, supaya
+> perusahaan bisa dijalankan bahkan oleh staf akuntansi **junior / fresh graduate** —
+> cukup input lewat **voucher**, dan **jurnal terbentuk otomatis (auto-jurnal)**.
+> Konsep debit/kredit "disembunyikan" di balik voucher, sehingga tidak perlu
+> merekrut akuntan senior hanya untuk operasional harian.
+>
+> Dikurasi oleh akuntan praktik (20+ tahun, akuntansi Indonesia).
+
+---
+
+## Bagian 1 — Persiapan Awal (Setup)
+
+Urutan menyiapkan software akuntansi untuk sebuah perusahaan:
+
+### Tahap 1 — Persiapan
+Detail & urutan menyusul (akan dilengkapi).
+
+### Tahap 2 — Menyiapkan Master Data
+Siapkan daftar master **sebelum** bisa bertransaksi. Contoh daftar:
+- **COA** (Bagan Akun / Chart of Accounts)
+- **Daftar Customer** (Nasabah / Pelanggan)
+- **Daftar Vendor** (Pemasok)
+- **Daftar Departemen** — untuk *costing*: **Business Unit** vs **Cost Center**
+- **Daftar Item** — *inventory part* / *non-inventory part* / *service*
+- **Fixed Asset** (Aset Tetap)
+- (lainnya menyusul bila ada update)
+
+### Tahap 3 — Saldo Awal
+- Diperlukan **hanya jika ada migrasi data** — perusahaan sudah punya software akuntansi lama.
+- Jika perusahaan **baru / belum punya data** → **tidak perlu** saldo awal.
+
+### Tahap 4 — Setup Pajak
+- **PPN 11%**.
+- **PPh** → tergantung **jenis biaya** dan **jenis Wajib Pajak (WP)**.
+
+---
+
+## Bagian 2 — Prinsip: 5 Buku Besar
+
+Sesuai prinsip akuntansi dasar & praktik, software akuntansi di-set berdasarkan **5 buku**
+(berlaku untuk **perusahaan dagang maupun jasa**). Setiap buku menghasilkan **auto-jurnal**.
+
+### 1. Buku Pembelian
+Mencatat pembelian barang dagangan / biaya; **pengakuan hutang**.
+Auto-jurnal (tergantung setting item di awal):
+```
+Dr  Persediaan / Biaya
+    Cr  Hutang Dagang / Hutang Biaya
+```
+
+### 2. Buku Penjualan
+Mencatat penjualan barang dagang / jasa; **pengakuan Piutang** (+ HPP & pengurangan persediaan untuk barang dagang).
+Auto-jurnal:
+```
+Dr  Piutang
+    Cr  Pendapatan Penjualan / Jasa
+```
+*(untuk barang dagang, ditambah: `Dr HPP | Cr Persediaan`)*
+
+### 3. Buku Pengeluaran Kas / Bank
+Mencatat pembayaran hutang atas pembelian / biaya.
+Auto-jurnal:
+```
+Dr  Hutang Dagang / Hutang Biaya
+    Cr  Kas / Bank
+```
+
+### 4. Buku Penerimaan Kas / Bank
+Mencatat penerimaan piutang atas penjualan barang dagang / jasa.
+Auto-jurnal:
+```
+Dr  Kas / Bank
+    Cr  Piutang Dagang
+```
+Jika **penerimaan uang muka penjualan** (mis. perusahaan properti — DP unit sebelum akad):
+```
+Dr  Kas / Bank
+    Cr  Uang Muka Penjualan
+```
+
+### 5. Jurnal Voucher
+Khusus mencatat transaksi **di luar 4 buku di atas**. Sebagian besar berupa **accrual biaya**.
+> Catatan penting: **pendapatan tidak boleh di-accrual** — akan kontradiksi dengan laporan penjualan.
+
+Bersifat **manual**, tapi bisa dibuat **recurring** jika transaksi bulanan. Contoh (accrual sewa kantor):
+```
+Dr  Biaya Sewa Kantor
+    Cr  Hutang Biaya
+```
+
+---
+
+## Filosofi
+
+Dengan alur **input voucher → auto-jurnal → posting**, perusahaan **tidak perlu akuntan senior**
+untuk operasional harian; lulusan **SMA / fresh graduate akuntansi** pun bisa mengoperasikan.
+Kerumitan debit/kredit ditangani oleh sistem lewat setting master (item, COA, pajak) yang
+disiapkan sekali di awal.
