@@ -80,13 +80,24 @@ Dr  Cash / Bank
 ```
 
 ### 5. Journal Voucher
-For transactions **outside the 4 books above**. Mostly **expense accruals**.
-> Important: **revenue must not be accrued** — it would contradict the sales report.
+For transactions **outside the 4 books above**. Mainly **adjustments**:
+**expense accruals** and **amortization of prepaid expenses**.
+> Important: **revenue must not be accrued** — it would contradict the sales report
+> **for fiscal/tax purposes**.
 
-Manual, but can be **recurring** for monthly transactions. Example (office rent accrual):
+Manual, but can be **recurring** for monthly transactions.
+
+**Example A — amortization of prepaid office rent** (recurring monthly; rent paid in advance,
+recognized as expense each month):
 ```
 Dr  Office Rent Expense
-    Cr  Accrued Expense
+    Cr  Prepaid Office Rent
+```
+
+**Example B — expense accrual** (expense incurred but not yet paid):
+```
+Dr  Expense
+    Cr  Accrued Expense (Expense Payable)
 ```
 
 ---

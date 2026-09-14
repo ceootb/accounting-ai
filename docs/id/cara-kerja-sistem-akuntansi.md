@@ -81,13 +81,24 @@ Dr  Kas / Bank
 ```
 
 ### 5. Jurnal Voucher
-Khusus mencatat transaksi **di luar 4 buku di atas**. Sebagian besar berupa **accrual biaya**.
-> Catatan penting: **pendapatan tidak boleh di-accrual** — akan kontradiksi dengan laporan penjualan.
+Khusus mencatat transaksi **di luar 4 buku di atas**. Umumnya untuk **penyesuaian**:
+**accrual biaya** dan **amortisasi biaya dibayar dimuka**.
+> Catatan penting: **pendapatan tidak boleh di-accrual** — akan kontradiksi dengan laporan
+> penjualan **secara fiskal**.
 
-Bersifat **manual**, tapi bisa dibuat **recurring** jika transaksi bulanan. Contoh (accrual sewa kantor):
+Bersifat **manual**, tapi bisa dibuat **recurring** untuk transaksi bulanan.
+
+**Contoh A — amortisasi sewa kantor dibayar dimuka** (recurring bulanan; sewa dibayar di muka
+lalu diakui bebannya tiap bulan):
 ```
 Dr  Biaya Sewa Kantor
-    Cr  Hutang Biaya
+    Cr  Sewa Kantor Dibayar Dimuka
+```
+
+**Contoh B — accrual biaya** (biaya sudah terjadi tetapi belum dibayar):
+```
+Dr  Biaya
+    Cr  Hutang Biaya (Beban Masih Harus Dibayar)
 ```
 
 ---
