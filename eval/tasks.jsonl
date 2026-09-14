@@ -1,0 +1,2 @@
+{"task":"journal_entry","instruction":"Catat: pembayaran gaji karyawan Rp8.000.000 via bank","input":"","output":"Dr Beban Gaji 8.000.000 | Cr Bank 8.000.000","lang":"id","standard":"general"}
+{"task":"journal_entry","instruction":"Record: owner invests 50,000,000 cash into the business","input":"","output":"Dr Cash 50,000,000 | Cr Owner's Capital 50,000,000","lang":"en","standard":"general"}

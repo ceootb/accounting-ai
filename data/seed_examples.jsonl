@@ -1,0 +1,6 @@
+{"task":"journal_entry","instruction":"Record: paid office rent 5,000,000 by bank transfer","input":"","output":"Dr Rent Expense 5,000,000 | Cr Bank 5,000,000","lang":"en","standard":"general"}
+{"task":"journal_entry","instruction":"Catat: penjualan tunai Rp1.100.000 (termasuk PPN 11%)","input":"","output":"Dr Kas 1.100.000 | Cr Penjualan 1.000.000 | Cr PPN Keluaran 100.000","lang":"id","standard":"psak"}
+{"task":"journal_entry","instruction":"Catat: pembelian persediaan Rp3.000.000 secara kredit","input":"","output":"Dr Persediaan 3.000.000 | Cr Utang Usaha 3.000.000","lang":"id","standard":"general"}
+{"task":"coa_mapping","instruction":"Map this expense to the correct account","input":"Monthly electricity bill for the shop","output":"Utilities Expense (Beban Listrik & Air)","lang":"en","standard":"general"}
+{"task":"categorization","instruction":"Beri kategori baris mutasi rekening ini","input":"TRSF E-BANKING GOJEK GOPAY 25.000","output":"Beban Transportasi","lang":"id","standard":"general"}
+{"task":"qa","instruction":"Kapan PPN Keluaran diakui pada penjualan kredit?","input":"","output":"PPN Keluaran diakui saat penyerahan barang/jasa (saat faktur pajak terbit), bukan saat kas diterima.","lang":"id","standard":"psak"}
