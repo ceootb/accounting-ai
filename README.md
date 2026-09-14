@@ -33,6 +33,12 @@ It is **not** a general chatbot. It is focused on a narrow, high-value domain so
 - **Private** → can run offline / on-prem for sensitive financial data.
 - **Improvable by everyone** → open data + open training recipe means the community keeps it current.
 
+### 🛰️ Edge AI — runs on-device
+A core design goal: the model is small enough to run **at the edge / on-device** — phone, laptop, mini-PC, or even in the browser — with **no internet and no cloud**. Financial data never leaves the device.
+- Quantized to **GGUF (4-bit)** ≈ 0.7–2 GB, runs on CPU.
+- Deploy via **llama.cpp**, **Ollama**, **MLC-LLM** (Android/iOS), or **WebLLM** (browser).
+- Private by default → ideal for sensitive accounting data.
+
 ### Repository structure
 ```
 accounting-ai/
@@ -72,6 +78,12 @@ Ini **bukan** chatbot serba bisa. Fokusnya sempit tapi bernilai tinggi, supaya m
 - **Privat** → bisa jalan offline / on-premise untuk data keuangan sensitif.
 - **Bisa disempurnakan siapa saja** → data & resep training terbuka, jadi komunitas menjaganya tetap relevan.
 
+### 🛰️ Edge AI — jalan di perangkat
+Tujuan desain inti: model cukup kecil untuk jalan **di edge / di perangkat** — HP, laptop, mini-PC, bahkan di browser — **tanpa internet, tanpa cloud**. Data keuangan tidak pernah keluar dari perangkat.
+- Di-quantize ke **GGUF (4-bit)** ≈ 0,7–2 GB, jalan di CPU.
+- Deploy via **llama.cpp**, **Ollama**, **MLC-LLM** (Android/iOS), atau **WebLLM** (browser).
+- Privat secara bawaan → ideal untuk data akuntansi sensitif.
+
 ### Struktur repo
 Lihat diagram di bagian English di atas (`data/`, `training/`, `inference/`, `eval/`, `docs/`, `MODEL_CARD.md`).
 
@@ -88,6 +100,7 @@ Siapa pun boleh berkontribusi — baca **[CONTRIBUTING.md](CONTRIBUTING.md)**. Y
 - [ ] **v0.1 — First model:** fine-tune a small base (e.g. Qwen/Llama/Phi 1–3B) on seed data, publish to Hugging Face.
 - [ ] **v0.2 — Indonesian focus:** PSAK/PPN datasets + benchmark.
 - [ ] **v1 — Usable:** inference API + evaluation report + docs.
+- [ ] **v1 — Edge builds:** GGUF (4-bit) + Ollama modelfile + on-device demo (mobile/browser).
 
 ## License / Lisensi
 [Apache-2.0](LICENSE) — free to use, including commercially. *Bebas dipakai, termasuk komersial.*
