@@ -2,14 +2,31 @@
 
 # Accounting AI — a small, open language model for accounting
 
-**A compact, open-source AI model specialized for accounting & bookkeeping.**
-*Model AI kecil sumber-terbuka yang dikhususkan untuk akuntansi & pembukuan.*
+**A compact, open-source AI model specialized for accounting & bookkeeping —
+distilling 20+ years of real Indonesian accounting expertise.**
+*Model AI kecil sumber-terbuka untuk akuntansi & pembukuan —
+menyuling 20+ tahun keahlian akuntansi Indonesia nyata.*
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 [![Status](https://img.shields.io/badge/status-early--stage-orange)](#roadmap--peta-jalan)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
 </div>
+
+---
+
+> ### 🧠 Built on 20+ years of real Indonesian accounting expertise
+> This is **not** AI hype. The knowledge, rules, datasets, and test cases are curated by a
+> practicing accountant with **20+ years of experience in Indonesian accounting** (PSAK, PPN,
+> faktur pajak, real UMKM & corporate bookkeeping). Every example reflects how accounting is
+> *actually done* in Indonesia — so a small model can be genuinely **trustworthy**, not just
+> plausible-sounding.
+>
+> *Ini **bukan** hype AI. Pengetahuan, aturan, dataset, dan kasus uji dikurasi oleh akuntan
+> praktik dengan **20+ tahun pengalaman akuntansi Indonesia** (PSAK, PPN, faktur pajak,
+> pembukuan UMKM & korporat nyata). Setiap contoh mencerminkan praktik akuntansi Indonesia
+> yang **sebenarnya** — supaya model kecil bisa benar-benar **dipercaya**, bukan sekadar
+> "kelihatan benar".*
 
 ---
 
