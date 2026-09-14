@@ -48,6 +48,12 @@ Auto-journal (depends on item setup):
 Dr  Inventory / Expense
     Cr  Accounts Payable / Accrued Expense
 ```
+The Purchase Book is also used to record **accrued expenses** — an expense already incurred but
+not yet paid/invoiced. Example (office rent payable):
+```
+Dr  Office Rent Expense
+    Cr  Accrued Expense (Expense Payable)
+```
 
 ### 2. Sales Book
 Records sales of goods / services; **recognizes receivables** (+ COGS & inventory reduction for goods).
@@ -80,24 +86,18 @@ Dr  Cash / Bank
 ```
 
 ### 5. Journal Voucher
-For transactions **outside the 4 books above**. Mainly **adjustments**:
-**expense accruals** and **amortization of prepaid expenses**.
-> Important: **revenue must not be accrued** — it would contradict the sales report
-> **for fiscal/tax purposes**.
+For transactions **outside the 4 books above** — mainly **adjustments**: amortization of
+prepaid expenses, reclassifications, and corrections.
+> Notes:
+> - **Revenue must not be accrued** — it would contradict the sales report **for fiscal/tax purposes**.
+> - **Expense accruals** (expenses payable) are simply entered via the **Purchase Book**
+>   (auto-journal `Dr Expense | Cr Accrued Expense`) — no manual journal voucher needed.
 
 Manual, but can be **recurring** for monthly transactions.
-
-**Example A — amortization of prepaid office rent** (recurring monthly; rent paid in advance,
-recognized as expense each month):
+Example — amortization of prepaid office rent (monthly; paid in advance, recognized each month):
 ```
 Dr  Office Rent Expense
     Cr  Prepaid Office Rent
-```
-
-**Example B — expense accrual** (expense incurred but not yet paid):
-```
-Dr  Expense
-    Cr  Accrued Expense (Expense Payable)
 ```
 
 ---

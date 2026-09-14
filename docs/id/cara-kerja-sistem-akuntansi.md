@@ -49,6 +49,12 @@ Auto-jurnal (tergantung setting item di awal):
 Dr  Persediaan / Biaya
     Cr  Hutang Dagang / Hutang Biaya
 ```
+Buku Pembelian juga dipakai mencatat **biaya yang masih harus dibayar** (*accrued expense*) —
+biaya sudah terjadi tetapi belum dibayar/ditagih. Contoh (biaya sewa kantor terutang):
+```
+Dr  Biaya Sewa Kantor
+    Cr  Hutang Biaya
+```
 
 ### 2. Buku Penjualan
 Mencatat penjualan barang dagang / jasa; **pengakuan Piutang** (+ HPP & pengurangan persediaan untuk barang dagang).
@@ -81,24 +87,18 @@ Dr  Kas / Bank
 ```
 
 ### 5. Jurnal Voucher
-Khusus mencatat transaksi **di luar 4 buku di atas**. Umumnya untuk **penyesuaian**:
-**accrual biaya** dan **amortisasi biaya dibayar dimuka**.
-> Catatan penting: **pendapatan tidak boleh di-accrual** — akan kontradiksi dengan laporan
-> penjualan **secara fiskal**.
+Khusus mencatat transaksi **di luar 4 buku di atas** — umumnya **penyesuaian**: amortisasi
+biaya dibayar dimuka, reklasifikasi, dan koreksi.
+> Catatan:
+> - **Pendapatan tidak boleh di-accrual** — akan kontradiksi dengan laporan penjualan **secara fiskal**.
+> - **Accrual biaya** (biaya yang masih harus dibayar) cukup dientri lewat **Buku Pembelian**
+>   (auto-jurnal `Dr Biaya | Cr Hutang Biaya`) — tidak perlu jurnal voucher manual.
 
 Bersifat **manual**, tapi bisa dibuat **recurring** untuk transaksi bulanan.
-
-**Contoh A — amortisasi sewa kantor dibayar dimuka** (recurring bulanan; sewa dibayar di muka
-lalu diakui bebannya tiap bulan):
+Contoh — amortisasi sewa kantor dibayar dimuka (bulanan; sewa dibayar di muka lalu diakui tiap bulan):
 ```
 Dr  Biaya Sewa Kantor
     Cr  Sewa Kantor Dibayar Dimuka
-```
-
-**Contoh B — accrual biaya** (biaya sudah terjadi tetapi belum dibayar):
-```
-Dr  Biaya
-    Cr  Hutang Biaya (Beban Masih Harus Dibayar)
 ```
 
 ---
