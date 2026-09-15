@@ -83,3 +83,48 @@ finally understood they had bought a **company that was actually deeply loss-mak
   not hidden expenses.
 - **Reconcile Profit vs Cash Flow:** large profit but tight cash = a manipulation signal.
 - **Acquisition due diligence** must dissect account details, not just review summary FS.
+
+---
+
+## Case 3 — Receivables (AR) Stuck Because the Customer Stalls Payment (Liquidity Crisis)
+
+**Context:** The cleaning-service company places *crew* at several **outlets** (large malls & offices);
+big malls absorb the most manpower. *(Outlet/mall names anonymized.)*
+
+**Finding:** Receivables (**AR**) from the big-mall customers were **overdue by ~8 months**, despite
+**terms of payment (TOP) of 60 days** from a *complete* invoice. Total **overdue AR ~IDR 8 billion**.
+
+**How the customer stalled payment:**
+- The invoice-**completion** process was made difficult; invoices were **repeatedly rejected** on
+  various excuses — e.g. crew attendance deemed incomplete, or refusing the tax invoice until
+  **proof of tax remittance to the state** was provided first — **fabricated reasons** to delay payment.
+
+**Impact:**
+- Liquidity drained; **every payroll there was no cash → had to borrow from HQ/owner**.
+- Revenue was **recognized (accrual)** but **cash never came in** → looks fine on paper but
+  **cash flow is negative** (echoing Case #2: **profit ≠ cash**).
+
+**Decision / advice to the board:**
+- **Terminate the contract & withdraw all crew** from the problem outlets. Supplying service without
+  being paid means the company carries payroll while the customer enjoys the service — a damaging
+  **liquidity subsidy**.
+
+**Red flags & lessons (AR / working-capital management):**
+1. **AR aging** far beyond TOP (8 months vs 60 days) → a **collection-failure** signal.
+2. The customer **weaponizes the invoice-acceptance process** (rejecting on technicalities) to stall.
+3. Controls: agree an **invoice-completeness SOP up front** in the contract (attendance, hand-over
+   minutes, tax-invoice docs) so the customer can't fabricate reasons; **routine aging monitoring**;
+   a **stop-supply trigger** when overdue exceeds a threshold; set an **allowance for doubtful accounts**.
+4. Principle: don't subsidize a customer with your own liquidity — **collection matters as much as sales**.
+
+**Accounting treatment:**
+Allowance for doubtful accounts (when collectibility is doubtful):
+```
+Dr  Bad Debt Expense
+    Cr  Allowance for Doubtful Accounts
+```
+Write-off of an uncollectible receivable (using the allowance):
+```
+Dr  Allowance for Doubtful Accounts
+    Cr  Accounts Receivable
+```
