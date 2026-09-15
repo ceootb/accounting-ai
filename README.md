@@ -59,13 +59,19 @@ A core design goal: the model is small enough to run **at the edge / on-device**
 ### Repository structure
 ```
 accounting-ai/
+├── core/         # Master accounting ENGINE (deterministic): COA, double-entry, tax. Reusable backbone.
 ├── data/         # Open datasets (instruction → response) for accounting tasks
 ├── training/     # Fine-tuning recipes & configs (base model → accounting SLM)
 ├── inference/    # Example scripts to run the model
 ├── eval/         # Benchmarks & evaluation harness (how we measure "good")
 ├── docs/         # Documentation (en/ + id/)
+├── ARCHITECTURE.md  # Layered design: deterministic engine + AI layer
 └── MODEL_CARD.md # What the model is, data, limits, intended use
 ```
+
+> **Architecture in one line:** a deterministic **accounting engine** (`core/`) guarantees the math
+> is correct (balance, tax), and a small **AI model** handles language & judgment on top. The AI
+> *proposes*, the engine *locks correctness*. See **[ARCHITECTURE.md](ARCHITECTURE.md)**.
 
 ### Status
 Early-stage / foundation. We are assembling datasets and the training recipe first. Model weights will be published on **Hugging Face** once a first version passes evaluation. See the [roadmap](#roadmap--peta-jalan).
