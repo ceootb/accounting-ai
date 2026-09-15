@@ -128,3 +128,53 @@ Write-off of an uncollectible receivable (using the allowance):
 Dr  Allowance for Doubtful Accounts
     Cr  Accounts Receivable
 ```
+
+---
+
+## Case 4 — Mispriced Bid: Overhead Not Included (Structural Loss)
+
+**Context:** *(An auditor reviewing the pricing model.)* The operations manager built the bid to
+supply cleaning *crew* to a mall. On re-check, the calculation only included **direct outlet cost**
+from manpower.
+
+**Finding — components counted (direct cost only):**
+- Crew salary
+- BPJS Ketenagakerjaan (employment insurance)
+- BPJS Kesehatan (health insurance)
+- **Management fee 10%** of total manpower cost (treated as the margin)
+
+**What was forgotten (indirect / office overhead):**
+- Office operating costs
+- Salaries of **office staff, managers, and directors** (indirect costs)
+
+**Result:** in the P&L summary, **total cost > revenue**. The 10% management fee **does not cover**
+overhead → a **structural loss** (not a one-off loss, but a flawed pricing model).
+
+**Principle violated (costing / pricing):**
+- The price must cover **full cost** = **direct cost** (manpower) + **allocated overhead** (office
+  opex, admin/management/director salaries) + a **profit margin**.
+- **Contribution margin** (price − direct cost) can be positive, yet if it doesn't cover overhead →
+  **net margin is negative**.
+- The *management fee* percentage must be **calibrated** to cover overhead + profit, not a flat
+  markup on direct cost alone.
+
+**Illustration (per contract unit):**
+```
+Direct cost (manpower)          100
+Management fee 10%               10   -> selling price = 110
+Allocated overhead               20
+Profit/(Loss) = 110 - 100 - 20 = (10)   -> LOSS
+Should be: price >= full cost (120) + margin
+```
+
+**Red flags:**
+1. Bid/tender priced as *direct cost + markup*, **without overhead allocation**.
+2. An outlet "looks profitable" (on direct cost) while the **company is losing money** overall.
+
+**Lessons:**
+- Build a **full costing model**: direct labor per outlet + **overhead allocation** (per head /
+  per revenue) + target margin.
+- **Calibrate the management fee** so it covers overhead + profit.
+- Finance/auditors must **review the pricing model**, not just transaction recording.
+- P&L structure: `Revenue − Direct Cost (crew) = Gross Profit; − Operating Expense (overhead) = Net Profit`.
+  If overhead is not priced in, Net Profit is negative.

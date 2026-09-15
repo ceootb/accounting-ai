@@ -130,3 +130,53 @@ Penghapusan piutang tak tertagih (memakai cadangan):
 Dr  Cadangan Kerugian Piutang
     Cr  Piutang Usaha
 ```
+
+---
+
+## Kasus 4 — Salah Hitung Harga Jual: Overhead Tidak Diperhitungkan (Rugi Struktural)
+
+**Konteks:** *(Auditor mengaudit model penetapan harga.)* Manajer operasional menyusun proposal
+harga sebagai penyedia *crew* cleaning ke mall. Saat di-*recheck*, cara menghitungnya hanya
+memasukkan **direct cost di outlet** dari *manpower*.
+
+**Temuan — komponen yang dihitung (hanya direct cost):**
+- Gaji crew
+- BPJS Ketenagakerjaan (TK)
+- BPJS Kesehatan
+- **Management fee 10%** dari total biaya *manpower* (dianggap sebagai margin)
+
+**Yang TERLUPA (indirect / overhead kantor):**
+- Biaya operasional kantor
+- Gaji **staff, manajer, dan direktur** (biaya tidak langsung)
+
+**Akibat:** di ringkasan Laba Rugi, **total biaya > pendapatan**. Management fee 10% **tidak cukup**
+menutup overhead → **rugi struktural** (bukan rugi karena satu transaksi, tapi karena modelnya salah).
+
+**Prinsip yang dilanggar (costing / pricing):**
+- Harga jual harus menutup **full cost** = **direct cost** (manpower) + **overhead teralokasi**
+  (opex kantor, gaji admin/manajemen/direksi) + **margin laba**.
+- **Contribution margin** (harga − direct cost) bisa positif, tetapi jika tidak menutup overhead →
+  **net margin negatif**.
+- Persentase *management fee* harus **dikalibrasi** untuk menutup overhead + laba, bukan sekadar
+  *markup* di atas direct cost.
+
+**Ilustrasi angka (per unit kontrak):**
+```
+Direct cost (manpower)          100
+Management fee 10%               10   -> harga jual = 110
+Overhead teralokasi              20
+Laba/(Rugi) = 110 - 100 - 20 = (10)   -> RUGI
+Seharusnya: harga >= full cost (120) + margin
+```
+
+**Red flag:**
+1. Proposal/tender dihargai = *direct cost + markup*, **tanpa alokasi overhead**.
+2. Outlet "kelihatan untung" (per direct cost) padahal **perusahaan rugi** di level konsolidasi.
+
+**Pelajaran:**
+- Bangun **model costing lengkap**: direct labor per outlet + **alokasi overhead** (per kepala /
+  per pendapatan) + target margin.
+- **Kalibrasi management fee** agar menutup overhead + laba.
+- Finance/auditor harus **mereview model penetapan harga**, bukan hanya pencatatan transaksi.
+- Struktur L/R: `Pendapatan − Beban Pokok (crew) = Laba Kotor; − Beban Operasional (overhead) = Laba Bersih`.
+  Jika overhead tidak dimasukkan ke harga, Laba Bersih negatif.
