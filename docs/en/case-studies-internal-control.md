@@ -48,3 +48,38 @@ Dr  Advances / Employee Receivable
   imprest reconciliation is required to surface a physical shortfall.
 - **Proper controls:** fixed imprest fund; documented replenishment; a **settlement deadline** for
   advances; separate advances into a Receivable/Advance account.
+
+---
+
+## Case 2 — Expense Hidden as "Prepaid Expense" (Fictitious Profit)
+
+**Context:** The same company. Recently **acquired by new management** from a former owner facing
+a **liquidity crisis** — yet, oddly, the financial statements showed a **PROFIT**. The new
+management's auditor (before the accounting head joined) had not found the error either.
+
+**Finding:** A **Prepaid Expense** account worth **hundreds of millions** actually contained
+**employee THR (holiday allowance) expense** — an expense already incurred, **not** a future-benefit asset.
+
+**Principle violated:** THR is a **current-period expense** (recognized when the obligation arises/
+is paid), **not** a prepaid item. Parking it in *prepaid* **defers/hides the expense** →
+**overstated (fictitious) profit**.
+
+**Correction / reclass:**
+```
+Dr  Employee THR Expense
+    Cr  Prepaid Expense
+```
+**Impact:** the P&L **automatically drops** — here it turned into a **large loss**. HQ's board
+finally understood they had bought a **company that was actually deeply loss-making**, not profitable.
+
+**Red flags:**
+1. Company in a **liquidity crisis** but FS shows **profit** — an inconsistency (healthy profit
+   should come with healthy cash flow).
+2. **Prepaid / deferred asset accounts ballooning** unnaturally.
+3. The *prepaid* account actually holds an **already-incurred expense** (THR), not a future benefit.
+
+**Lessons:**
+- **Open up the detail of prepaid / deferred accounts** — confirm they are truly future benefits,
+  not hidden expenses.
+- **Reconcile Profit vs Cash Flow:** large profit but tight cash = a manipulation signal.
+- **Acquisition due diligence** must dissect account details, not just review summary FS.

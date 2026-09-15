@@ -50,3 +50,39 @@ Dr  Uang Muka / Piutang Karyawan
   + rekonsiliasi imprest untuk menemukan selisih fisik.
 - **Kontrol yang benar:** dana imprest tetap; replenishment harus berbukti; ada **batas waktu
   settlement** advance; pisahkan uang muka ke akun Piutang/Uang Muka.
+
+---
+
+## Kasus 2 — Beban Disembunyikan sebagai "Biaya Dibayar Dimuka" (Laba Semu)
+
+**Konteks:** PT yang sama. Baru **diambil alih manajemen baru** dari owner lama yang sedang
+**kesulitan likuiditas** — namun anehnya laporan keuangan (*FS*) disajikan dalam keadaan **LABA**.
+Auditor manajemen baru (sebelum *accounting head* bergabung) pun belum menemukan letak kekeliruannya.
+
+**Temuan:** Ada akun **Biaya Dibayar Dimuka** senilai **ratusan juta** yang isinya sebenarnya =
+**Biaya THR karyawan** — beban yang sudah menjadi kewajiban, **bukan** aset/manfaat masa depan.
+
+**Prinsip yang dilanggar:** THR adalah **beban periode berjalan** (diakui saat kewajiban timbul/
+dibayar), **bukan** "dibayar dimuka". Menaruhnya di *prepaid* = **menunda/menyembunyikan beban**
+→ **laba overstated (laba semu)**.
+
+**Koreksi / reklas:**
+```
+Dr  Biaya THR Karyawan
+    Cr  Biaya Dibayar Dimuka
+```
+**Dampak:** Laporan Laba Rugi **otomatis turun** — dalam kasus ini berubah jadi **rugi besar**.
+BOD kantor pusat akhirnya paham mereka membeli **perusahaan yang sebenarnya sedang rugi besar**,
+bukan perusahaan laba.
+
+**Red flag:**
+1. Perusahaan **kesulitan likuiditas** tapi FS **menunjukkan laba** — inkonsistensi (laba sehat
+   mestinya diiringi arus kas sehat).
+2. Akun **Biaya Dibayar Dimuka / aset ditangguhkan membengkak** tidak wajar.
+3. Isi akun *prepaid* ternyata **beban yang sudah terjadi** (THR), bukan manfaat masa depan.
+
+**Pelajaran:**
+- **Buka rincian akun *prepaid* / *deferred*** — pastikan benar-benar manfaat masa depan, bukan
+  beban yang disembunyikan.
+- **Rekonsiliasi Laba vs Arus Kas:** laba besar tapi kas ketat = sinyal manipulasi.
+- **Due diligence akuisisi** wajib membedah rincian akun, bukan hanya melihat FS ringkas.
