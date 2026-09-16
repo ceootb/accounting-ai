@@ -2,7 +2,14 @@
 
 > The **Procure-to-Pay (P2P)** cycle and its accounting logic. Focus first on **flow + logic +
 > auto-journal per step**; **field details** to follow.
-> *(Draft — curated by a practicing accountant.)*
+> *(Curated by a practicing accountant.)*
+
+---
+
+## 0. Setup Prerequisite
+
+**Items are configured up front**, and **each item is linked to a COA** account (e.g. Inventory).
+This item → COA mapping is what lets the **auto-journal** know which account to use during transactions.
 
 ---
 
@@ -11,8 +18,8 @@
 ```
 1. Purchase Requisition (PR)   — internal request to buy
 2. Purchase Order (PO)         — official order to the vendor
-3. Receive Items (GRN)         — goods/services received
-4. Purchase Invoice            — vendor's bill/invoice
+3. Receive Items (GRN)         — goods received by warehouse (pulls PO data)
+4. Purchase Invoice            — vendor's bill (pulls Received Item data)
 5. Purchase Return             — return of goods (if any)
 6. Purchase Payment            — payment to the vendor
 ```
@@ -23,36 +30,38 @@
 
 | Step | Journal? | Auto-journal | Notes |
 |---|---|---|---|
-| **1. Purchase Requisition** | ❌ No | — | Internal document (request/approval). No financial impact yet. |
-| **2. Purchase Order** | ❌ No | — | Commitment to vendor (off-balance). Position unchanged. |
-| **3. Receive Items** | ✅ Yes | `Dr Inventory` \| `Cr Accrued Purchase (GRNI)` | Goods received → asset up, temporary liability (received-not-invoiced). |
-| **4. Purchase Invoice** | ✅ Yes | `Dr Accrued Purchase` (or Inventory/Expense) + `Dr Input VAT` \| `Cr Accounts Payable` | Vendor invoice → recognize **AP** & **Input VAT**; clear the GRNI. |
-| **5. Purchase Return** | ✅ Yes | `Dr Accounts Payable` \| `Cr Inventory` (+ reverse Input VAT) | Reverse of purchase; reduces payable & inventory. |
-| **6. Purchase Payment** | ✅ Yes | `Dr Accounts Payable` \| `Cr Cash/Bank` | Settle the payable; cash/bank down. |
+| **1. Purchase Requisition** | ❌ No | — | Record & **approval** by user/manager only. No financial impact. |
+| **2. Purchase Order** | ❌ No | — | Official order to vendor (commitment). No journal. |
+| **3. Receive Items** | ⚪ Warehouse record | — (journal at Purchase Invoice) | Goods received by **warehouse** by **pulling the PO** data. No accounting journal yet. |
+| **4. Purchase Invoice** | ✅ Yes | `Dr Inventory` \| `Cr Accounts Payable`  *(+ `Dr Input VAT` if a tax invoice exists)* | **Pulls Received Item** data on entry. **This is where the accounting journal happens** — recognize inventory & AP. |
+| **5. Purchase Return** | ✅ Yes | **Automatic reversal by the system** | Goods returned → the system reverses the purchase journal (reduces inventory & payable). |
+| **6. Purchase Payment** | ✅ Yes | `Dr Accounts Payable` \| `Cr Cash/Bank` | On entry, just input **paid via bank/cash**; auto-journal settles the payable. |
 
-> **Key:** Steps **1-2 do not journal** (commitment docs). Journals start at **Receive Items**, then
-> **Purchase Invoice** (recognize payable + VAT), and close at **Purchase Payment**.
+> **Key:** PR & PO = record + approval (**no journal**). Receive Items = **warehouse receipt**
+> (pulls PO, no journal yet). **The accounting journal happens at Purchase Invoice** (`Dr Inventory |
+> Cr Accounts Payable`), and closes at **Purchase Payment** (`Dr AP | Cr Cash/Bank`).
 
 ---
 
 ## 3. Key Logic Principles
 
-1. **3-Way Match** (core control): before paying, match **PO ↔ Goods Receipt ↔ Invoice** (qty & price).
-   Prevents paying for goods not ordered / not received / mispriced.
-2. **Item type drives the debit account:**
-   - *Inventory part* → **Inventory** (asset).
-   - *Non-inventory / service / expense* → straight to **Expense** (may skip "Receive Items").
-3. **Input VAT** is recognized at the **Purchase Invoice** (tax invoice), **not** at goods receipt.
-4. **Received-not-invoiced:** if goods arrive before the invoice, use a temporary "Accrued Purchase"
-   account, then move it to Accounts Payable when the invoice arrives.
-5. **AP flow:** Invoice increases AP → Payment decreases AP. AP balance = unpaid bills.
+1. **Item → COA setup:** each item is linked to an Inventory account up front → the basis of auto-journal.
+2. **Data flows between documents:** PO → pulled by Receive Items → pulled by Purchase Invoice. This
+   naturally enforces the **3-way match** (order ↔ receipt ↔ invoice) and prevents wrong qty/price.
+3. **Journal point = Purchase Invoice** (not at goods receipt, in this model).
+4. **Input VAT** is recognized at the Purchase Invoice (if a tax invoice exists).
+5. **Return = automatic reversal** by the system (no manual journal needed).
+6. **AP flow:** Purchase Invoice increases AP → Purchase Payment decreases AP.
+
+*(Optional note: some setups recognize "goods received not invoiced / GRNI" at Receive Items. In this
+model the journal is consolidated at the Purchase Invoice per the practice used.)*
 
 ---
 
 ## 4. In One Breath
 
-`PR & PO = commitment (no journal)` → `Receive = asset in + temporary payable` →
-`Invoice = Accounts Payable + Input VAT` → `Payment = AP settled, cash out`.
-(Return = the reversal when goods are sent back.)
+`PR & PO = record + approval (no journal)` → `Receive Items = warehouse receipt, pull PO` →
+`Purchase Invoice = JOURNAL: Dr Inventory | Cr Accounts Payable (+ Input VAT)` →
+`Purchase Payment = Dr AP | Cr Cash/Bank`. (Return = automatic reversal.)
 
-*Field details for each document (vendor, item, qty, price, tax, terms, etc.) to follow in the next doc.*
+*Field details for each document (vendor, item, qty, price, tax, terms, etc.) to follow.*
