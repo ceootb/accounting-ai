@@ -54,8 +54,11 @@ transaksi berjalan.
 5. **Retur = reversal otomatis** oleh sistem (tak perlu jurnal manual).
 6. **Alur Utang (AP):** Purchase Invoice menaikkan AP → Purchase Payment menurunkan AP.
 
-*(Catatan opsional: sebagian setup mengakui "barang diterima belum ditagih/GRNI" saat Receive Items.
-Pada model ini jurnal disatukan di Purchase Invoice sesuai praktik yang dipakai.)*
+**Kenapa jurnal di Purchase Invoice (bukan saat Receive Items)?** Karena **umumnya vendor mengirim
+barang sekaligus dengan invoice/tagihan** — begitu barang diterima, tagihan sudah ada, jadi utang
+sudah pasti walau **tempo pembayaran** belakangan. Maka cukup **satu jurnal di Purchase Invoice**.
+*(Sebagian sistem menyediакan auto-jurnal "barang diterima belum ditagih/GRNI" saat Receive Items;
+itu baru relevan bila ada **jeda waktu signifikan** antara penerimaan barang dan terbitnya invoice.)*
 
 ---
 

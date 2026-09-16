@@ -53,8 +53,11 @@ This item → COA mapping is what lets the **auto-journal** know which account t
 5. **Return = automatic reversal** by the system (no manual journal needed).
 6. **AP flow:** Purchase Invoice increases AP → Purchase Payment decreases AP.
 
-*(Optional note: some setups recognize "goods received not invoiced / GRNI" at Receive Items. In this
-model the journal is consolidated at the Purchase Invoice per the practice used.)*
+**Why journal at Purchase Invoice (not at Receive Items)?** Because **vendors usually ship the goods
+together with the invoice/bill** — once goods arrive, the bill already exists, so the payable is certain
+even if the **payment term** is later. Thus a **single journal at Purchase Invoice** suffices.
+*(Some systems offer a "goods received not invoiced / GRNI" auto-journal at Receive Items; that only
+matters when there is a **significant time gap** between goods receipt and invoice issuance.)*
 
 ---
 
