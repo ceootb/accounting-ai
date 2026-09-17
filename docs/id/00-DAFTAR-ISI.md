@@ -8,6 +8,9 @@ Versi Inggris ada di [`docs/en/`](../en/).
 2. [Bentuk Laporan Keuangan & Aturan Debit-Kredit](bentuk-laporan-keuangan.md) — persamaan dasar, **saldo normal (hafalan)**, 3 laporan (Neraca/L-R/Perubahan Modal) & keterkaitannya, kenapa selalu imbang.
 3. [Struktur COA: Tipe Akun, Parent & Child](struktur-coa-tipe-parent-child.md) — 16 tipe akun (+saldo normal & laporan), parent vs child (sub-account of), contoh berjenjang.
 
+## Panduan Sederhana (untuk pengguna non-akuntan)
+- [Dari Input Transaksi sampai Laporan Keuangan](alur-entry-ke-laporan.md) — penjelasan bahasa sehari-hari: satu faktur penjualan → jurnal otomatis → Buku Besar → Laporan Keuangan. Staf tak harus mahir akuntansi; manajer yang wajib paham.
+
 ## Persiapan / Setup
 3b. [Modul Setup / Persiapan Awal (Tahap 1)](modul-setup-persiapan.md) — menu Setup: Company Info, Preferences, **User Access Rights** (kontrol internal/segregation of duties), Quick Setup, Form Templates.
 
