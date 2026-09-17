@@ -30,10 +30,61 @@ Has several **tabs**: **General · Accounting Period · Tax · Branch ID**.
   Taxable Company's Date, Branch Code, Type, **KLU** (business field classification).
 
 ### 2. Preferences
-Global system settings:
-- **Default accounts** (e.g. default cash/bank, rounding account, retained earnings).
-- Document number formats, number & date formats.
-- **Tax settings** (default VAT) & feature toggles.
+**Global system settings** + the **default accounts** used to auto-post journals. Split into several
+sub-menus. **Core idea:** before any transaction can run, each transaction type must be mapped to a
+**default account** in the COA — this is what makes journals form automatically. *(Account numbers
+below are illustrative COA-mapping examples only.)*
+
+**a) Company** — app behavior: *Backup on close*, *Confirm before exit*, *Open last company*,
+*Show purchase & sales price in item history*.
+- **Retained Earning Account** (e.g. `3200001`): the account that closing profit/loss rolls into
+  each period. **Required.**
+
+**b) Feature** — enables data structures & methods:
+- **Inventory Costing Method**: **FIFO** or Average — how inventory COGS is computed.
+- Toggles: *Multi Warehouse*, *Quantity can < 0*, **Multi Unit**, *Use Salesman*, *Can Edit Invoice
+  Number*, *Control Qty Measurement*.
+- **Cost & Profit Center**: **Multi Department** / **Multi Project** — so cost & profit can be
+  reported per department/project.
+- **Audit Trail**: **Transaction Log** (who created/edited — internal control) & Recalculating Cost Log.
+
+**c) Currency Default Account** — default accounts **per currency** (e.g. IDR):
+- *Account Payable*, *Account Receivable*, *Advance Purchase*, *Advance Sales*, *Sales Discount*,
+  *Realized Gain/Loss* & *Unrealized Gain/Loss* (FX differences).
+
+**d) Item Default Account** — defaults for **inventory/item** transactions:
+- *Inventory*, *Sales*, *Sales Return*, *Item Discount*, *Goods In Transit*, **COGS**,
+  *Purchase Return*, *Expense*, *Unbilled Goods* (received not yet billed).
+
+**e) Purchases** — purchasing module behavior:
+- *Remember Vendor*, warning when buying a Serial Number item already bought.
+- **Purchase Return**: *All Purchase Invoices* / *Outstanding Invoices*.
+- **Receive Item → Default Receive Cost**: *Reupdate by bill* / *Do not reupdate* / *Set to reupdate
+  by bill if the first bill date falls in the same period as the receive date*.
+- **Default Difference Unbilled Account**: absorbs the received-vs-billed difference.
+
+**f) Cost & Profit Center** — defaults for **projects & departments**:
+- Warning when **Department** is not filled.
+- **Labour Cost** (Expense Account) and project accounts: *Project In Process*, *Advanced Revenue*,
+  *Revenue*, *Cost of Project Sold*.
+
+**g) Job Costing** — *Save different cost to account* option + its holding account.
+
+**h) Taxation** — tax settings:
+- *Code in Invoice Tax No*, *Number for each invoice*, **Rounded (Upper)** rounding.
+- **Income Tax Account** (e.g. `7300000` — Corporate Income Tax).
+
+**i) Reminder** — startup reminders: *Item to Reorder*, *Expired Serial Number*, **Receivable due**
+& **Payable due** (e.g. 7 days before due date), discount due, and **Recurring** transactions
+(Sales/Purchase Invoice, Payment, Deposit).
+
+**j) Templates Setting** — print copies (e.g. **VAT Invoice Copies**).
+
+**k) Miscellaneous** — *Auto pop-up search*, **Invoice Aging** (Aging Range e.g. 30 days; computed
+from **Due Date** or **Invoice Date**), **Language** (English/Indonesia), **Date Format**
+(e.g. `dd mmm yy`) & number format.
+
+**l) Font Setting & Skin Option** — font size/name & appearance (cosmetic).
 
 ### 3. User Profile & Access Rights — **the key internal control**
 - Create a **user (login)** for each staff member.
