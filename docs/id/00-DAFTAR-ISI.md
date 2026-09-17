@@ -9,6 +9,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 3. [Struktur COA: Tipe Akun, Parent & Child](struktur-coa-tipe-parent-child.md) — 16 tipe akun (+saldo normal & laporan), parent vs child (sub-account of), contoh berjenjang.
 
 ## Panduan Sederhana (untuk pengguna non-akuntan)
+- [Menyiapkan Data Setup Sebelum Transaksi](persiapan-sebelum-transaksi.md) — kenapa Company Info, Preferences (peta akun), & User Profile disiapkan dulu; analogi "menyiapkan dapur". Data rapi di depan → laporan otomatis di belakang.
 - [Dari Input Transaksi sampai Laporan Keuangan](alur-entry-ke-laporan.md) — penjelasan bahasa sehari-hari: satu faktur penjualan → jurnal otomatis → Buku Besar → Laporan Keuangan. Staf tak harus mahir akuntansi; manajer yang wajib paham.
 
 ## Persiapan / Setup
