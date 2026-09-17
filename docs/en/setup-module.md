@@ -9,10 +9,25 @@
 ## Setup Menu Contents
 
 ### 1. Company Info
-Company identity & base parameters:
-- Name, address, **Tax ID (NPWP)**, logo.
-- **Fiscal year / period** (start date).
-- Base **currency**.
+Has several **tabs**: **General · Accounting Period · Tax · Branch ID**.
+
+**a) General tab** — basic identity:
+- Company Name, Address, Zip Code, Phone, Fax, Country.
+- **Default Currency** (e.g. IDR).
+
+**b) Accounting Period tab** — **period control (important):**
+- **Start Date** — the date the company starts operating/bookkeeping.
+- **Fiscal Year** — the accounting year.
+- **Default Period** — the **current period**.
+- **Warn if** — *N* months **before / after** the Default Period → shows a **warning**.
+- **Error if** — *N* months **before / after** → **blocks/locks** entry (error).
+- **Locking Period:** prevents users from entering data carelessly — e.g. after the FS are **closed**,
+  or posting to a **future period** without a clear document/reason. Future data is usually only for
+  **recurring** transactions.
+
+**c) Tax tab** — tax data:
+- Form Serial Number, **Tax Registration Number (NPWP)**, **Taxable Company's No.** (PKP no.),
+  Taxable Company's Date, Branch Code, Type, **KLU** (business field classification).
 
 ### 2. Preferences
 Global system settings:

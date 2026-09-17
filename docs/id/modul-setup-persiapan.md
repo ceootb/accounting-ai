@@ -9,10 +9,25 @@
 ## Isi Menu Setup
 
 ### 1. Company Info (Info Perusahaan)
-Identitas & parameter dasar perusahaan:
-- Nama, alamat, **NPWP**, logo.
-- **Tahun buku / periode fiskal** (tanggal mulai).
-- **Mata uang** dasar.
+Terdiri dari beberapa **tab**: **General · Accounting Period · Tax · Branch ID**.
+
+**a) Tab General** — identitas dasar:
+- Company Name, Address, Zip Code, Phone No., Fax No., Country.
+- **Default Currency** (mis. IDR).
+
+**b) Tab Accounting Period** — **kontrol periode (penting):**
+- **Start Date** — tanggal perusahaan mulai beroperasi/pembukuan.
+- **Fiscal Year** — tahun buku.
+- **Default Period** — **periode berjalan** (current period).
+- **Warn if** — *N* bulan **sebelum / sesudah** Default Period → memunculkan **peringatan**.
+- **Error if** — *N* bulan **sebelum / sesudah** Default Period → **menolak/mengunci** entry (error).
+- **Locking Period:** mencegah user **sembarangan entry** — mis. saat FS sudah **closing**, atau input
+  transaksi ke **periode masa depan** tanpa dokumen/alasan jelas. Data masa depan umumnya hanya untuk
+  transaksi **recurring**.
+
+**c) Tab Tax** — data perpajakan:
+- Form Serial Number, **Tax Registration Number (NPWP)**, **Taxable Company's No.** (No. PKP),
+  Taxable Company's Date, Branch Code, Type, **KLU** (Klasifikasi Lapangan Usaha).
 
 ### 2. Preferences (Preferensi)
 Pengaturan global sistem:
