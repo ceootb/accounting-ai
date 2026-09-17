@@ -8,6 +8,9 @@ Versi Inggris ada di [`docs/en/`](../en/).
 2. [Bentuk Laporan Keuangan & Aturan Debit-Kredit](bentuk-laporan-keuangan.md) — persamaan dasar, **saldo normal (hafalan)**, 3 laporan (Neraca/L-R/Perubahan Modal) & keterkaitannya, kenapa selalu imbang.
 3. [Struktur COA: Tipe Akun, Parent & Child](struktur-coa-tipe-parent-child.md) — 16 tipe akun (+saldo normal & laporan), parent vs child (sub-account of), contoh berjenjang.
 
+## Persiapan / Setup
+3b. [Modul Setup / Persiapan Awal (Tahap 1)](modul-setup-persiapan.md) — menu Setup: Company Info, Preferences, **User Access Rights** (kontrol internal/segregation of duties), Quick Setup, Form Templates.
+
 ## Modul Transaksi (kerangka + logika auto-jurnal)
 4. [Modul Pembelian (Purchase)](modul-purchase-kerangka.md) — Procure-to-Pay 6 langkah; jurnal di **Purchase Invoice** (`Dr Persediaan | Cr Utang Usaha`); Payment; Return=reversal.
 5. [Modul Penjualan (Sales)](modul-sales-kerangka.md) — Order-to-Cash 6 langkah; jurnal di **Sales Invoice** (`Dr Piutang | Cr Pendapatan +PPN` **&** `Dr HPP | Cr Persediaan`); Receipt; Return=reversal.
