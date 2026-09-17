@@ -71,4 +71,59 @@ atau **Excluding PPN** saat entry.
 `Sales Invoice = JURNAL: (Dr Piutang | Cr Pendapatan +PPN Keluaran) & (Dr HPP | Cr Persediaan)` →
 `Sales Receipt = Dr Kas/Bank | Cr Piutang`. (Retur = reversal otomatis.)
 
-*Detail field entry modul Sales dilengkapi berikutnya.*
+---
+
+## 6. Sales Invoice — Detail Field Data Entry
+
+Layar entry dibuat agar **user cukup memilih data** (lewat **dropdown ▼** dan **kaca pembesar 🔍**
+yang menautkan ke master data); sistem yang **menghitung Amount/VAT/Total dan membuat jurnal
+otomatis**.
+
+**a) Header — pihak & dokumen:**
+- **Customer** ▼ — link ke **master customer**; otomatis menarik Bill To/Ship To, Terms, dan AR default.
+- **Select DO / Select SO** 🔍 — link ke voucher **Delivery Order / Sales Order**. **Opsional:** bila
+  DO diinput, item tertarik otomatis dari DO; bila tidak, bagian **Finance** input langsung di Sales
+  Invoice untuk **pengakuan Piutang**.
+- **Cust. is Taxable** ☑ dan **Inclusive Tax** ☑ — menentukan apakah pelanggan kena pajak & apakah
+  harga sudah termasuk PPN.
+- **Bill To / Ship To** — alamat tagih & kirim (▼).
+- **PO No.**, **Invoice No.** (auto), **Invoice Date**, **Ship Date**, **FOB**, **Terms** ▼ (mis.
+  C.O.D), **Ship Via** ▼.
+- **Template** ▼ (A4 / A4 FULL / Sales Invoice) & **Preview** ▼ (Preview / Printer / VAT Invoice).
+
+**b) Grid item** (tab **# Items** / **Down Payment**):
+- **Item** ▼🔍 — link ke **master item**; menarik deskripsi, harga, dan COA (pendapatan/persediaan/HPP).
+- **Item Description**, **Qty**, **Item Unit**, **Unit Price**, **Disc %**, **Tax** (T = kena pajak),
+  **Amount** (auto = Qty × Unit Price − Disc), **Dept.** ▼ (cost/profit center), **SN** (serial/batch).
+
+**c) Footer — pajak, akun & total:**
+- **Inv. Tax No** + nomor faktur pajak + tanggal.
+- **Description** — keterangan transaksi.
+- **AR Account** ▼ — pilih akun **Piutang**: AR Trade, AR Nontrade, AR Affiliates, AR Employee,
+  AR Officers, AR Others, atau Advance Payment.
+- **Sub Total** (auto), **Discount** (nilai / %), **VAT** (auto), **Freight**, **Total Invoice** (auto).
+- Status: Balance, Paid, Paid Disc, PPh Ps.23, Return.
+- Tombol: **Pay**, **Print**, **Save & New**, **Save & Close**, **Cancel**.
+- Toolbar: **Get from Memorize**, **Recurring**, **Sales Receipt**, dan **Show Journal** (lihat
+  jurnal otomatis yang terbentuk).
+
+**d) Auto-jurnal yang terbentuk** (contoh: *Inclusive Tax*, Total Invoice Rp450.000):
+
+*Jurnal 1 — pengakuan pendapatan (dari header + total):*
+```
+Dr  Piutang Usaha (AR)              450.000
+    Cr  PPN Keluaran (VAT Out)           44.594
+    Cr  Pendapatan Penjualan           405.406
+```
+*Jurnal 2 — pengakuan HPP (dari item × harga pokok):*
+```
+Dr  HPP (COGS)                     234.000
+    Cr  Persediaan (Inventory)         234.000
+```
+> Karena **Inclusive Tax**, VAT dikeluarkan dari total (450.000 − 44.594 = 405.406 pendapatan bersih).
+> Satu Sales Invoice → **dua jurnal balance** sekaligus (pendapatan + HPP), tanpa user menjurnal manual.
+> Tombol **Show Journal** menampilkan Transaction Journal ini untuk verifikasi.
+
+---
+
+*Alur & logika di atas melengkapi kerangka modul Sales.*

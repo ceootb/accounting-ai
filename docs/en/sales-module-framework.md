@@ -70,4 +70,59 @@ or **Excluding VAT** at entry.
 `Sales Invoice = JOURNAL: (Dr AR | Cr Sales Revenue +Output VAT) & (Dr COGS | Cr Inventory)` →
 `Sales Receipt = Dr Cash/Bank | Cr AR`. (Return = automatic reversal.)
 
-*Sales entry field details to follow.*
+---
+
+## 6. Sales Invoice — Field Data Entry Detail
+
+The entry screen is built so the **user only picks data** (via **dropdowns ▼** and **magnifier 🔍**
+that link to master data); the system **computes Amount/VAT/Total and creates the journal
+automatically**.
+
+**a) Header — parties & document:**
+- **Customer** ▼ — links to the **customer master**; auto-pulls Bill To/Ship To, Terms, and default AR.
+- **Select DO / Select SO** 🔍 — links to the **Delivery Order / Sales Order** voucher. **Optional:**
+  if a DO is entered, items are pulled from the DO; if not, **Finance** enters directly on the Sales
+  Invoice to **recognize the Receivable**.
+- **Cust. is Taxable** ☑ and **Inclusive Tax** ☑ — whether the customer is taxable & whether prices
+  already include VAT.
+- **Bill To / Ship To** — billing & shipping address (▼).
+- **PO No.**, **Invoice No.** (auto), **Invoice Date**, **Ship Date**, **FOB**, **Terms** ▼ (e.g.
+  C.O.D), **Ship Via** ▼.
+- **Template** ▼ (A4 / A4 FULL / Sales Invoice) & **Preview** ▼ (Preview / Printer / VAT Invoice).
+
+**b) Item grid** (tabs **# Items** / **Down Payment**):
+- **Item** ▼🔍 — links to the **item master**; pulls description, price, and COA (revenue/inventory/COGS).
+- **Item Description**, **Qty**, **Item Unit**, **Unit Price**, **Disc %**, **Tax** (T = taxable),
+  **Amount** (auto = Qty × Unit Price − Disc), **Dept.** ▼ (cost/profit center), **SN** (serial/batch).
+
+**c) Footer — tax, account & totals:**
+- **Inv. Tax No** + tax invoice number + date.
+- **Description** — transaction note.
+- **AR Account** ▼ — pick the **Receivable** account: AR Trade, AR Nontrade, AR Affiliates,
+  AR Employee, AR Officers, AR Others, or Advance Payment.
+- **Sub Total** (auto), **Discount** (value / %), **VAT** (auto), **Freight**, **Total Invoice** (auto).
+- Status: Balance, Paid, Paid Disc, Withholding (PPh 23), Return.
+- Buttons: **Pay**, **Print**, **Save & New**, **Save & Close**, **Cancel**.
+- Toolbar: **Get from Memorize**, **Recurring**, **Sales Receipt**, and **Show Journal** (view the
+  auto-generated journal).
+
+**d) The auto-journal produced** (example: *Inclusive Tax*, Total Invoice IDR 450,000):
+
+*Entry 1 — revenue recognition (from header + total):*
+```
+Dr  Accounts Receivable (AR)       450,000
+    Cr  Output VAT                       44,594
+    Cr  Sales Revenue                   405,406
+```
+*Entry 2 — COGS recognition (from item × cost):*
+```
+Dr  COGS                           234,000
+    Cr  Inventory                       234,000
+```
+> Because of **Inclusive Tax**, VAT is stripped out of the total (450,000 − 44,594 = 405,406 net
+> revenue). One Sales Invoice → **two balanced journal entries** at once (revenue + COGS), with no
+> manual journaling. The **Show Journal** button displays this Transaction Journal for verification.
+
+---
+
+*The flow and logic above complete the Sales module framework.*
