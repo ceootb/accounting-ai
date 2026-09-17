@@ -14,8 +14,9 @@
 
 Urutan menyiapkan software akuntansi untuk sebuah perusahaan:
 
-### Tahap 1 — Persiapan
-Detail & urutan menyusul (akan dilengkapi).
+### Tahap 1 — Persiapan (Setup)
+Konfigurasi awal di menu **Setup**: Company Info, Preferences, User Profile & Hak Akses,
+Change Password, Quick Setup, Form Templates. Detail: [modul-setup-persiapan.md](modul-setup-persiapan.md).
 
 ### Tahap 2 — Menyiapkan Master Data
 Siapkan daftar master **sebelum** bisa bertransaksi. Contoh daftar:
