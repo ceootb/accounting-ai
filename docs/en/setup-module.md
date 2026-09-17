@@ -87,11 +87,41 @@ from **Due Date** or **Invoice Date**), **Language** (English/Indonesia), **Date
 **l) Font Setting & Skin Option** — font size/name & appearance (cosmetic).
 
 ### 3. User Profile & Access Rights — **the key internal control**
-- Create a **user (login)** for each staff member.
-- **Access rights per module** (Sales, Purchase, GL, etc.): tick **Create / Edit / Delete**.
-- **Specific rights**, e.g. *Print Sales Invoice*, *Change Selling Price*.
-- **Control principle:** apply **segregation of duties** — separate whoever **inputs**, **approves**,
-  and **holds cash**. Restrict **Delete** & **Change Selling Price** to specific roles (prone to misuse).
+
+The **Edit User** screen manages login identity + per-user access rights.
+
+**a) Header (user identity):**
+- **Login Name**, **Full Name**, **Password** + **Confirmation**.
+- **Level** (dropdown): **Admin · Supervisor · User** — access-level presets. Admin usually has all
+  rights ticked; User is empty by default (must be granted rights as needed).
+- Buttons: **New**, **Save**, **Delete**, **Close**, and **Get Privilege**.
+
+**b) Get Privilege** — when creating a new user this button turns on automatically. It **copies the
+access rights of an existing user** to the new one, so you don't have to tick everything manually.
+
+**c) Access rights per activity — 6 permission columns:**
+Each activity row can be ticked under: **Create · Edit · Delete · Report · View · List**.
+Rights are grouped into **module tabs**:
+- **Sales:** Sales Quotation, Sales Order, Delivery Order, Invoicing, Customer Receipt, Sales Return,
+  RMA. Special rights: *Print Sales Invoice*, **Change Selling Price**, *Commission*, *AR Reminder*,
+  *Change Customer Info in Invoice*, *Allow over limit*, *Allow over qty in Invoice*, *Reprint
+  Delivery & Invoice*.
+- **Purchase:** Purchase Requisition, Purchase Order, Receive Item, Purchasing, Vendor Payment,
+  Purchase Return + *AP Reminder*.
+- **Item & Inventory:** Item, Warehouse, Item Transfer, Grouping, Job Costing, Inventory Adjustment,
+  Selling Price Adjustment + *Change Item Account*, *Create/Enter Serial/Batch Number*.
+- **Project:** Labour Cost (+ Adjustment), Material Budget & Price Adjustment, Work Price Analysis,
+  Project, Material In Used, Project Survey, Project Ending + *Show RAB*, *Project Control*,
+  *Project Expense Payment*.
+- **General Ledger & Others:** Chart of Account, Journal Voucher, Budgeting, Customer Data, Vendor
+  Data, Financial Report, Tax Report, Department + *Export Data* / *Import Data*.
+- **Bank & Fixed Asset:** Other Payment, Other Deposit, Fixed Asset + *Bank Reconciliation*,
+  *Revaluate/Dispose Fixed Asset*, *View & print bank book*.
+- **Memorized Reports · Designed Reports · Memorized Transaction** (separate tabs).
+
+**d) Control principle:** apply **segregation of duties** — separate whoever **inputs**, **approves**,
+and **holds cash**. Restrict **Delete** & **Change Selling Price** to specific roles (most prone to
+misuse). Avoid giving every user the **Admin** level.
 
 ### 4. Change Password
 Periodic password change — account access security.

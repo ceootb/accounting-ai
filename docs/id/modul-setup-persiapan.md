@@ -91,12 +91,41 @@ dari **Due Date** atau **Invoice Date**), **Language** (English/Indonesia), **Da
 **l) Font Setting & Skin Option** — ukuran/jenis font & tampilan (kosmetik).
 
 ### 3. User Profile & Hak Akses (Access Rights) — **kontrol internal utama**
-- Buat **user (login)** untuk tiap staf.
-- **Hak akses per modul** (Sales, Purchase, GL, dll): centang **Create / Edit / Delete**.
-- **Hak khusus**, mis. *Print Sales Invoice*, *Change Selling Price*.
-- **Prinsip pengendalian:** terapkan **segregation of duties** — pisahkan yang **input**, yang
-  **approve**, dan **pemegang kas**. Batasi hak **Delete** & **Change Selling Price** hanya ke role
-  tertentu (rawan penyalahgunaan).
+
+Layar **Edit User** mengatur identitas login + hak akses per user.
+
+**a) Header (identitas user):**
+- **Login Name**, **Full Name**, **Password** + **Confirmation**.
+- **Level** (dropdown): **Admin · Supervisor · User** — preset tingkat akses. Admin biasanya semua
+  hak tercentang; User default kosong (harus diberi hak sesuai kebutuhan).
+- Tombol: **New**, **Save**, **Delete**, **Close**, dan **Get Privilege**.
+
+**b) Get Privilege** — saat membuat user baru, tombol ini otomatis aktif. Gunanya **menyalin hak
+akses dari user yang sudah ada** ke user baru, biar tidak perlu centang ulang satu per satu.
+
+**c) Hak akses per aktivitas — 6 kolom izin:**
+Tiap baris aktivitas bisa dicentang di kolom: **Create · Edit · Delete · Report · View · List**.
+Hak dikelompokkan dalam beberapa **tab modul**:
+- **Sales:** Sales Quotation, Sales Order, Delivery Order, Invoicing, Customer Receipt, Sales Return,
+  RMA. Hak khusus: *Print Sales Invoice*, **Change Selling Price**, *Commission*, *AR Reminder*,
+  *Change Customer Info in Invoice*, *Allow over limit*, *Allow over qty in Invoice*, *Reprint
+  Delivery & Invoice*.
+- **Purchase:** Purchase Requisition, Purchase Order, Receive Item, Purchasing, Vendor Payment,
+  Purchase Return + *AP Reminder*.
+- **Item & Inventory:** Item, Warehouse, Item Transfer, Grouping, Job Costing, Inventory Adjustment,
+  Selling Price Adjustment + *Change Item Account*, *Create/Enter Serial/Batch Number*.
+- **Project:** Labour Cost (+ Adjustment), Material Budget & Price Adjustment, Work Price Analysis,
+  Project, Material In Used, Project Survey, Project Ending + *Show RAB*, *Project Control*,
+  *Project Expense Payment*.
+- **General Ledger & Others:** Chart of Account, Journal Voucher, Budgeting, Customer Data, Vendor
+  Data, Financial Report, Tax Report, Department + *Export Data* / *Import Data*.
+- **Bank & Fixed Asset:** Other Payment, Other Deposit, Fixed Asset + *Bank Reconciliation*,
+  *Revaluate/Dispose Fixed Asset*, *View & print bank book*.
+- **Memorized Reports · Designed Reports · Memorized Transaction** (tab tersendiri).
+
+**d) Prinsip pengendalian:** terapkan **segregation of duties** — pisahkan yang **input**, yang
+**approve**, dan **pemegang kas**. Batasi hak **Delete** & **Change Selling Price** hanya ke role
+tertentu (paling rawan penyalahgunaan). Hindari memberi semua user level **Admin**.
 
 ### 4. Change Password
 Ganti password berkala — keamanan akses akun.
