@@ -19,6 +19,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 ## Modul Transaksi (kerangka + logika auto-jurnal)
 4. [Modul Pembelian (Purchase)](modul-purchase-kerangka.md) — Procure-to-Pay 6 langkah; jurnal di **Purchase Invoice** (`Dr Persediaan | Cr Utang Usaha`); Payment; Return=reversal.
 5. [Modul Penjualan (Sales)](modul-sales-kerangka.md) — Order-to-Cash 6 langkah; jurnal di **Sales Invoice** (`Dr Piutang | Cr Pendapatan +PPN` **&** `Dr HPP | Cr Persediaan`); Receipt; Return=reversal.
+5b. [Modul General Ledger — Journal Voucher (JV)](modul-general-ledger-jv.md) — buku besar ke-5; **jurnal manual** untuk adjustment/koreksi (amortisasi prepaid, settlement uang muka); harus balance; akses supervisor/manager.
 
 ## Studi Kasus (Pengendalian Internal / Temuan Audit)
 6. [Studi Kasus Pengendalian Internal](studi-kasus-pengendalian-internal.md) —
@@ -29,7 +30,8 @@ Versi Inggris ada di [`docs/en/`](../en/).
 
 ## Data Latih (JSONL) — [`data/`](../../data/)
 `accounting_process.jsonl` · `financial_statements.jsonl` · `coa_structure.jsonl` ·
-`purchase_module.jsonl` · `sales_module.jsonl` · `internal_control_cases.jsonl`
+`purchase_module.jsonl` · `sales_module.jsonl` · `setup_module.jsonl` ·
+`general_ledger_jv.jsonl` · `bank_reconciliation.jsonl` · `internal_control_cases.jsonl`
 
 ## Menyusul (pending)
 - Detail **Tahap 1 (Persiapan)** setup.

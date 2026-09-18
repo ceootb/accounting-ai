@@ -101,6 +101,8 @@ Contoh — amortisasi sewa kantor dibayar dimuka (bulanan; sewa dibayar di muka 
 Dr  Biaya Sewa Kantor
     Cr  Sewa Kantor Dibayar Dimuka
 ```
+> **Detail field & contoh lengkap JV** (settlement uang muka, dll) ada di
+> [Modul General Ledger — Journal Voucher](modul-general-ledger-jv.md).
 
 ---
 
