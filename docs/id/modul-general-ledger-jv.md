@@ -12,10 +12,11 @@
 JV dipakai untuk **penyesuaian (adjustment) dan koreksi** — jurnal yang tidak muncul dari modul
 Sales/Purchase/Kas. Contoh yang sering:
 - **Amortisasi biaya dibayar dimuka** (sewa, asuransi, dll).
-- **Penyusutan** aset (bila tidak otomatis).
 - **Reklasifikasi** akun (salah pos → dipindahkan).
 - **Settlement uang muka** (cash advance) staf.
 - **Koreksi** kesalahan pencatatan.
+
+> **Catatan:** **penyusutan aset dihitung otomatis oleh modul Fixed Asset**, jadi *tidak* perlu JV manual.
 
 > Karena sifatnya menyesuaikan angka secara manual, **JV umumnya dipegang supervisor/manager** —
 > bukan staf input biasa. Ini bagian dari pengendalian internal (lihat hak akses di modul Setup).
@@ -31,7 +32,7 @@ Sales/Purchase/Kas. Contoh yang sering:
 - **Multi Currency** — dicentang bila melibatkan mata uang asing.
 
 **b) Grid baris jurnal:**
-- **Account No. / Account Name** — pilih akun dari daftar **COA**. Bisa lewat **kaca pembesar 🔍**
+- **Account No. / Account Name** — pilih akun dari daftar **COA**. Bisa lewat **opsi search**
   atau cukup **mengetik nama/nomor akun** (mis. ketik "pet" → muncul *Cash - Petty Cash*).
 - **Debit** / **Credit** — isi nilai di sisi yang tepat.
 - **Memo** — catatan per baris.

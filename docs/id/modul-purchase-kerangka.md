@@ -73,7 +73,7 @@ itu baru relevan bila ada **jeda waktu signifikan** antara penerimaan barang dan
 ## 5. Purchase Invoice — Detail Field Data Entry
 
 **Purchase Invoice = faktur pembelian dari vendor.** Seperti di penjualan, user **memilih data** lewat
-**dropdown ▼** dan **kaca pembesar 🔍**; sistem menghitung pajak & total, lalu membuat jurnal otomatis.
+**dropdown ▼** dan **opsi search**; sistem menghitung pajak & total, lalu membuat jurnal otomatis.
 
 ### Field yang diisi
 
@@ -86,11 +86,11 @@ itu baru relevan bila ada **jeda waktu signifikan** antara penerimaan barang dan
 
 **b) Isi transaksi — bisa lewat 3 cara:**
 
-1. **Lewat Item** (tab *Items*) — untuk **beli barang/persediaan**. Pilih **Item** 🔍 dari master
-   (menarik harga & COA), isi **Qty**, **Unit Price**, **Tax**, dan **Dept.** 🔍. Amount dihitung
+1. **Lewat Item** (tab *Items*) — untuk **beli barang/persediaan**. Pilih **Item** (search) dari master
+   (menarik harga & COA), isi **Qty**, **Unit Price**, **Tax**, dan **Dept.** (search). Amount dihitung
    otomatis. Cocok untuk stok yang masuk gudang.
 2. **Lewat Akun COA** (tab *Expense*) — untuk **beli jasa/biaya** (mis. internet, biaya bank). Pilih
-   **Account No.** 🔍 dari daftar COA, isi **Amount**, **Notes**, dan **Department** 🔍.
+   **Account No.** (search) dari daftar COA, isi **Amount**, **Notes**, dan **Department** (search).
 3. **Kombinasi** — item **dan** biaya tambahan sekaligus (mis. beli barang + ongkos/biaya admin).
 
 > **Insight penting:** sebuah "item" bisa **disetel setara akun biaya di COA** (item-for-expense).

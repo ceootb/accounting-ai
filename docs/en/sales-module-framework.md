@@ -74,13 +74,13 @@ or **Excluding VAT** at entry.
 
 ## 6. Sales Invoice — Field Data Entry Detail
 
-The entry screen is built so the **user only picks data** (via **dropdowns ▼** and **magnifier 🔍**
+The entry screen is built so the **user only picks data** (via **dropdowns ▼** and **search option**
 that link to master data); the system **computes Amount/VAT/Total and creates the journal
 automatically**.
 
 **a) Header — parties & document:**
 - **Customer** ▼ — links to the **customer master**; auto-pulls Bill To/Ship To, Terms, and default AR.
-- **Select DO / Select SO** 🔍 — links to the **Delivery Order / Sales Order** voucher. **Optional:**
+- **Select DO / Select SO** (search) — links to the **Delivery Order / Sales Order** voucher. **Optional:**
   if a DO is entered, items are pulled from the DO; if not, **Finance** enters directly on the Sales
   Invoice to **recognize the Receivable**.
 - **Cust. is Taxable** ☑ and **Inclusive Tax** ☑ — whether the customer is taxable & whether prices
@@ -91,7 +91,7 @@ automatically**.
 - **Template** ▼ (A4 / A4 FULL / Sales Invoice) & **Preview** ▼ (Preview / Printer / VAT Invoice).
 
 **b) Item grid** (tabs **# Items** / **Down Payment**):
-- **Item** ▼🔍 — links to the **item master**; pulls description, price, and COA (revenue/inventory/COGS).
+- **Item** ▼ / search — links to the **item master**; pulls description, price, and COA (revenue/inventory/COGS).
 - **Item Description**, **Qty**, **Item Unit**, **Unit Price**, **Disc %**, **Tax** (T = taxable),
   **Amount** (auto = Qty × Unit Price − Disc), **Dept.** ▼ (cost/profit center), **SN** (serial/batch).
 

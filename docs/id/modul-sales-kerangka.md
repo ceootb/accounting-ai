@@ -75,13 +75,13 @@ atau **Excluding PPN** saat entry.
 
 ## 6. Sales Invoice — Detail Field Data Entry
 
-Layar entry dibuat agar **user cukup memilih data** (lewat **dropdown ▼** dan **kaca pembesar 🔍**
+Layar entry dibuat agar **user cukup memilih data** (lewat **dropdown ▼** dan **opsi search**
 yang menautkan ke master data); sistem yang **menghitung Amount/VAT/Total dan membuat jurnal
 otomatis**.
 
 **a) Header — pihak & dokumen:**
 - **Customer** ▼ — link ke **master customer**; otomatis menarik Bill To/Ship To, Terms, dan AR default.
-- **Select DO / Select SO** 🔍 — link ke voucher **Delivery Order / Sales Order**. **Opsional:** bila
+- **Select DO / Select SO** (search) — link ke voucher **Delivery Order / Sales Order**. **Opsional:** bila
   DO diinput, item tertarik otomatis dari DO; bila tidak, bagian **Finance** input langsung di Sales
   Invoice untuk **pengakuan Piutang**.
 - **Cust. is Taxable** ☑ dan **Inclusive Tax** ☑ — menentukan apakah pelanggan kena pajak & apakah
@@ -92,7 +92,7 @@ otomatis**.
 - **Template** ▼ (A4 / A4 FULL / Sales Invoice) & **Preview** ▼ (Preview / Printer / VAT Invoice).
 
 **b) Grid item** (tab **# Items** / **Down Payment**):
-- **Item** ▼🔍 — link ke **master item**; menarik deskripsi, harga, dan COA (pendapatan/persediaan/HPP).
+- **Item** ▼ / search — link ke **master item**; menarik deskripsi, harga, dan COA (pendapatan/persediaan/HPP).
 - **Item Description**, **Qty**, **Item Unit**, **Unit Price**, **Disc %**, **Tax** (T = kena pajak),
   **Amount** (auto = Qty × Unit Price − Disc), **Dept.** ▼ (cost/profit center), **SN** (serial/batch).
 

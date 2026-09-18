@@ -12,10 +12,11 @@
 The JV is used for **adjustments and corrections** — journals that don't come out of the
 Sales/Purchase/Cash modules. Common uses:
 - **Amortizing prepaid expenses** (rent, insurance, etc.).
-- **Depreciation** of assets (when not automatic).
 - **Reclassifying** accounts (wrong posting → moved).
 - **Settling cash advances** given to staff.
 - **Correcting** recording errors.
+
+> **Note:** **asset depreciation is computed automatically by the Fixed Asset module**, so no manual JV is needed.
 
 > Because it adjusts figures manually, the **JV is usually restricted to supervisors/managers** — not
 > regular input staff. This is part of internal control (see access rights in the Setup module).
@@ -32,7 +33,7 @@ Sales/Purchase/Cash modules. Common uses:
 
 **b) Journal-line grid:**
 - **Account No. / Account Name** — pick an account from the **COA** list. Either via the
-  **magnifier 🔍** or simply by **typing the account name/number** (e.g. type "pet" → *Cash - Petty
+  **search option** or simply by **typing the account name/number** (e.g. type "pet" → *Cash - Petty
   Cash* appears).
 - **Debit** / **Credit** — enter the value on the correct side.
 - **Memo** — a per-line note.
