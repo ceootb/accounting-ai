@@ -130,9 +130,7 @@ Dr  HPP (COGS)                     234.000
 
 **Sales Receipt = mencatat uang masuk saat pelanggan membayar faktur.** Dibuka dari layar **Sales
 Invoice → klik tombol "Sales Receipt"**, sehingga banyak field **terisi otomatis** dari faktur.
-Layarnya disebut **Cust. Receipt**.
-
-> **Field berwarna kuning = wajib diisi.** Sisanya banyak yang terisi sendiri.
+Layarnya disebut **Cust. Receipt**. Banyak field terisi sendiri; user cukup melengkapi sisanya.
 
 **a) Bagian atas — dari siapa & kapan:**
 - **Received From** — **otomatis terisi** nama pelanggan (data ditarik dari Sales Invoice).

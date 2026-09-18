@@ -129,9 +129,7 @@ Dr  COGS                           234,000
 
 **Sales Receipt = recording money in when a customer pays an invoice.** It opens from the **Sales
 Invoice screen → click the "Sales Receipt" button**, so many fields are **auto-filled** from the
-invoice. The screen is called **Cust. Receipt**.
-
-> **Yellow fields = mandatory.** Many of the rest fill in by themselves.
+invoice. The screen is called **Cust. Receipt**. Many fields fill in by themselves; the user just completes the rest.
 
 **a) Top section — from whom & when:**
 - **Received From** — **auto-filled** with the customer name (pulled from the Sales Invoice).
