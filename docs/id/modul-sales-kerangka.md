@@ -126,4 +126,53 @@ Dr  HPP (COGS)                     234.000
 
 ---
 
+## 7. Sales Receipt (Penerimaan Pembayaran) — Detail Field Data Entry
+
+**Sales Receipt = mencatat uang masuk saat pelanggan membayar faktur.** Dibuka dari layar **Sales
+Invoice → klik tombol "Sales Receipt"**, sehingga banyak field **terisi otomatis** dari faktur.
+Layarnya disebut **Cust. Receipt**.
+
+> **Field berwarna kuning = wajib diisi.** Sisanya banyak yang terisi sendiri.
+
+**a) Bagian atas — dari siapa & kapan:**
+- **Received From** — **otomatis terisi** nama pelanggan (data ditarik dari Sales Invoice).
+- **Form No.** — nomor bukti terima (otomatis). **Payment Date** — tanggal uang diterima.
+
+**b) Bagian akun penerima — ke mana uang masuk:**
+- **Bank** — akun kas/bank yang **menerima** uang. Bisa rekening bank biasa, atau akun khusus
+  **Cash in Transit (CIT)** — lihat catatan di bawah.
+- **Cheque No. / Cheque Date** (bila bayar pakai cek), **Currency / Rate** (bila valas).
+- **Cheque Amount** — jumlah yang diterima; **Distribute Amount** — jumlah yang dialokasikan ke
+  faktur.
+
+**c) Grid faktur yang dibayar:**
+- **Invoice No., Date, Amount, Owing (sisa utang), Payment Amount (otomatis), Total Disc., Paid
+  (centang lunas), Discount Date.** Kolom **Paid** dan **Payment Amount** ikut terisi otomatis
+  mengikuti faktur yang dipilih.
+- **Memo** — keterangan.
+- Tombol: **Print, Save & New, Save & Close, Cancel.**
+
+**d) Auto-jurnal yang terbentuk** (contoh pelunasan Rp15.300.000):
+```
+Dr  Kas/Bank penerima (mis. Cash in Transit)   15.300.000
+    Cr  Piutang Usaha (AR)                          15.300.000
+```
+> Satu jurnal sederhana: **kas/bank bertambah, piutang berkurang.** Inilah penutup siklus penjualan
+> — faktur yang tadinya "belum dibayar" kini lunas.
+
+---
+
+### Catatan khusus: akun **Cash in Transit (CIT)** untuk penjualan retail
+
+Untuk **penjualan retail** yang jumlahnya banyak, penerimaan bisa diarahkan ke akun **penampungan
+sementara** bernama **Cash in Transit (CIT)** — bukan langsung ke bank. Tujuannya **menggunggung**
+(menggabungkan) penerimaan retail agar **tidak perlu entry satu per satu**, karena bagian marketing
+sudah menerbitkan **OR (Official Receipt)** sendiri untuk tiap pelanggan retail. Nanti saldo CIT ini
+"dibersihkan" ke bank saat setoran nyata masuk.
+
+> **Catatan untuk Tere:** akan ada **file update tersendiri** soal mekanisme CIT / gunggung retail
+> ini → dimasukkan ke halaman **tips akunting/jurnal**. *(Ditandai sebagai to-do.)*
+
+---
+
 *Alur & logika di atas melengkapi kerangka modul Sales.*

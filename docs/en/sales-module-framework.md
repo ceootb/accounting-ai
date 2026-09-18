@@ -125,4 +125,51 @@ Dr  COGS                           234,000
 
 ---
 
+## 7. Sales Receipt (Customer Payment) — Field Data Entry Detail
+
+**Sales Receipt = recording money in when a customer pays an invoice.** It opens from the **Sales
+Invoice screen → click the "Sales Receipt" button**, so many fields are **auto-filled** from the
+invoice. The screen is called **Cust. Receipt**.
+
+> **Yellow fields = mandatory.** Many of the rest fill in by themselves.
+
+**a) Top section — from whom & when:**
+- **Received From** — **auto-filled** with the customer name (pulled from the Sales Invoice).
+- **Form No.** — receipt number (auto). **Payment Date** — the date money was received.
+
+**b) Receiving-account section — where the money lands:**
+- **Bank** — the cash/bank account that **receives** the money. It can be a normal bank account, or a
+  special **Cash in Transit (CIT)** account — see the note below.
+- **Cheque No. / Cheque Date** (if paid by cheque), **Currency / Rate** (if foreign currency).
+- **Cheque Amount** — the amount received; **Distribute Amount** — the amount allocated to invoices.
+
+**c) Paid-invoices grid:**
+- **Invoice No., Date, Amount, Owing, Payment Amount (auto), Total Disc., Paid (tick when settled),
+  Discount Date.** The **Paid** and **Payment Amount** columns auto-fill based on the selected invoice.
+- **Memo** — a note.
+- Buttons: **Print, Save & New, Save & Close, Cancel.**
+
+**d) The auto-journal produced** (example: settlement of IDR 15,300,000):
+```
+Dr  Receiving Cash/Bank (e.g. Cash in Transit)   15,300,000
+    Cr  Accounts Receivable (AR)                      15,300,000
+```
+> One simple entry: **cash/bank goes up, receivables go down.** This closes the sales cycle — the
+> invoice that was "unpaid" is now settled.
+
+---
+
+### Special note: the **Cash in Transit (CIT)** account for retail sales
+
+For **retail sales** with high volume, receipts can be directed to a **temporary holding account**
+called **Cash in Transit (CIT)** — not straight to the bank. The goal is to **aggregate** retail
+receipts so you **don't have to enter each one**, because the marketing team already issues its own
+**OR (Official Receipt)** for each retail customer. The CIT balance is later "cleared" to the bank
+when the actual deposit comes in.
+
+> **Note for Tere:** a **separate update file** about the CIT / retail-aggregation mechanism is coming
+> → to be added to the **accounting/journal tips** page. *(Flagged as a to-do.)*
+
+---
+
 *The flow and logic above complete the Sales module framework.*
