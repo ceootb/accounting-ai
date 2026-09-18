@@ -126,4 +126,47 @@ Dr  Input VAT              297,298
 
 ---
 
+## 6. Purchase Payment (Paying the Vendor) — Field Data Entry Detail
+
+**Purchase Payment = paying the bill (invoice) owed to a vendor.** It opens from the **Purchase
+Invoice screen → click the "Purchase Payment" button**, so many fields are **auto-filled** and the
+invoice being paid is instantly **ticked as Paid**.
+
+### Fields to fill
+- **Vendor / Payee** — **auto-filled** from the Purchase Invoice.
+- **Form No.** (auto) & **Payment Date** — the date of payment.
+- **Bank** — the **paying cash/bank account** (the user just picks where the money leaves from). The
+  bank balance is shown as info.
+- **Memo**, and (if by cheque) **Cheque No./Date/Amount**.
+- **Invoice grid:** Invoice No., Date, **Due**, Amount, **Owing**, **Payment Amount**,
+  **Disc./W-H Amount**, **Paid** (auto-ticked for the opened invoice).
+
+> **The point: the user only picks the paying bank and the amount — no need to think about the
+> journal, because it's created automatically.**
+
+### The auto-journal produced (example)
+An invoice of IDR 3,890,000 is paid, with **withholding tax (PPh 23) of IDR 70,000** (services), so
+cash out is IDR 3,820,000:
+```
+Dr  Accounts Payable (A/P)            3,890,000
+    Cr  Cash/Bank                         3,820,000
+    Cr  Tax Payable — W/H Tax (PPh 23)       70,000
+```
+> **The payable is fully settled (3,890,000), but cash out is smaller** because 70,000 is withheld as
+> **PPh 23** to be remitted to the tax office later. This closes the purchase cycle.
+
+### Two important notes
+1. **The payable account must match.** The **A/P** account chosen on the Purchase Invoice is
+   **automatically debited** at Purchase Payment (e.g. pick "A/P Others" on the invoice → Purchase
+   Payment debits "A/P Others" too). The Payables ledger (**and the per-vendor sub-ledger**) updates
+   automatically.
+2. **An "Owing" invoice not yet due = likely recurring.** These are **monthly recurring costs** whose
+   invoices are **entered in advance**. The benefit: the current month's cost is already recorded even
+   before the vendor bills it, and it doubles as a **cash-flow estimate** for what's coming.
+
+> **Note for Tere (to-do):** two separate update files are coming → **(a) the Recurring mechanism**
+> and **(b) the Payables ledger (GL A/P) + per-vendor Sub-GL**. Both are on the pending list. *(Flagged.)*
+
+---
+
 *The flow and logic above complete the Purchase module framework.*

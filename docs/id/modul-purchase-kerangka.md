@@ -126,4 +126,46 @@ Dr  PPN Masukan             297.298
 
 ---
 
+## 6. Purchase Payment (Pembayaran ke Vendor) — Detail Field Data Entry
+
+**Purchase Payment = membayar utang (faktur) ke vendor.** Dibuka dari layar **Purchase Invoice →
+klik tombol "Purchase Payment"**, sehingga banyak field **terisi otomatis** dan faktur yang dibayar
+langsung **tercentang lunas (Paid)**.
+
+### Field yang diisi
+- **Vendor / Payee** — **otomatis terisi** dari Purchase Invoice.
+- **Form No.** (otomatis) & **Payment Date** — tanggal bayar.
+- **Bank** — **akun kas/bank pembayar** (user tinggal pilih dari mana uang keluar). Saldo bank
+  ditampilkan sebagai info.
+- **Memo**, dan (bila pakai cek) **Cheque No./Date/Amount**.
+- **Grid faktur:** Invoice No., Date, **Due (jatuh tempo)**, Amount, **Owing (sisa)**,
+  **Payment Amount**, **Disc./W-H Amount**, **Paid** (tercentang otomatis untuk faktur yang dibuka).
+
+> **Intinya user cukup memilih bank pembayar dan jumlahnya — tidak perlu memikirkan jurnalnya,
+> karena jurnal terbentuk otomatis.**
+
+### Auto-jurnal yang terbentuk (contoh)
+Faktur Rp3.890.000 dibayar, dengan potongan **PPh Pasal 23 Rp70.000** (jasa), kas keluar Rp3.820.000:
+```
+Dr  Utang Usaha (A/P)                 3.890.000
+    Cr  Kas/Bank                          3.820.000
+    Cr  Utang Pajak — PPh 23 (dipotong)      70.000
+```
+> **Utang lunas penuh (3.890.000), tapi kas keluar lebih kecil** karena Rp70.000 ditahan sebagai
+> **PPh 23** yang nanti disetor ke negara. Ini penutup siklus pembelian.
+
+### Dua catatan penting
+1. **Akun utang harus cocok.** Akun **A/P** yang dipilih di Purchase Invoice akan **otomatis
+   didebit** saat Purchase Payment (mis. pilih "A/P Others" di faktur → Purchase Payment mendebit
+   "A/P Others" juga). Buku Besar Utang (**dan Sub-Buku Besar per vendor**) ter-update otomatis.
+2. **Faktur "Owing" yang belum jatuh tempo = kemungkinan recurring.** Yaitu **biaya berulang tiap
+   bulan** yang fakturnya **dientry di muka**. Manfaatnya: biaya bulan berjalan sudah tercatat
+   walau vendor belum menagih, sekaligus jadi **estimasi kebutuhan kas (cash flow)** ke depan.
+
+> **Catatan untuk Tere (to-do):** dua topik ini akan ada **file update tersendiri** →
+> **(a) mekanisme Recurring** (transaksi berulang), dan **(b) Buku Besar Utang (GL A/P) + Sub-GL per
+> vendor**. Keduanya saya masukkan ke daftar tunggu. *(Ditandai.)*
+
+---
+
 *Alur & logika di atas melengkapi kerangka modul Purchase.*
