@@ -67,4 +67,63 @@ matters when there is a **significant time gap** between goods receipt and invoi
 `Purchase Invoice = JOURNAL: Dr Inventory | Cr Accounts Payable (+ Input VAT)` →
 `Purchase Payment = Dr AP | Cr Cash/Bank`. (Return = automatic reversal.)
 
-*Field details for each document (vendor, item, qty, price, tax, terms, etc.) to follow.*
+---
+
+## 5. Purchase Invoice — Field Data Entry Detail
+
+**Purchase Invoice = the bill from a vendor.** As in sales, the user **selects data** via **dropdowns ▼**
+and the **magnifier 🔍**; the system computes tax & totals, then creates the journal automatically.
+
+### Fields to fill
+
+**a) Top section (vendor & document):**
+- **Vendor** ▼ — pick from the vendor master (auto-pulls address & terms).
+- **Select PO** ▼ — pull data from a **Purchase Order** if any (items fill in automatically).
+- **Vendor is Taxable** ☑ and **Inclusive Tax** ☑ — whether VAT applies & whether prices already
+  include VAT.
+- **Form No.** (auto), **Invoice No.**, **Invoice Date**, **Ship Date**, **Terms** ▼ (e.g. Net 14),
+  **A/P Account** ▼ (the **Payable** account used).
+
+**b) The transaction body — three ways to enter it:**
+
+1. **Via Item** (*Items* tab) — for **buying goods/inventory**. Pick an **Item** 🔍 from the master
+   (pulls price & COA), enter **Qty**, **Unit Price**, **Tax**, and **Dept.** 🔍. Amount is computed
+   automatically. Best for stock entering the warehouse.
+2. **Via COA account** (*Expense* tab) — for **buying services/expenses** (e.g. internet, bank
+   charges). Pick an **Account No.** 🔍 from the COA list, enter **Amount**, **Notes**, and
+   **Department** 🔍.
+3. **Combination** — items **and** additional costs at once (e.g. goods + freight/admin fee).
+
+> **Key insight:** an "item" can be **set up to equal an expense account in the COA** (item-for-expense).
+> When it is, the **resulting journal is exactly the same** whether the cost is entered via **Item** or
+> via the **Expense** tab — so the user can pick whichever is more convenient.
+
+### VAT: Exclusive vs Inclusive
+- **Exclusive:** VAT is **added** on top of the price. E.g. IDR 3,000,000 → VAT 330,000 → total 3,330,000.
+- **Inclusive:** VAT is **stripped out** of the price. E.g. IDR 3,000,000 already includes VAT →
+  net expense 2,702,702 + VAT 297,298.
+
+### The auto-journal produced
+
+**Example 1 — buying inventory (Exclusive VAT):** 50 units × IDR 110,000 = 5,500,000, VAT 605,000.
+```
+Dr  Inventory            5,500,000
+Dr  Input VAT              605,000
+    Cr  Accounts Payable       6,105,000
+```
+
+**Example 2 — buying an expense, item + bank charge combination (Inclusive VAT):** internet
+IDR 3,000,000 (VAT-inclusive) + bank charge IDR 5,000 (not taxed).
+```
+Dr  Internet Expense     2,702,702
+Dr  Bank Charges             5,000
+Dr  Input VAT              297,298
+    Cr  Accounts Payable       3,005,000
+```
+> General purchase pattern: **Dr Inventory/Expense + Dr Input VAT | Cr Accounts Payable.** If there's
+> a **withholding tax (PPh 23)** (e.g. on services), it appears at the bottom and reduces the cash paid
+> at settlement. The **Show Journal** button displays this journal for verification.
+
+---
+
+*The flow and logic above complete the Purchase module framework.*

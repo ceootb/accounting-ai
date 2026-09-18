@@ -68,4 +68,62 @@ itu baru relevan bila ada **jeda waktu signifikan** antara penerimaan barang dan
 `Purchase Invoice = JURNAL: Dr Persediaan | Cr Utang Usaha (+PPN Masukan)` →
 `Purchase Payment = Dr Utang Usaha | Cr Kas/Bank`. (Retur = reversal otomatis.)
 
-*Detail field tiap dokumen (vendor, item, qty, harga, pajak, termin, dsb) dilengkapi di dokumen berikutnya.*
+---
+
+## 5. Purchase Invoice — Detail Field Data Entry
+
+**Purchase Invoice = faktur pembelian dari vendor.** Seperti di penjualan, user **memilih data** lewat
+**dropdown ▼** dan **kaca pembesar 🔍**; sistem menghitung pajak & total, lalu membuat jurnal otomatis.
+
+### Field yang diisi
+
+**a) Bagian atas (vendor & dokumen):**
+- **Vendor** ▼ — pilih dari master vendor (otomatis menarik alamat & termin).
+- **Select PO** ▼ — tarik data dari **Purchase Order** bila ada (item langsung terisi).
+- **Vendor is Taxable** ☑ dan **Inclusive Tax** ☑ — apakah kena PPN & apakah harga sudah termasuk PPN.
+- **Form No.** (otomatis), **Invoice No.**, **Invoice Date**, **Ship Date**, **Terms** ▼ (mis. Net 14),
+  **A/P Account** ▼ (akun **Utang** yang dipakai).
+
+**b) Isi transaksi — bisa lewat 3 cara:**
+
+1. **Lewat Item** (tab *Items*) — untuk **beli barang/persediaan**. Pilih **Item** 🔍 dari master
+   (menarik harga & COA), isi **Qty**, **Unit Price**, **Tax**, dan **Dept.** 🔍. Amount dihitung
+   otomatis. Cocok untuk stok yang masuk gudang.
+2. **Lewat Akun COA** (tab *Expense*) — untuk **beli jasa/biaya** (mis. internet, biaya bank). Pilih
+   **Account No.** 🔍 dari daftar COA, isi **Amount**, **Notes**, dan **Department** 🔍.
+3. **Kombinasi** — item **dan** biaya tambahan sekaligus (mis. beli barang + ongkos/biaya admin).
+
+> **Insight penting:** sebuah "item" bisa **disetel setara akun biaya di COA** (item-for-expense).
+> Kalau begitu, **hasil jurnalnya sama persis** apakah biaya diinput lewat **Item** atau lewat tab
+> **Expense** — jadi user boleh pakai cara yang paling nyaman.
+
+### PPN: Exclusive vs Inclusive
+- **Exclusive (tidak termasuk):** PPN **ditambahkan** di atas harga. Contoh Rp3.000.000 → PPN
+  Rp330.000 → total Rp3.330.000.
+- **Inclusive (sudah termasuk):** PPN **dikeluarkan** dari harga. Contoh Rp3.000.000 sudah termasuk
+  PPN → beban bersih Rp2.702.702 + PPN Rp297.298.
+
+### Auto-jurnal yang terbentuk
+
+**Contoh 1 — beli persediaan (Exclusive PPN):** 50 unit × Rp110.000 = Rp5.500.000, PPN Rp605.000.
+```
+Dr  Persediaan            5.500.000
+Dr  PPN Masukan             605.000
+    Cr  Utang Usaha             6.105.000
+```
+
+**Contoh 2 — beli biaya, kombinasi item + biaya bank (Inclusive PPN):** internet Rp3.000.000
+(termasuk PPN) + biaya bank Rp5.000 (tidak kena pajak).
+```
+Dr  Beban Internet        2.702.702
+Dr  Beban Bank                5.000
+Dr  PPN Masukan             297.298
+    Cr  Utang Usaha             3.005.000
+```
+> Pola umum pembelian: **Dr Persediaan/Beban + Dr PPN Masukan | Cr Utang Usaha.** Bila ada pemotongan
+> **PPh Pasal 23** (mis. atas jasa), nilainya muncul di bagian bawah dan mengurangi kas yang dibayar
+> saat pelunasan. Tombol **Show Journal** menampilkan jurnal ini untuk verifikasi.
+
+---
+
+*Alur & logika di atas melengkapi kerangka modul Purchase.*
