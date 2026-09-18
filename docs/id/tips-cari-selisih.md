@@ -42,6 +42,24 @@ transaksi yang kamu kenal, periksa transaksi itu — mungkin debit dan kreditnya
 
 ---
 
+## Syarat utama sebelum tutup buku (closing FS)
+
+Sebelum Laporan Keuangan sebuah periode boleh **ditutup (closing / period end)**, dua syarat utama
+harus dipenuhi:
+
+1. **Seluruh transaksi periode berjalan sudah dipastikan terinput lengkap** di sistem (penjualan,
+   pembelian, kas/bank, penyesuaian).
+2. **Rekonsiliasi bank & kas selesai dengan selisih NOL** — yaitu saldo **Buku Bank perusahaan sama
+   persis (balance) dengan saldo Rekening Koran dari bank**.
+
+> Selama masih ada selisih, laporan keuangan **belum boleh ditutup**. Alasannya: kas/bank adalah pos
+> yang **paling mudah diverifikasi ke pihak luar** (rekening koran bank). Kalau angka kas saja belum
+> bisa diyakini benar, maka keandalan seluruh laporan ikut diragukan. Karena itu **rekonsiliasi kas &
+> bank yang nol adalah pondasi** sebelum tutup buku. *(Trik cari selisih di atas membantu mempercepat
+> proses ini.)*
+
+---
+
 ## Ringkasan cepat
 
 | Selisih... | Kemungkinan penyebab | Langkah |

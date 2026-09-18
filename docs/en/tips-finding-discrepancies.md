@@ -43,6 +43,24 @@ transaction you recognize, check that transaction — its debit and credit may b
 
 ---
 
+## The main prerequisite before closing the books (closing FS)
+
+Before a period's Financial Statements may be **closed (closing / period end)**, two main conditions
+must be met:
+
+1. **All transactions for the current period are confirmed fully entered** in the system (sales,
+   purchases, cash/bank, adjustments).
+2. **Bank & cash reconciliation is complete with ZERO difference** — i.e. the company's **Bank Book
+   balance exactly matches (balances with) the bank statement**.
+
+> As long as a difference remains, the financial statements **may not be closed**. The reason: cash/bank
+> is the item **most easily verified against an external party** (the bank statement). If even the cash
+> figure can't be trusted, the reliability of the whole report is in doubt. So a **zero cash & bank
+> reconciliation is the foundation** before closing. *(The discrepancy-hunting tricks above help speed
+> this up.)*
+
+---
+
 ## Quick summary
 
 | If the difference... | Likely cause | Step |
