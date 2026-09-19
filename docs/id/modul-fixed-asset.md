@@ -89,7 +89,7 @@ Dr  Aset Tetap (mis. Bangunan)
 > Akun **Fixed Asset Transaction** = "jembatan" antara pembelian dan pendaftaran aset. Setelah kedua
 > tahap selesai, saldo akun perantara ini kembali **nol** (masuk lalu keluar).
 
-**Tahap 3 — Penyusutan bulanan (otomatis, lewat Period End):**
+**Tahap 3 — Penyusutan bulanan (otomatis, lewat [Period End](proses-tutup-periode-period-end.md)):**
 ```
 Dr  Beban Penyusutan (Depreciation Expense)
     Cr  Akumulasi Penyusutan (Accumulated Depreciation)

@@ -21,6 +21,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 5. [Modul Penjualan (Sales)](modul-sales-kerangka.md) — Order-to-Cash 6 langkah; jurnal di **Sales Invoice** (`Dr Piutang | Cr Pendapatan +PPN` **&** `Dr HPP | Cr Persediaan`); Receipt; Return=reversal.
 5b. [Modul General Ledger — Journal Voucher (JV)](modul-general-ledger-jv.md) — buku besar ke-5; **jurnal manual** untuk adjustment/koreksi (amortisasi prepaid, settlement uang muka); harus balance; akses supervisor/manager.
 6. [Modul Aset Tetap (Fixed Asset)](modul-fixed-asset.md) — 3 sub-modul (kelompok pajak → kategori → daftar aset); akun perantara **Fixed Asset Transaction**; **penyusutan otomatis tiap bulan via "Period End"** (`Dr Beban Penyusutan | Cr Akumulasi Penyusutan`); tabel kelompok fiskal RI (UU PPh 11/PMK 72/2023).
+7. [Proses Tutup Periode (Period End)](proses-tutup-periode-period-end.md) — satu klik saat tutup bulan; auto-jurnal **penyusutan aset** + **revaluasi selisih kurs** (Realized/Unrealized). Dijalankan setelah transaksi lengkap & rekonsiliasi nol.
 
 ## Studi Kasus (Pengendalian Internal / Temuan Audit)
 6. [Studi Kasus Pengendalian Internal](studi-kasus-pengendalian-internal.md) —

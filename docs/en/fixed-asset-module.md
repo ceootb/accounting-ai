@@ -90,7 +90,7 @@ Dr  Fixed Asset (e.g. Building)
 > The **Fixed Asset Transaction** account is the "bridge" between the purchase and the asset
 > registration. After both stages, this intermediary balance returns to **zero** (in then out).
 
-**Stage 3 — Monthly depreciation (automatic, via Period End):**
+**Stage 3 — Monthly depreciation (automatic, via [Period End](period-end-closing-process.md)):**
 ```
 Dr  Depreciation Expense
     Cr  Accumulated Depreciation
