@@ -1,6 +1,6 @@
 # Menyiapkan Data Setup Sebelum Transaksi — Penjelasan Sederhana
 
-> Ditulis dengan bahasa sehari-hari untuk **pengguna yang tidak harus mahir akuntansi**. Intinya:
+> Untuk **pengguna yang tidak harus mahir akuntansi**. Intinya:
 > **semua data dasar disiapkan lebih dulu**, supaya begitu transaksi diinput, sistem langsung tahu
 > harus mencatat ke mana — dan laporan keuangan terbentuk sendiri.
 >

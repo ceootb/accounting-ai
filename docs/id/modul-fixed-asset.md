@@ -1,8 +1,8 @@
 # Modul Aset Tetap (Fixed Asset)
 
 > Modul untuk mencatat **aset tetap** (gedung, kendaraan, mesin, komputer, dll), menghitung
-> **penyusutan otomatis tiap bulan**, dan membuat **jurnalnya sendiri**. Bahasa awam untuk user;
-> detail teknis disimpan untuk tahap build software.
+> **penyusutan otomatis tiap bulan**, dan membuat **jurnalnya sendiri**.
+> *(Detail teknis disimpan untuk tahap build software.)*
 
 ---
 
@@ -94,9 +94,9 @@ Dr  Aset Tetap (mis. Bangunan)
 Dr  Beban Penyusutan (Depreciation Expense)
     Cr  Akumulasi Penyusutan (Accumulated Depreciation)
 ```
-> Cukup **klik tombol "Period End"** saat tutup buku bulanan — sistem **menghitung & menjurnal
-> penyusutan semua aset sekaligus** (satu voucher, dirinci per aset & per departemen). User tidak
-> menghitung manual.
+> Saat tutup buku bulanan, proses **Period End** dijalankan dan sistem **menghitung serta menjurnal
+> penyusutan semua aset sekaligus** (satu voucher, dirinci per aset & per departemen) — tanpa
+> perhitungan manual.
 
 **Contoh angka:** bangunan Rp1.200.000.000, umur 20 tahun (garis lurus 5%/tahun) → penyusutan
 Rp60.000.000/tahun = **Rp5.000.000/bulan**:
@@ -111,5 +111,5 @@ Dr  Beban Penyusutan - Bangunan     5.000.000
 
 > **Setup sekali** (kelompok pajak → kategori aset), lalu **daftarkan tiap aset** dengan akun-akun
 > COA-nya. Sistem mengurus sisanya: pembelian lewat akun perantara, lalu **penyusutan tiap bulan
-> otomatis hanya dengan klik "Period End"**. User tak perlu menghitung penyusutan manual, dan angka
+> otomatis lewat proses **Period End**. User tak perlu menghitung penyusutan manual, dan angka
 > selalu konsisten ke Buku Besar & Laporan Keuangan.

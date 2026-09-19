@@ -128,7 +128,7 @@ Dr  COGS                           234,000
 ## 7. Sales Receipt (Customer Payment) — Field Data Entry Detail
 
 **Sales Receipt = recording money in when a customer pays an invoice.** It opens from the **Sales
-Invoice screen → click the "Sales Receipt" button**, so many fields are **auto-filled** from the
+Invoice screen → "Sales Receipt"**, so many fields are **auto-filled** from the
 invoice. The screen is called **Cust. Receipt**. Many fields fill in by themselves; the user just completes the rest.
 
 **a) Top section — from whom & when:**

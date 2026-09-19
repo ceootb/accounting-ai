@@ -2,8 +2,8 @@
 
 > The **Journal Voucher (JV)** is the **5th ledger** of the [5-Ledgers concept](how-accounting-system-works.md).
 > Unlike the other four (Purchases, Sales, Cash Payments & Cash Receipts), the JV is a **manual
-> journal** for things **not** covered by automatic transactions. Plain language for users; technical
-> detail is kept for the software-build stage.
+> journal** for things **not** covered by automatic transactions.
+> *(Technical detail is kept for the software-build stage.)*
 
 ---
 

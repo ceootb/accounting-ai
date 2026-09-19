@@ -1,8 +1,8 @@
 # Proses Tutup Periode (Period End)
 
-> **Period End** adalah proses yang dijalankan **saat menutup buku tiap bulan/periode**. Dengan sekali
-> klik, sistem **membuat sendiri jurnal-jurnal penutup rutin** — terutama **penyusutan aset** dan
-> **penyesuaian selisih kurs** — sehingga user tidak menghitung manual. Bahasa awam untuk user.
+> **Period End** adalah proses yang dijalankan **saat menutup buku tiap bulan/periode**. Sistem
+> otomatis **membuat jurnal-jurnal penutup rutin** — terutama **penyusutan aset** dan
+> **penyesuaian selisih kurs** — sehingga user tidak menghitung manual.
 
 ---
 

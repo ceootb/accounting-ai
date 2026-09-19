@@ -129,7 +129,7 @@ Dr  PPN Masukan             297.298
 ## 6. Purchase Payment (Pembayaran ke Vendor) — Detail Field Data Entry
 
 **Purchase Payment = membayar utang (faktur) ke vendor.** Dibuka dari layar **Purchase Invoice →
-klik tombol "Purchase Payment"**, sehingga banyak field **terisi otomatis** dan faktur yang dibayar
+pilih "Purchase Payment"**, sehingga banyak field **terisi otomatis** dan faktur yang dibayar
 langsung **tercentang lunas (Paid)**.
 
 ### Field yang diisi

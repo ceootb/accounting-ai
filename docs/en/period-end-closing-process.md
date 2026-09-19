@@ -1,8 +1,8 @@
 # Period-End Closing Process (Period End)
 
-> **Period End** is the process run **when closing the books each month/period**. With one click, the
-> system **creates the routine closing journals itself** — mainly **asset depreciation** and
-> **foreign-exchange adjustments** — so the user does no manual math. Plain language for users.
+> **Period End** is the process run **when closing the books each month/period**. When run, the
+> system automatically **creates the routine closing journals** — mainly **asset depreciation** and
+> **foreign-exchange adjustments** — so the user does no manual math.
 
 ---
 

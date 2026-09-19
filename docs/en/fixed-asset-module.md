@@ -1,8 +1,8 @@
 # Fixed Asset Module
 
 > The module for recording **fixed assets** (buildings, vehicles, machines, computers, etc.),
-> computing **depreciation automatically each month**, and creating **its own journals**. Plain
-> language for users; technical detail is kept for the software-build stage.
+> computing **depreciation automatically each month**, and creating **its own journals**.
+> *(Technical detail is kept for the software-build stage.)*
 
 ---
 
@@ -95,9 +95,9 @@ Dr  Fixed Asset (e.g. Building)
 Dr  Depreciation Expense
     Cr  Accumulated Depreciation
 ```
-> Just **click the "Period End" button** at monthly closing — the system **computes & journals
-> depreciation for all assets at once** (one voucher, detailed per asset & per department). The user
-> does no manual math.
+> At monthly closing, the **Period End** process runs and the system **computes & journals
+> depreciation for all assets at once** (one voucher, detailed per asset & per department) — with no
+> manual math.
 
 **Numeric example:** a building of IDR 1,200,000,000, 20-year life (straight-line 5%/year) →
 depreciation IDR 60,000,000/year = **IDR 5,000,000/month**:
@@ -112,5 +112,5 @@ Dr  Depreciation Expense - Building     5,000,000
 
 > **Set up once** (tax group → asset category), then **register each asset** with its COA accounts.
 > The system handles the rest: the purchase via an intermediary account, then **monthly depreciation
-> automatically with a single "Period End" click**. Users never compute depreciation manually, and the
+> automatically through the **Period End** process. Users never compute depreciation manually, and the
 > figures stay consistent all the way to the General Ledger & Financial Statements.

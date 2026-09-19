@@ -129,7 +129,7 @@ Dr  Input VAT              297,298
 ## 6. Purchase Payment (Paying the Vendor) — Field Data Entry Detail
 
 **Purchase Payment = paying the bill (invoice) owed to a vendor.** It opens from the **Purchase
-Invoice screen → click the "Purchase Payment" button**, so many fields are **auto-filled** and the
+Invoice screen → "Purchase Payment"**, so many fields are **auto-filled** and the
 invoice being paid is instantly **ticked as Paid**.
 
 ### Fields to fill

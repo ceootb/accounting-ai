@@ -1,6 +1,6 @@
 # Preparing Setup Data Before Transactions — A Simple Explanation
 
-> Written in everyday language for **users who don't need to be accounting experts**. The point:
+> For **users who don't need to be accounting experts**. The point:
 > **all the basic data is prepared first**, so the moment a transaction is entered, the system
 > already knows where to record it — and the financial statements form by themselves.
 >

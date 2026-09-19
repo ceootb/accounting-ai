@@ -2,8 +2,8 @@
 
 > **Jurnal Voucher (JV)** adalah **buku besar ke-5** dari [konsep 5 Buku Besar](cara-kerja-sistem-akuntansi.md#bagian-2--prinsip-5-buku-besar).
 > Bedanya dengan 4 buku lain (Pembelian, Penjualan, Pengeluaran & Penerimaan Kas): JV adalah
-> **jurnal manual** untuk hal-hal yang **tidak** tercakup transaksi otomatis. Bahasa awam untuk user;
-> detail teknis disimpan untuk tahap build software.
+> **jurnal manual** untuk hal-hal yang **tidak** tercakup transaksi otomatis.
+> *(Detail teknis disimpan untuk tahap build software.)*
 
 ---
 

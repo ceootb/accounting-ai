@@ -1,4 +1,4 @@
-# Quick Tips for Finding Discrepancies (Reconciliation & Journals) — Simple Language
+# Quick Tips for Finding Discrepancies (Reconciliation & Journals)
 
 > Practitioner tricks to **quickly guess the cause of a discrepancy** without checking every
 > transaction one by one. Useful during **bank reconciliation** or whenever numbers don't match.

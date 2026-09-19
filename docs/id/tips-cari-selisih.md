@@ -1,8 +1,8 @@
-# Tips Cepat Mencari Selisih (Rekonsiliasi & Jurnal) — Bahasa Sederhana
+# Tips Cepat Mencari Selisih (Rekonsiliasi & Jurnal)
 
 > Trik praktik akuntan untuk **menebak penyebab selisih** dengan cepat, tanpa harus mengecek semua
 > transaksi satu per satu. Berguna saat **rekonsiliasi bank** atau saat angka tidak cocok.
-> Ditulis untuk pengguna umum. *(Dikurasi akuntan praktik.)*
+> *(Dikurasi akuntan praktik.)*
 
 ---
 

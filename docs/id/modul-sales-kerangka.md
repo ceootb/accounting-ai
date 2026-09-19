@@ -129,7 +129,7 @@ Dr  HPP (COGS)                     234.000
 ## 7. Sales Receipt (Penerimaan Pembayaran) — Detail Field Data Entry
 
 **Sales Receipt = mencatat uang masuk saat pelanggan membayar faktur.** Dibuka dari layar **Sales
-Invoice → klik tombol "Sales Receipt"**, sehingga banyak field **terisi otomatis** dari faktur.
+Invoice → pilih "Sales Receipt"**, sehingga banyak field **terisi otomatis** dari faktur.
 Layarnya disebut **Cust. Receipt**. Banyak field terisi sendiri; user cukup melengkapi sisanya.
 
 **a) Bagian atas — dari siapa & kapan:**

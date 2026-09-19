@@ -1,6 +1,6 @@
 # From Transaction Entry to Financial Statements — A Simple Explanation
 
-> Written in everyday language for **users who don't need to be accounting experts**. The goal: to
+> For **users who don't need to be accounting experts**. The goal: to
 > understand *how* a single transaction entry turns itself into financial statements. The example
 > uses a **Sales Invoice** worth IDR 450,000.
 >

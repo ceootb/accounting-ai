@@ -1,6 +1,6 @@
 # Dari Input Transaksi sampai Laporan Keuangan — Penjelasan Sederhana
 
-> Ditulis dengan bahasa sehari-hari untuk **pengguna yang tidak harus mahir akuntansi**. Tujuannya:
+> Untuk **pengguna yang tidak harus mahir akuntansi**. Tujuannya:
 > memahami *bagaimana* satu kali input transaksi bisa berubah sendiri menjadi laporan keuangan.
 > Contoh memakai **Sales Invoice (faktur penjualan)** senilai Rp450.000.
 >
