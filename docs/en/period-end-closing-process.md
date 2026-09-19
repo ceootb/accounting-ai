@@ -36,13 +36,18 @@ Balances held in **foreign currency** (cash, bank, receivables, payables in USD/
 - **Realized** and **Unrealized** — posted to the *Gain/Loss* accounts already mapped in
   **Preferences → Currency Default Account**.
 
-Simple example: the company holds **USD 1,000**. Recorded at a rate of IDR 15,000 (value IDR
-15,000,000). At month-end the closing rate is IDR 15,200 → value becomes IDR 15,200,000. The
-**IDR 200,000** difference is recorded as an **(unrealized) forex gain**:
+Simple example: the company holds **USD 1,000**. The old value was recorded at a rate of IDR 15,000
+(= IDR 15,000,000). The month-end closing rate is IDR 15,200 (= IDR 15,200,000). The system
+**revalues** that cash account: it books the new value on the debit side and removes the old value on
+the credit side, with the difference going to the forex gain/loss account:
 ```
-Dr  Cash USD                        200,000
-    Cr  Forex Gain (Unrealized)          200,000
+Dr  Cash USD (1,000 × 15,200)         15,200,000
+    Cr  Cash USD (1,000 × 15,000)         15,000,000
+    Cr  Forex Gain (Unrealized)              200,000
 ```
+> Because the rate **rose**, the result is a **gain** (Cr Forex Gain). If the rate **falls**, the
+> pattern reverses and the difference is booked as a **Forex Loss (Dr)**. For balances still held by
+> the company, the difference is **Unrealized**.
 
 *(Other process types that may appear: Roll Over Goods and Project Expense Payment — depending on the
 modules the company uses.)*

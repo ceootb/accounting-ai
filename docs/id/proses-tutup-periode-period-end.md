@@ -36,13 +36,18 @@ ulang ke kurs penutup** yang tadi diinput. Selisihnya dicatat sebagai **keuntung
 - **Realized** (sudah terealisasi) dan **Unrealized** (belum terealisasi) — masuk ke akun
   *Gain/Loss* yang sudah dipetakan di **Preferences → Currency Default Account**.
 
-Contoh sederhana: perusahaan punya kas **USD 1.000**. Saat dicatat kursnya Rp15.000 (nilai
-Rp15.000.000). Di akhir bulan kurs penutup Rp15.200 → nilai jadi Rp15.200.000. Selisih **Rp200.000**
-dicatat sebagai **keuntungan kurs (belum terealisasi)**:
+Contoh sederhana: perusahaan punya kas **USD 1.000**. Nilai lama dicatat pada kurs Rp15.000
+(= Rp15.000.000). Kurs penutup akhir bulan Rp15.200 (= Rp15.200.000). Sistem **menilai ulang** akun
+kas itu: mencatat nilai baru di sisi debit dan mengeluarkan nilai lama di sisi kredit, lalu selisihnya
+ke akun laba/rugi kurs:
 ```
-Dr  Kas USD                         200.000
-    Cr  Keuntungan Selisih Kurs (Unrealized)   200.000
+Dr  Kas USD (1.000 × 15.200)          15.200.000
+    Cr  Kas USD (1.000 × 15.000)          15.000.000
+    Cr  Laba Selisih Kurs (Unrealized)      200.000
 ```
+> Karena kurs **naik**, hasilnya **keuntungan** (Cr Laba Selisih Kurs). Bila kurs **turun**, polanya
+> terbalik dan selisih dicatat sebagai **Rugi Selisih Kurs (Dr)**. Untuk saldo yang masih ada di
+> perusahaan, selisihnya **Unrealized** (belum terealisasi).
 
 *(Tipe proses lain yang bisa muncul: Roll Over Goods dan Project Expense Payment — sesuai modul yang
 dipakai perusahaan.)*
