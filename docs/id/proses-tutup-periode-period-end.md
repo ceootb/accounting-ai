@@ -49,6 +49,17 @@ Dr  Kas USD (1.000 × 15.200)          15.200.000
 > terbalik dan selisih dicatat sebagai **Rugi Selisih Kurs (Dr)**. Untuk saldo yang masih ada di
 > perusahaan, selisihnya **Unrealized** (belum terealisasi).
 
+> **Catatan penting — kurs "lama" yang direversal.** Nilai lama yang dikeluarkan **bukan** sekadar
+> kurs satu transaksi, melainkan **kurs buku (carrying rate) = saldo GL dalam IDR ÷ saldo GL dalam
+> mata uang asing**. Jadi bila selama bulan berjalan saldo valas bergerak di banyak kurs harian yang
+> berbeda, yang dipakai adalah **kurs rata-rata tertimbang** dari saldo tersebut, lalu dinilai ulang
+> ke kurs penutup. *(Contoh angka dari GL kas USD nyata menyusul.)*
+
+**Pedoman standar (PSAK):** revaluasi ini mengikuti **PSAK 10** — *Pengaruh Perubahan Kurs Valuta
+Asing* (sejak 1 Jan 2024 dinomori ulang menjadi **PSAK 221**, adopsi IAS 21). Prinsipnya: **pos
+moneter** dalam mata uang asing (kas, bank, piutang, utang) dijabarkan memakai **kurs penutup** pada
+akhir periode, dan **selisih kursnya diakui di Laporan Laba Rugi periode berjalan**.
+
 *(Tipe proses lain yang bisa muncul: Roll Over Goods dan Project Expense Payment — sesuai modul yang
 dipakai perusahaan.)*
 

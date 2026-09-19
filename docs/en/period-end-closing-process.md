@@ -49,6 +49,18 @@ Dr  Cash USD (1,000 × 15,200)         15,200,000
 > pattern reverses and the difference is booked as a **Forex Loss (Dr)**. For balances still held by
 > the company, the difference is **Unrealized**.
 
+> **Important note — the "old" rate being reversed.** The old value removed is **not** just one
+> transaction's rate, but the **carrying rate = GL balance in IDR ÷ GL balance in foreign currency**.
+> So if the foreign-currency balance moved at many different daily rates during the month, the system
+> uses the **weighted-average rate** of that balance, then revalues it to the closing rate.
+> *(A numeric example from a real USD-cash GL will follow.)*
+
+**Standard guidance (PSAK):** this revaluation follows **PSAK 10** — *Effects of Changes in Foreign
+Exchange Rates* (renumbered **PSAK 221** effective 1 Jan 2024; adopts IAS 21). The principle:
+**monetary items** in foreign currency (cash, bank, receivables, payables) are translated at the
+**closing rate** at period-end, and the **exchange difference is recognized in profit or loss for the
+period**.
+
 *(Other process types that may appear: Roll Over Goods and Project Expense Payment — depending on the
 modules the company uses.)*
 
