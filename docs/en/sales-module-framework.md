@@ -137,7 +137,7 @@ invoice. The screen is called **Cust. Receipt**. Many fields fill in by themselv
 
 **b) Receiving-account section — where the money lands:**
 - **Bank** — the cash/bank account that **receives** the money. It can be a normal bank account, or a
-  special **Cash in Transit (CIT)** account — see the note below.
+  **Cash Clearing Account (CCA)** — see the note below.
 - **Cheque No. / Cheque Date** (if paid by cheque), **Currency / Rate** (if foreign currency).
 - **Cheque Amount** — the amount received; **Distribute Amount** — the amount allocated to invoices.
 
@@ -149,7 +149,7 @@ invoice. The screen is called **Cust. Receipt**. Many fields fill in by themselv
 
 **d) The auto-journal produced** (example: settlement of IDR 15,300,000):
 ```
-Dr  Receiving Cash/Bank (e.g. Cash in Transit)   15,300,000
+Dr  Receiving Cash/Bank (e.g. Cash Clearing Account)   15,300,000
     Cr  Accounts Receivable (AR)                      15,300,000
 ```
 > One simple entry: **cash/bank goes up, receivables go down.** This closes the sales cycle — the
@@ -157,15 +157,14 @@ Dr  Receiving Cash/Bank (e.g. Cash in Transit)   15,300,000
 
 ---
 
-### Special note: the **Cash in Transit (CIT)** account for retail sales
+### Special note: the **Cash Clearing Account (CCA)** for retail sales
 
-For **retail sales** with high volume, receipts can be directed to a **temporary holding account**
-called **Cash in Transit (CIT)** — not straight to the bank. The goal is to **aggregate** retail
-receipts so you **don't have to enter each one**, because the marketing team already issues its own
-**OR (Official Receipt)** for each retail customer. The CIT balance is later "cleared" to the bank
-when the actual deposit comes in.
+For **retail sales** with high volume, receipts can be directed to a **clearing account / Cash
+Clearing Account (CCA)** first — not recognized directly as sales. The goal is to **aggregate** retail
+receipts so you **don't have to enter each one**. The CCA balance is "cleared" (back to zero) when it
+is aggregated into one Sales Invoice at month-end.
 
-> Full detail of this technique is in [Tips: CIT for Aggregating Retail Sales](tips-cit-retail-aggregation.md).
+> Full detail of this technique is in [Tips: CCA for Aggregating Retail Sales](tips-cca-retail-aggregation.md).
 
 ---
 

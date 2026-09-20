@@ -137,8 +137,8 @@ Layarnya disebut **Cust. Receipt**. Banyak field terisi sendiri; user cukup mele
 - **Form No.** — nomor bukti terima (otomatis). **Payment Date** — tanggal uang diterima.
 
 **b) Bagian akun penerima — ke mana uang masuk:**
-- **Bank** — akun kas/bank yang **menerima** uang. Bisa rekening bank biasa, atau akun khusus
-  **Cash in Transit (CIT)** — lihat catatan di bawah.
+- **Bank** — akun kas/bank yang **menerima** uang. Bisa rekening bank biasa, atau **akun perantara
+  / Cash Clearing Account (CCA)** untuk penjualan retail yang digunggung — lihat catatan di bawah.
 - **Cheque No. / Cheque Date** (bila bayar pakai cek), **Currency / Rate** (bila valas).
 - **Cheque Amount** — jumlah yang diterima; **Distribute Amount** — jumlah yang dialokasikan ke
   faktur.
@@ -160,15 +160,14 @@ Dr  Kas/Bank penerima (mis. Cash in Transit)   15.300.000
 
 ---
 
-### Catatan khusus: akun **Cash in Transit (CIT)** untuk penjualan retail
+### Catatan khusus: akun perantara **Cash Clearing Account (CCA)** untuk penjualan retail
 
-Untuk **penjualan retail** yang jumlahnya banyak, penerimaan bisa diarahkan ke akun **penampungan
-sementara** bernama **Cash in Transit (CIT)** — bukan langsung ke bank. Tujuannya **menggunggung**
-(menggabungkan) penerimaan retail agar **tidak perlu entry satu per satu**, karena bagian marketing
-sudah menerbitkan **OR (Official Receipt)** sendiri untuk tiap pelanggan retail. Nanti saldo CIT ini
-"dibersihkan" ke bank saat setoran nyata masuk.
+Untuk **penjualan retail** yang jumlahnya banyak, penerimaan bisa diarahkan ke **akun perantara /
+Cash Clearing Account (CCA)** lebih dulu — bukan langsung diakui sebagai penjualan. Tujuannya
+**menggunggung** (menggabungkan) penerimaan retail agar **tidak perlu entry satu per satu**. Saldo CCA
+"dibersihkan" (kembali nol) saat digunggung jadi satu Sales Invoice di akhir bulan.
 
-> Detail lengkap teknik ini ada di [Tips: CIT untuk Gunggung Penjualan Retail](tips-cit-gunggung-retail.md).
+> Detail lengkap teknik ini ada di [Tips: CCA untuk Gunggung Penjualan Retail](tips-cca-gunggung-retail.md).
 
 ---
 
