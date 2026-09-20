@@ -11,6 +11,17 @@
 
 ---
 
+## Account setup & its control
+
+- **The CIT account is registered in the COA as a Cash/Bank-type account.** It holds money "in
+  transit" from retail receipts before it becomes formal sales.
+- **Mandatory control: at every month-end the CIT balance must be ZERO.** If it isn't zero, some
+  receipts haven't been aggregated into a Sales Invoice, or there's a mismatch with the POS report —
+  it must be investigated before closing. A zero CIT balance at month-end is the **sign that all
+  retail receipts have been booked correctly**.
+
+---
+
 ## The flow
 
 **1. Daily — park receipts into CIT (via a Journal Voucher).**

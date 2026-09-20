@@ -11,6 +11,17 @@
 
 ---
 
+## Setup akun & kontrolnya
+
+- **Akun CIT didaftarkan di COA setara dengan Kas/Bank** (tipe akun *Kas/Bank*). Jadi ia menampung
+  uang "yang sedang dalam perjalanan" dari penerimaan retail sebelum resmi jadi penjualan.
+- **Kontrol wajib: setiap akhir bulan saldo CIT harus NOL (zero balance).** Kalau tidak nol, berarti
+  ada penerimaan yang belum digunggung ke Sales Invoice, atau ada selisih dengan laporan POS — harus
+  ditelusuri sebelum tutup buku. Saldo CIT = 0 di akhir bulan adalah **tanda semua penerimaan retail
+  sudah dibukukan dengan benar**.
+
+---
+
 ## Alurnya
 
 **1. Harian — tampung penerimaan ke CIT (lewat Journal Voucher).**
