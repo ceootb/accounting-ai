@@ -12,6 +12,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 ## Panduan Sederhana (untuk pengguna non-akuntan)
 - [Menyiapkan Data Setup Sebelum Transaksi](persiapan-sebelum-transaksi.md) — kenapa Company Info, Preferences (peta akun), & User Profile disiapkan dulu; analogi "menyiapkan dapur". Data rapi di depan → laporan otomatis di belakang.
 - [Dari Input Transaksi sampai Laporan Keuangan](alur-entry-ke-laporan.md) — penjelasan bahasa sehari-hari: satu faktur penjualan → jurnal otomatis → Buku Besar → Laporan Keuangan. Staf tak harus mahir akuntansi; manajer yang wajib paham.
+- [Tips: Jurnal Potongan PPh 23](tips-pph23-jurnal.md) — dua sisi: memotong (beli jasa → Utang PPh 23) vs dipotong (jual jasa → kurang bayar → Prepaid PPh 23).
 - [Tips Cepat Mencari Selisih](tips-cari-selisih.md) — trik praktik: selisih habis dibagi 9 = angka terbalik (transposisi); selisih 2× = salah sisi debit/kredit. Berguna saat rekonsiliasi bank.
 
 ## Persiapan / Setup
