@@ -97,6 +97,8 @@ itu baru relevan bila ada **jeda waktu signifikan** antara penerimaan barang dan
 > Kalau begitu, **hasil jurnalnya sama persis** apakah biaya diinput lewat **Item** atau lewat tab
 > **Expense** — jadi user boleh pakai cara yang paling nyaman.
 
+> **Sumber setting PPN & kasus beda periode:** lihat [Tips: Setting PPN & Split PI](tips-ppn-setting-split-pi.md).
+
 ### PPN: Exclusive vs Inclusive
 - **Exclusive (tidak termasuk):** PPN **ditambahkan** di atas harga. Contoh Rp3.000.000 → PPN
   Rp330.000 → total Rp3.330.000.
