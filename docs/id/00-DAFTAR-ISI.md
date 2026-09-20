@@ -6,6 +6,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 ## Fondasi
 1. [Cara Kerja Sistem Akuntansi](cara-kerja-sistem-akuntansi.md) — setup (master data, saldo awal, pajak) + **5 Buku Besar** + auto-jurnal + filosofi voucher→auto-jurnal.
 2. [Bentuk Laporan Keuangan & Aturan Debit-Kredit](bentuk-laporan-keuangan.md) — persamaan dasar, **saldo normal (hafalan)**, 3 laporan (Neraca/L-R/Perubahan Modal) & keterkaitannya, kenapa selalu imbang.
+2b. [Format 3 Laporan Keuangan Inti](format-laporan-keuangan.md) — template baris demi baris Laba Rugi, Perubahan Modal, & Neraca (acuan PSAK); contoh angka balance. Laporan = tarikan saldo Buku Besar, bukan transaksi baru.
 3. [Struktur COA: Tipe Akun, Parent & Child](struktur-coa-tipe-parent-child.md) — 16 tipe akun (+saldo normal & laporan), parent vs child (sub-account of), contoh berjenjang.
 
 ## Panduan Sederhana (untuk pengguna non-akuntan)
