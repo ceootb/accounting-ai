@@ -40,6 +40,8 @@ Versi Inggris ada di [`docs/en/`](../en/).
 `internal_control_cases.jsonl`
 
 ## Menyusul (pending)
-- Detail **Tahap 1 (Persiapan)** setup.
-- **SS field entry** modul Purchase & Sales (untuk finalisasi field).
-- Konfirmasi arah repo dari owner (studi kasus pengalaman).
+- **Cash in Transit (CIT) / gunggung penjualan retail** → halaman tips.
+- **Recurring** (transaksi berulang, entry di muka).
+- **Buku Besar Utang (GL A/P) + Sub-GL per vendor.**
+- **Dispose & Revaluation** aset tetap.
+- **Setting PPN di Sales Invoice** (paralel dengan sisi Purchase).
