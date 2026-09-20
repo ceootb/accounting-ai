@@ -165,8 +165,7 @@ receipts so you **don't have to enter each one**, because the marketing team alr
 **OR (Official Receipt)** for each retail customer. The CIT balance is later "cleared" to the bank
 when the actual deposit comes in.
 
-> **Note for Tere:** a **separate update file** about the CIT / retail-aggregation mechanism is coming
-> → to be added to the **accounting/journal tips** page. *(Flagged as a to-do.)*
+> Full detail of this technique is in [Tips: CIT for Aggregating Retail Sales](tips-cit-retail-aggregation.md).
 
 ---
 

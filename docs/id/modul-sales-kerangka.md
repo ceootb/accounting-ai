@@ -168,8 +168,7 @@ sementara** bernama **Cash in Transit (CIT)** — bukan langsung ke bank. Tujuan
 sudah menerbitkan **OR (Official Receipt)** sendiri untuk tiap pelanggan retail. Nanti saldo CIT ini
 "dibersihkan" ke bank saat setoran nyata masuk.
 
-> **Catatan untuk Tere:** akan ada **file update tersendiri** soal mekanisme CIT / gunggung retail
-> ini → dimasukkan ke halaman **tips akunting/jurnal**. *(Ditandai sebagai to-do.)*
+> Detail lengkap teknik ini ada di [Tips: CIT untuk Gunggung Penjualan Retail](tips-cit-gunggung-retail.md).
 
 ---
 
