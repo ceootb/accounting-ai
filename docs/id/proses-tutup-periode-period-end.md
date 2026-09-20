@@ -36,24 +36,22 @@ ulang ke kurs penutup** yang tadi diinput. Selisihnya dicatat sebagai **keuntung
 - **Realized** (sudah terealisasi) dan **Unrealized** (belum terealisasi) — masuk ke akun
   *Gain/Loss* yang sudah dipetakan di **Preferences → Currency Default Account**.
 
-Contoh sederhana: perusahaan punya kas **USD 1.000**. Nilai lama dicatat pada kurs Rp15.000
-(= Rp15.000.000). Kurs penutup akhir bulan Rp15.200 (= Rp15.200.000). Sistem **menilai ulang** akun
-kas itu: mencatat nilai baru di sisi debit dan mengeluarkan nilai lama di sisi kredit, lalu selisihnya
-ke akun laba/rugi kurs:
+**Contoh nyata (dari GL kas USD).** Selama bulan berjalan, saldo kas USD bergerak di banyak kurs
+harian yang berbeda (mis. beli 500 USD @17.880, keluar 753 USD @17.940, keluar 331 USD @17.880).
+Akhir bulan tersisa **747 USD**. Karena masuk/keluar di kurs berbeda, nilai buku 747 USD itu memakai
+**kurs rata-rata tertimbang** — dihitung dari **saldo GL dalam IDR ÷ saldo GL dalam USD**. Misal
+hasilnya **17.657,37** (nilai buku Rp13.189.977). Kurs penutup akhir bulan **17.856** (nilai baru
+Rp13.338.350). Sistem menilai ulang:
 ```
-Dr  Kas USD (1.000 × 15.200)          15.200.000
-    Cr  Kas USD (1.000 × 15.000)          15.000.000
-    Cr  Laba Selisih Kurs (Unrealized)      200.000
+Dr  Kas USD (747 × 17.856 = kurs penutup)         13.338.350
+    Cr  Kas USD (747 × 17.657,37 = kurs buku/avg)     13.189.977
+    Cr  Laba Selisih Kurs (Unrealized)                   148.373
 ```
-> Karena kurs **naik**, hasilnya **keuntungan** (Cr Laba Selisih Kurs). Bila kurs **turun**, polanya
-> terbalik dan selisih dicatat sebagai **Rugi Selisih Kurs (Dr)**. Untuk saldo yang masih ada di
-> perusahaan, selisihnya **Unrealized** (belum terealisasi).
-
-> **Catatan penting — kurs "lama" yang direversal.** Nilai lama yang dikeluarkan **bukan** sekadar
-> kurs satu transaksi, melainkan **kurs buku (carrying rate) = saldo GL dalam IDR ÷ saldo GL dalam
-> mata uang asing**. Jadi bila selama bulan berjalan saldo valas bergerak di banyak kurs harian yang
-> berbeda, yang dipakai adalah **kurs rata-rata tertimbang** dari saldo tersebut, lalu dinilai ulang
-> ke kurs penutup. *(Contoh angka dari GL kas USD nyata menyusul.)*
+> **Kunci:** nilai lama yang dikeluarkan (Cr) **bukan** kurs satu transaksi, melainkan **kurs buku =
+> saldo GL IDR ÷ saldo GL valas** (rata-rata tertimbang seluruh saldo). Sisi debit memakai **kurs
+> penutup**, dan selisihnya jadi **laba/rugi kurs**. Karena kurs penutup > kurs buku, hasilnya
+> **keuntungan** (Cr Laba Selisih Kurs); bila sebaliknya → **Rugi Selisih Kurs (Dr)**. Untuk saldo
+> yang masih dipegang, selisih ini **Unrealized** (belum terealisasi).
 
 **Pedoman standar (PSAK):** revaluasi ini mengikuti **PSAK 10** — *Pengaruh Perubahan Kurs Valuta
 Asing* (sejak 1 Jan 2024 dinomori ulang menjadi **PSAK 221**, adopsi IAS 21). Prinsipnya: **pos

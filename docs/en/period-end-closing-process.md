@@ -36,24 +36,22 @@ Balances held in **foreign currency** (cash, bank, receivables, payables in USD/
 - **Realized** and **Unrealized** — posted to the *Gain/Loss* accounts already mapped in
   **Preferences → Currency Default Account**.
 
-Simple example: the company holds **USD 1,000**. The old value was recorded at a rate of IDR 15,000
-(= IDR 15,000,000). The month-end closing rate is IDR 15,200 (= IDR 15,200,000). The system
-**revalues** that cash account: it books the new value on the debit side and removes the old value on
-the credit side, with the difference going to the forex gain/loss account:
+**Real example (from a USD-cash GL).** During the month the USD balance moved at many different daily
+rates (e.g. bought 500 USD @17,880, out 753 USD @17,940, out 331 USD @17,880). At month-end **747
+USD** remained. Because it came in/out at different rates, the carrying value of those 747 USD uses a
+**weighted-average rate** — computed as **GL balance in IDR ÷ GL balance in USD**. Say that gives
+**17,657.37** (carrying value IDR 13,189,977). The month-end closing rate is **17,856** (new value
+IDR 13,338,350). The system revalues:
 ```
-Dr  Cash USD (1,000 × 15,200)         15,200,000
-    Cr  Cash USD (1,000 × 15,000)         15,000,000
-    Cr  Forex Gain (Unrealized)              200,000
+Dr  Cash USD (747 × 17,856 = closing rate)        13,338,350
+    Cr  Cash USD (747 × 17,657.37 = carrying/avg)     13,189,977
+    Cr  Forex Gain (Unrealized)                          148,373
 ```
-> Because the rate **rose**, the result is a **gain** (Cr Forex Gain). If the rate **falls**, the
-> pattern reverses and the difference is booked as a **Forex Loss (Dr)**. For balances still held by
-> the company, the difference is **Unrealized**.
-
-> **Important note — the "old" rate being reversed.** The old value removed is **not** just one
-> transaction's rate, but the **carrying rate = GL balance in IDR ÷ GL balance in foreign currency**.
-> So if the foreign-currency balance moved at many different daily rates during the month, the system
-> uses the **weighted-average rate** of that balance, then revalues it to the closing rate.
-> *(A numeric example from a real USD-cash GL will follow.)*
+> **Key:** the old value removed (Cr) is **not** one transaction's rate, but the **carrying rate = GL
+> balance in IDR ÷ GL balance in foreign currency** (weighted average of the whole balance). The debit
+> uses the **closing rate**, and the difference is the **forex gain/loss**. Since closing > carrying,
+> it's a **gain** (Cr Forex Gain); the opposite → **Forex Loss (Dr)**. For balances still held, this
+> difference is **Unrealized**.
 
 **Standard guidance (PSAK):** this revaluation follows **PSAK 10** — *Effects of Changes in Foreign
 Exchange Rates* (renumbered **PSAK 221** effective 1 Jan 2024; adopts IAS 21). The principle:
