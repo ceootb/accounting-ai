@@ -28,6 +28,9 @@ Versi Inggris ada di [`docs/en/`](../en/).
 6. [Modul Aset Tetap (Fixed Asset)](modul-fixed-asset.md) — 3 sub-modul (kelompok pajak → kategori → daftar aset); akun perantara **Fixed Asset Transaction**; **penyusutan otomatis tiap bulan via "Period End"** (`Dr Beban Penyusutan | Cr Akumulasi Penyusutan`); tabel kelompok fiskal RI (UU PPh 11/PMK 72/2023).
 7. [Proses Tutup Periode (Period End)](proses-tutup-periode-period-end.md) — satu klik saat tutup bulan; auto-jurnal **penyusutan aset** + **revaluasi selisih kurs** (Realized/Unrealized). Dijalankan setelah transaksi lengkap & rekonsiliasi nol.
 
+## Laporan & Riwayat Transaksi
+- [Riwayat Transaksi per Akun & Laporan Piutang (AR / Customer)](laporan-riwayat-akun-ar.md) — **Account History** (rekap transaksi per akun, data grid + filter); laporan AR yang sering dipakai (Outstanding Invoices, Aging Summary/Detail, **AR Sub Ledger Detail**); konsep **Sub Ledger** AR/AP (1 akun kontrol + buku pembantu per customer/vendor, COA tetap ramping). *(EN: `account-history-ar-reports.md`.)*
+
 ## Studi Kasus (Pengendalian Internal / Temuan Audit)
 6. [Studi Kasus Pengendalian Internal](studi-kasus-pengendalian-internal.md) —
    - #1 Kas kecil imprest membengkak & bon gantung
