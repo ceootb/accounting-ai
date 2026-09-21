@@ -42,7 +42,6 @@ Versi Inggris ada di [`docs/en/`](../en/).
 `internal_control_cases.jsonl`
 
 ## Menyusul (pending)
-- **Recurring** (transaksi berulang, entry di muka).
 - **Buku Besar Utang (GL A/P) + Sub-GL per vendor.**
 - **Dispose & Revaluation** aset tetap.
 - **Setting PPN di Sales Invoice** (paralel dengan sisi Purchase).
