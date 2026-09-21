@@ -161,7 +161,7 @@ Dr  Utang Usaha (A/P)                 3.890.000
    didebit** saat Purchase Payment (mis. pilih "A/P Others" di faktur → Purchase Payment mendebit
    "A/P Others" juga). Buku Besar Utang (**dan Sub-Buku Besar per vendor**) ter-update otomatis.
 2. **Faktur "Owing" yang belum jatuh tempo = kemungkinan recurring.** Yaitu **biaya berulang tiap
-   bulan** yang fakturnya **dientry di muka**. Manfaatnya: biaya bulan berjalan sudah tercatat
+   bulan** yang fakturnya **dientry di muka**. Manfaatnya (lihat [Tips: Recurring](tips-recurring.md)): biaya bulan berjalan sudah tercatat
    walau vendor belum menagih, sekaligus jadi **estimasi kebutuhan kas (cash flow)** ke depan.
 
 > **Catatan untuk Tere (to-do):** dua topik ini akan ada **file update tersendiri** →
