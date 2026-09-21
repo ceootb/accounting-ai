@@ -45,22 +45,26 @@ sampai benar-benar dibuat menjadi voucher aktual).
 
 ## Cara mengeksekusi voucher berikutnya
 
-Voucher ke-2 dan seterusnya dibuat satu per satu saat periodenya tiba:
+Voucher ke-2 dan seterusnya **tidak perlu menunggu periodenya tiba** — begitu grid terbentuk, semua
+baris **bisa langsung dieksekusi sekarang juga** sampai seluruh grid ter-*execute* (dibuat sekaligus).
+*(Justru untuk inilah Accounting Period di Company Info diperpanjang 12 bulan ke depan — supaya voucher
+periode masa depan tidak ditolak sistem.)*
 
 1. Di **List Recurring**, **dobel-klik** baris recurring (yang tersorot biru).
 2. **Klik kanan** pada baris yang **belum** ter-*execute* → pilih **Create Invoice**.
 3. Layar otomatis pindah ke **Sales Invoice** (data sudah terisi dari master) → cek → **Save**.
 4. Kembali ke layar recurring → klik **Refresh** → muncul **centang** di kolom **Executed** (tanda
    voucher berhasil dibuat & disimpan).
-5. **Ulangi** untuk voucher periode berikutnya (Create Invoice → Save → Refresh) sampai **semua**
-   ter-*execute* → **Save & Close**.
+5. **Ulangi untuk semua baris sekarang juga** (Create Invoice → Save → Refresh), tanpa menunggu
+   tanggalnya, sampai **seluruh grid** ter-*execute* → **Save & Close**.
 
 ---
 
 ## Intinya
 
 > **Recurring = "cetak ulang otomatis" voucher rutin.** Buat master sekali → tentukan periode &
-> jumlahnya → sistem menyiapkan voucher untuk tiap periode; tinggal *Create Invoice* saat waktunya
-> tiba. Hemat waktu untuk tagihan/biaya/penyesuaian yang **sama tiap bulan**, sekaligus membantu
+> jumlahnya → sistem menyiapkan voucher untuk tiap periode; **semua bisa langsung di-*Create Invoice*
+> sekarang juga** (tak perlu menunggu tanggalnya) sampai grid penuh. Hemat waktu untuk
+> tagihan/biaya/penyesuaian yang **sama tiap bulan**, sekaligus membantu
 > **kontrol biaya & estimasi cash flow** ke depan. *(Ini tips efisiensi, bukan aturan akuntansi baru —
 > jurnal yang dihasilkan tetap sama seperti voucher biasa.)*

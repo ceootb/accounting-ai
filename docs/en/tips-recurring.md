@@ -45,22 +45,26 @@ real vouchers).
 
 ## How to execute the next vouchers
 
-The 2nd voucher onward is created one at a time as its period arrives:
+The 2nd voucher onward **does not need to wait for its period to arrive** — once the grid is built,
+every row **can be executed right now**, all at once, until the whole grid is executed. *(This is
+exactly why the Accounting Period in Company Info is extended 12 months ahead — so future-period
+vouchers aren't rejected by the system.)*
 
 1. In the **List Recurring**, **double-click** the recurring row (highlighted blue).
 2. **Right-click** a row that is **not yet** executed → choose **Create Invoice**.
 3. The screen switches to the **Sales Invoice** (data pre-filled from the master) → check → **Save**.
 4. Back on the recurring screen → click **Refresh** → a **checkmark** appears in the **Executed**
    column (the voucher was created & saved).
-5. **Repeat** for the next period (Create Invoice → Save → Refresh) until **all** are executed →
-   **Save & Close**.
+5. **Repeat for every row right now** (Create Invoice → Save → Refresh), without waiting for the
+   dates, until the **whole grid** is executed → **Save & Close**.
 
 ---
 
 ## Bottom line
 
 > **Recurring = "auto re-print" of routine vouchers.** Make the master once → set the period & count
-> → the system prepares a voucher for each period; you just *Create Invoice* when the time comes. It
+> → the system prepares a voucher for each period; **you can *Create Invoice* for all of them right now**
+> (no need to wait for the dates) until the grid is full. It
 > saves time for bills/costs/adjustments that are **the same every month**, and helps with **cost
 > control & cash-flow estimation** ahead. *(This is an efficiency tip, not a new accounting rule — the
 > journal produced is the same as an ordinary voucher.)*
