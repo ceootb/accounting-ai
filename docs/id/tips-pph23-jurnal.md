@@ -53,6 +53,14 @@ Dr  PPh 23 Dibayar Dimuka (Prepaid)   200.000
 > (akun **Aset**). Dasarnya adalah **bukti potong** yang diberikan pelanggan; simpan bukti itu karena
 > menjadi **pengurang PPh Badan** di SPT Tahunan.
 
+> **Dicatat saat Sales Receipt:** potongan pajak ini **tidak** mengurangi pendapatan — dicatat saat
+> **penerimaan pembayaran (Sales Receipt)** lewat **kolom potongan (discount / write-off)**, sehingga
+> kas yang diterima = tagihan − potongan. **Akun potongannya mengikuti jenis pajaknya:** PPh 23 (kredit
+> pajak) → **PPh 23 Dibayar Dimuka**; sedangkan mis. **PPh final atas sewa** → akun pajak **final**
+> tersendiri (bukan prepaid, karena sifatnya final). Kolom potongan yang sama juga dipakai untuk
+> potongan **non-pajak**, misalnya **biaya bank (bank charges)** ketika dana yang diterima sudah
+> dipotong bank.
+
 ---
 
 ## Ringkasan

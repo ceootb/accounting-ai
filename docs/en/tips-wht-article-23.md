@@ -54,6 +54,13 @@ Dr  Prepaid PPh 23                    200,000
 > Prepaid PPh 23** (an **Asset** account). The basis is the **withholding slip** the customer
 > provides; keep it, as it **reduces corporate income tax** in the annual return.
 
+> **Recorded at the Sales Receipt:** this tax cut does **not** reduce revenue — it is recorded **when
+> the payment is received (Sales Receipt)** via the **deduction field (discount / write-off)**, so cash
+> received = invoice − deduction. **The deduction account follows the tax type:** PPh 23 (a tax credit)
+> → **Prepaid PPh 23**; whereas e.g. **final PPh on rent** → its own **final**-tax account (not prepaid,
+> since it is final). The same deduction field is also used for **non-tax** cuts, e.g. **bank charges**
+> when the funds received have already been reduced by the bank.
+
 ---
 
 ## Summary
