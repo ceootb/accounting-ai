@@ -1,0 +1,30 @@
+# Accounting SLM — QLoRA fine-tune recipe
+# A small, permissive base is fine-tuned into a narrow accounting model.
+# Keep it small on purpose: cheap, private, on-device friendly.
+
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+# rationale: Apache-2.0, multilingual (includes Indonesian), strong for its size.
+# alternatives: Qwen/Qwen2.5-3B-Instruct (better quality, still small),
+#               microsoft/Phi-3.5-mini-instruct, meta-llama/Llama-3.2-3B-Instruct.
+
+output_dir: out/accounting-slm-qlora
+
+data:
+  train: build/train.jsonl
+  val: build/val.jsonl
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+train:
+  epochs: 3
+  lr: 2.0e-4
+  batch_size: 8
+  grad_accum: 2
+  max_seq_len: 1024
+  warmup_ratio: 0.03
+  bf16: true
+  quant: 4bit        # QLoRA (nf4). Set to "none" for plain LoRA / full precision.
