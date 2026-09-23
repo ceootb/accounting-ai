@@ -31,3 +31,28 @@ All departments appear in a **list** that can be filtered — for example by **a
 
 > **Bottom line:** a department isn't part of debit-credit accounting itself; it's a **unit tag** that
 > lets reports be split by segment. Set it up once, then just pick it on transactions.
+
+---
+
+## Customer
+
+A **Customer** is the master record for a party you sell to. It **links to the Sales Invoice →
+Accounts Receivable (AR) → and the AR Sub Ledger** (the subsidiary book per customer). So correct
+customer data makes **receivables and aging tidy** by itself.
+
+The information is grouped into a few sections; the most important:
+- **Address** — **mandatory** (for billing / shipping).
+- **Payment Term** — e.g. 30 days. This is the **basis for computing receivable aging (AR aging)**, so
+  it should always be filled in.
+- **Currency** — when the customer transacts in a **foreign currency**.
+- **Tax** — two settings: **Tax 1 = VAT** and **Tax 2 = withholding tax (PPh)** — so that when an
+  invoice is created, the tax is **applied automatically and correctly**. There's also a **tax-included
+  price** option. Example: a **foreign** customer usually **isn't charged VAT**, so the tax setting is
+  left blank.
+- **Customer Type** — grouping for analysis / reporting.
+
+Other sections (Contacts, Notes, Custom Field) are **optional** and often unused.
+
+> **Bottom line:** the parts that truly affect accounting are the **Term** (for aging), **Tax** (VAT &
+> withholding), and **Currency**. Set them once, and the customer's invoices and receivables stay
+> consistent.

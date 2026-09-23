@@ -29,7 +29,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 7. [Proses Tutup Periode (Period End)](proses-tutup-periode-period-end.md) — satu klik saat tutup bulan; auto-jurnal **penyusutan aset** + **revaluasi selisih kurs** (Realized/Unrealized). Dijalankan setelah transaksi lengkap & rekonsiliasi nol.
 
 ## Master Data
-- [Master Data (Departemen, Pelanggan, Pemasok, Item)](master-data.md) — data acuan yang disiapkan sekali & dipakai berulang; pola umum (list/data grid, filter, suspend bukan hapus, isi manual/import). **Departemen** = unit/pusat biaya untuk costing & laporan per unit (nomor+nama, Sub-Dept hierarki, status suspend). *(EN: `master-data.md`. Customer/Vendor/Item menyusul.)*
+- [Master Data (Departemen, Pelanggan, Pemasok, Item)](master-data.md) — data acuan yang disiapkan sekali & dipakai berulang; pola umum (list/data grid, filter, suspend bukan hapus, isi manual/import). **Departemen** = unit/pusat biaya untuk costing & laporan per unit (nomor+nama, Sub-Dept hierarki, status suspend). *(EN: `master-data.md`. Customer sudah masuk; Vendor/Item menyusul.)*
 
 ## Laporan & Riwayat Transaksi
 - [Riwayat Transaksi per Akun & Laporan Piutang (AR / Customer)](laporan-riwayat-akun-ar.md) — **Account History** (rekap transaksi per akun, data grid + filter); laporan AR yang sering dipakai (Outstanding Invoices, Aging Summary/Detail, **AR Sub Ledger Detail**); konsep **Sub Ledger** AR/AP (1 akun kontrol + buku pembantu per customer/vendor, COA tetap ramping). *(EN: `account-history-ar-reports.md`.)*

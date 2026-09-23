@@ -32,3 +32,27 @@ Seluruh departemen tampil di **daftar (list)** yang bisa disaring — misalnya m
 
 > **Intinya:** departemen bukan bagian akuntansi debit-kredit, tapi **penanda unit** yang membuat
 > laporan bisa dipecah per bagian. Siapkan sekali, lalu tinggal dipilih di transaksi.
+
+---
+
+## Pelanggan (Customer)
+
+**Customer** adalah master pihak yang kita jual kepadanya. Data ini **terhubung ke Sales Invoice →
+Piutang Usaha (AR) → dan Sub Ledger AR** (buku pembantu per pelanggan). Karena itu, data pelanggan yang
+benar membuat **piutang dan umur piutang (aging) rapi** dengan sendirinya.
+
+Informasi yang disiapkan dikelompokkan dalam beberapa bagian; yang paling penting:
+- **Alamat** — **wajib diisi** (untuk penagihan / pengiriman).
+- **Termin pembayaran (Term)** — mis. 30 hari. Ini menjadi **dasar perhitungan umur piutang (aging
+  AR)**, jadi sebaiknya selalu diisi.
+- **Mata uang (Currency)** — bila pelanggan bertransaksi dalam **valuta asing**.
+- **Pajak** — ada dua setelan: **Tax 1 = PPN (VAT)** dan **Tax 2 = pemotongan PPh (withholding)** —
+  supaya saat membuat faktur, pajaknya **otomatis benar**. Ada juga opsi **harga sudah termasuk pajak
+  (tax included)**. Contoh: pelanggan **luar negeri** umumnya **tidak dikenai PPN**, jadi setelan
+  pajaknya dikosongkan.
+- **Tipe Pelanggan (Customer Type)** — pengelompokan untuk analisa/laporan.
+
+Bagian lain (Kontak, Catatan, Custom Field) sifatnya **opsional** dan sering tidak dipakai.
+
+> **Intinya:** isi yang benar-benar berdampak ke akuntansi adalah **Termin** (untuk aging), **Pajak**
+> (PPN & PPh), dan **Mata uang**. Sekali disiapkan, faktur & piutang pelanggan itu jadi konsisten.
