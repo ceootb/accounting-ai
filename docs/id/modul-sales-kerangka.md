@@ -152,7 +152,7 @@ Layarnya disebut **Cust. Receipt**. Banyak field terisi sendiri; user cukup mele
 
 **d) Auto-jurnal yang terbentuk** (contoh pelunasan Rp15.300.000):
 ```
-Dr  Kas/Bank penerima (mis. Cash in Transit)   15.300.000
+Dr  Kas/Bank penerima (mis. Cash Clearing Account/CCA)   15.300.000
     Cr  Piutang Usaha (AR)                          15.300.000
 ```
 > Satu jurnal sederhana: **kas/bank bertambah, piutang berkurang.** Inilah penutup siklus penjualan
