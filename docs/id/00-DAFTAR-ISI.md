@@ -21,6 +21,9 @@ Versi Inggris ada di [`docs/en/`](../en/).
 ## Persiapan / Setup
 3b. [Modul Setup / Persiapan Awal (Tahap 1)](modul-setup-persiapan.md) — menu Setup: Company Info, Preferences, **User Access Rights** (kontrol internal/segregation of duties), Quick Setup, Form Templates.
 
+## Alur Kerja Modul (Workflow — overview)
+- [Alur Kerja Modul (Workflow)](alur-kerja-modul.md) — diagram alur generik (Mermaid) 4 siklus: **Pembelian** (Procure-to-Pay), **Penjualan** (Order-to-Cash), **Kas/Bank**, dan **Buku Besar → Laporan Keuangan**; menandai **titik jurnal otomatis terbentuk** tiap langkah. *(EN: `module-workflows.md`.)*
+
 ## Modul Transaksi (kerangka + logika auto-jurnal)
 4. [Modul Pembelian (Purchase)](modul-purchase-kerangka.md) — Procure-to-Pay 6 langkah; jurnal di **Purchase Invoice** (`Dr Persediaan | Cr Utang Usaha`); Payment; Return=reversal.
 5. [Modul Penjualan (Sales)](modul-sales-kerangka.md) — Order-to-Cash 6 langkah; jurnal di **Sales Invoice** (`Dr Piutang | Cr Pendapatan +PPN` **&** `Dr HPP | Cr Persediaan`); Receipt; Return=reversal.
