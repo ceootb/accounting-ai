@@ -45,3 +45,31 @@ not received).
 > **when it may be paid**. Keep them separate — this is also **segregation of duties**. The accounting
 > system just records the payable and its journal; the payment-approval flow is a **separate control
 > layer**, not an extension of journal logic.
+
+---
+
+## Partial / Installment Payment
+
+**One Purchase Invoice may be paid more than once** per the SLA / payment terms agreed with the
+supplier. The key rule: **do not create a new Purchase Invoice for each payment.** The Purchase Invoice
+remains the **source of the payable**; each payment entry only **reduces the Accounts Payable balance
+of the same invoice** until the outstanding reaches zero.
+
+**Example** — a Purchase Invoice of **IDR 100m**, paid in 3 installments:
+
+| Step | Journal | Outstanding |
+|---|---|---|
+| Purchase Invoice | `Dr Inventory/Expense 100m \| Cr Accounts Payable 100m` | 100m |
+| Payment 1 (IDR 30m) | `Dr Accounts Payable 30m \| Cr Cash/Bank 30m` | 70m |
+| Payment 2 (IDR 40m) | `Dr Accounts Payable 40m \| Cr Cash/Bank 40m` | 30m |
+| Payment 3 (IDR 30m) | `Dr Accounts Payable 30m \| Cr Cash/Bank 30m` | **0** |
+
+- The **Accounts Payable for that invoice decreases with each payment**; the principal is not
+  re-recorded.
+- The system can show **total invoice, total paid, and outstanding balance** — typically in the
+  **owing** column on the Purchase Invoice. That owing column is "the amount still due".
+- While owing isn't zero, the invoice is **not yet fully paid** (partially paid).
+
+> **Mirror on the Receivable (AR) side:** the same concept works in reverse — one **Sales Invoice** can
+> be collected in installments; each **Sales Receipt** reduces the **Accounts Receivable** of the same
+> invoice until its outstanding is zero. No new Sales Invoice is created per collection.
