@@ -29,6 +29,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 5. [Modul Penjualan (Sales)](modul-sales-kerangka.md) — Order-to-Cash 6 langkah; jurnal di **Sales Invoice** (`Dr Piutang | Cr Pendapatan +PPN` **&** `Dr HPP | Cr Persediaan`); Receipt; Return=reversal.
 5b. [Modul General Ledger — Journal Voucher (JV)](modul-general-ledger-jv.md) — buku besar ke-5; **jurnal manual** untuk adjustment/koreksi (amortisasi prepaid, settlement uang muka); harus balance; akses supervisor/manager.
 6. [Modul Aset Tetap (Fixed Asset)](modul-fixed-asset.md) — 3 sub-modul (kelompok pajak → kategori → daftar aset); akun perantara **Fixed Asset Transaction**; **penyusutan otomatis tiap bulan via "Period End"** (`Dr Beban Penyusutan | Cr Akumulasi Penyusutan`); tabel kelompok fiskal RI (UU PPh 11/PMK 72/2023).
+6b. [Pelepasan Aset Tetap (Disposal)](fixed-asset-disposal.md) — workflow **Dispose** (bukan hapus manual): aset keluar dari list aktif → pindah ke **Fixed Assets Disposal** (historical); auto-jurnal *hidden* keluarkan cost + reversal akum. penyusutan (s/d periode **sebelum** disposal) + catat proceeds + **Gain/Loss on Disposal** (parent **Other Income**). Contoh angka. *(EN: `fixed-asset-disposal.md`.)*
 7. [Proses Tutup Periode (Period End)](proses-tutup-periode-period-end.md) — satu klik saat tutup bulan; auto-jurnal **penyusutan aset** + **revaluasi selisih kurs** (Realized/Unrealized). Dijalankan setelah transaksi lengkap & rekonsiliasi nol.
 
 ## Master Data
@@ -58,4 +59,4 @@ Versi Inggris ada di [`docs/en/`](../en/).
 - **Master Data: Vendor & Item** (melengkapi Departemen & Pelanggan).
 - **Kas & Bank: Other Deposit / Other Payment** (Bank Book).
 - **Potongan di Sales Invoice vs Purchase Invoice** (beda pajak → beda akun + auto-jurnal).
-- **Dispose & Revaluation** aset tetap.
+- **Revaluation** aset tetap (Dispose sudah — konsep).

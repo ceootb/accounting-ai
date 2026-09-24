@@ -113,3 +113,7 @@ Dr  Beban Penyusutan - Bangunan     5.000.000
 > COA-nya. Sistem mengurus sisanya: pembelian lewat akun perantara, lalu **penyusutan tiap bulan
 > otomatis lewat proses **Period End**. User tak perlu menghitung penyusutan manual, dan angka
 > selalu konsisten ke Buku Besar & Laporan Keuangan.
+
+> **Pelepasan aset:** saat aset dijual, prosesnya lewat **Dispose** (bukan hapus manual) — sistem
+> otomatis mengeluarkan cost, reversal akumulasi penyusutan, catat proceeds, & hitung laba/rugi.
+> Detail: [Pelepasan Aset Tetap (Disposal)](fixed-asset-disposal.md).
