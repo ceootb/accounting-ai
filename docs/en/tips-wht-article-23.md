@@ -56,10 +56,15 @@ Dr  Prepaid PPh 23                    200,000
 
 > **Recorded at the Sales Receipt:** this tax cut does **not** reduce revenue — it is recorded **when
 > the payment is received (Sales Receipt)** via the **deduction field (discount / write-off)**, so cash
-> received = invoice − deduction. **The deduction account follows the tax type:** PPh 23 (a tax credit)
-> → **Prepaid PPh 23**; whereas e.g. **final PPh on rent** → its own **final**-tax account (not prepaid,
-> since it is final). The same deduction field is also used for **non-tax** cuts, e.g. **bank charges**
-> when the funds received have already been reduced by the bank.
+> received = invoice − deduction. **The deduction account follows the type of cut:**
+> - **PPh 23** (creditable) → a **Prepaid Tax / Prepaid PPh 23** account (Asset) — i.e. a tax credit.
+> - **Final PPh (e.g. on rent)** → a **Final Tax Expense** account (e.g. *Tax Expense – W/H Tax Final*),
+>   because final tax **cannot be credited** and is recognized directly as an **expense** — **not**
+>   prepaid and **not** a tax payable.
+> - **Non-tax cuts** (e.g. **bank charges**) → the related **expense** account, when the funds received
+>   have already been reduced by the bank.
+>
+> One Sales Receipt can also settle **several Sales Invoices** at once, each with its own deduction.
 
 ---
 

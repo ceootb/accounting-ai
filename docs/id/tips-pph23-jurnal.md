@@ -55,11 +55,16 @@ Dr  PPh 23 Dibayar Dimuka (Prepaid)   200.000
 
 > **Dicatat saat Sales Receipt:** potongan pajak ini **tidak** mengurangi pendapatan — dicatat saat
 > **penerimaan pembayaran (Sales Receipt)** lewat **kolom potongan (discount / write-off)**, sehingga
-> kas yang diterima = tagihan − potongan. **Akun potongannya mengikuti jenis pajaknya:** PPh 23 (kredit
-> pajak) → **PPh 23 Dibayar Dimuka**; sedangkan mis. **PPh final atas sewa** → akun pajak **final**
-> tersendiri (bukan prepaid, karena sifatnya final). Kolom potongan yang sama juga dipakai untuk
-> potongan **non-pajak**, misalnya **biaya bank (bank charges)** ketika dana yang diterima sudah
-> dipotong bank.
+> kas yang diterima = tagihan − potongan. **Akun potongannya mengikuti jenis potongannya:**
+> - **PPh 23** (dapat dikreditkan) → akun **PPh 23 Dibayar Dimuka / Prepaid Tax** (Aset) — jadi kredit pajak.
+> - **PPh final (mis. atas sewa)** → akun **Beban Pajak Final** (mis. *Tax Expense – W/H Tax Final*),
+>   karena PPh final **tidak dapat dikreditkan** sehingga langsung diakui sebagai **beban** — **bukan**
+>   prepaid dan **bukan** utang pajak.
+> - **Potongan non-pajak** (mis. **biaya bank / bank charges**) → akun **beban** terkait, saat dana yang
+>   diterima sudah dipotong bank.
+>
+> Satu Sales Receipt juga bisa melunasi **beberapa Sales Invoice** sekaligus, masing-masing dengan
+> potongannya sendiri.
 
 ---
 
