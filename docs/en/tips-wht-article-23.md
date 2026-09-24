@@ -55,8 +55,10 @@ Dr  Prepaid PPh 23                    200,000
 > provides; keep it, as it **reduces corporate income tax** in the annual return.
 
 > **Recorded at the Sales Receipt:** this tax cut does **not** reduce revenue — it is recorded **when
-> the payment is received (Sales Receipt)** via the **deduction field (discount / write-off)**, so cash
-> received = invoice − deduction. **The deduction account follows the type of cut:**
+> the payment is received (Sales Receipt)** via the **deduction field** (the software labels it
+> *Discount / Write-off*, but it is functionally a **payment deduction**, **not** a **sales discount**
+> that reduces revenue), so cash received = invoice − deduction. **The deduction account follows the
+> type of cut:**
 > - **PPh 23** (creditable) → a **Prepaid Tax / Prepaid PPh 23** account (Asset) — i.e. a tax credit.
 > - **Final PPh (e.g. on rent)** → a **Final Tax Expense** account (e.g. *Tax Expense – W/H Tax Final*),
 >   because final tax **cannot be credited** and is recognized directly as an **expense** — **not**

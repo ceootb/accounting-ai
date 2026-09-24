@@ -54,8 +54,10 @@ Dr  PPh 23 Dibayar Dimuka (Prepaid)   200.000
 > menjadi **pengurang PPh Badan** di SPT Tahunan.
 
 > **Dicatat saat Sales Receipt:** potongan pajak ini **tidak** mengurangi pendapatan — dicatat saat
-> **penerimaan pembayaran (Sales Receipt)** lewat **kolom potongan (discount / write-off)**, sehingga
-> kas yang diterima = tagihan − potongan. **Akun potongannya mengikuti jenis potongannya:**
+> **penerimaan pembayaran (Sales Receipt)** lewat **kolom potongan / *deduction*** (di software field-nya
+> berlabel *Discount / Write-off*, tetapi maknanya **pengurang pembayaran**, **bukan** potongan harga /
+> *sales discount* yang mengurangi pendapatan), sehingga kas yang diterima = tagihan − potongan.
+> **Akun potongannya mengikuti jenis potongannya:**
 > - **PPh 23** (dapat dikreditkan) → akun **PPh 23 Dibayar Dimuka / Prepaid Tax** (Aset) — jadi kredit pajak.
 > - **PPh final (mis. atas sewa)** → akun **Beban Pajak Final** (mis. *Tax Expense – W/H Tax Final*),
 >   karena PPh final **tidak dapat dikreditkan** sehingga langsung diakui sebagai **beban** — **bukan**
