@@ -54,6 +54,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 `internal_control_cases.jsonl`
 
 ## Menyusul (pending)
-- **Buku Besar Utang (GL A/P) + Sub-GL per vendor.**
+- **Master Data: Vendor & Item** (melengkapi Departemen & Pelanggan).
+- **Kas & Bank: Other Deposit / Other Payment** (Bank Book).
+- **Potongan di Sales Invoice vs Purchase Invoice** (beda pajak → beda akun + auto-jurnal).
 - **Dispose & Revaluation** aset tetap.
-- **Setting PPN di Sales Invoice** (paralel dengan sisi Purchase).
