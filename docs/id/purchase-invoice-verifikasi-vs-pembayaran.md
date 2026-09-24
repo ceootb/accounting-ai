@@ -70,4 +70,5 @@ pembayaran.** Purchase Invoice tetap menjadi **sumber utangnya**; setiap *paymen
 
 > **Paralel di sisi Piutang (AR):** konsep yang sama berlaku terbalik — satu **Sales Invoice** bisa
 > diterima pembayarannya bertahap; tiap **Sales Receipt** mengurangi **Piutang Usaha** dari invoice
-> yang sama sampai *outstanding*-nya nol. Tidak membuat Sales Invoice baru per penerimaan.
+> yang sama sampai *outstanding*-nya nol. Tidak membuat Sales Invoice baru per penerimaan. Detail:
+> [Sales Invoice — Pembayaran Bertahap (Owing)](sales-invoice-pembayaran-bertahap.md).

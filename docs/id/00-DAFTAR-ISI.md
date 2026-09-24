@@ -39,6 +39,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 
 ## Konsep & Kontrol Internal
 - [Purchase Invoice — Verifikasi Dokumen & Kontrol Pembayaran](purchase-invoice-verifikasi-vs-pembayaran.md) — batas jelas **"boleh dicatat sebagai utang"** (gerbang accounting: supplier/invoice/item/qty/harga/pajak/akun/Dr-Cr) vs **"boleh dibayar"** (gerbang finance/AP: PO/bukti terima/dok pajak/approval/terms). Jangan campur kontrol pembayaran ke logika jurnal; invoice valid tetap jadi Utang Usaha walau dokumen bayar belum lengkap → status *payment hold*, bukan pembatalan. Termasuk **pembayaran bertahap/cicilan** (1 invoice dibayar beberapa kali, kurangi Utang Usaha sampai owing nol). *(EN: `purchase-invoice-verification-vs-payment.md`.)*
+- [Sales Invoice — Pembayaran Bertahap / Cicilan (Owing)](sales-invoice-pembayaran-bertahap.md) — cerminan sisi AR: 1 Sales Invoice diterima lewat banyak **Sales Receipt**, tiap receipt kurangi **Piutang Usaha** sampai **Owing = 0** (lunas). **Owing = nilai SI − total Sales Receipt.** Konsisten dgn sisi Purchase. *(EN: `sales-invoice-installment-payment.md`.)*
 
 ## Studi Kasus (Pengendalian Internal / Temuan Audit)
 6. [Studi Kasus Pengendalian Internal](studi-kasus-pengendalian-internal.md) —

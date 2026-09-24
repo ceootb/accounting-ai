@@ -72,4 +72,5 @@ of the same invoice** until the outstanding reaches zero.
 
 > **Mirror on the Receivable (AR) side:** the same concept works in reverse — one **Sales Invoice** can
 > be collected in installments; each **Sales Receipt** reduces the **Accounts Receivable** of the same
-> invoice until its outstanding is zero. No new Sales Invoice is created per collection.
+> invoice until its outstanding is zero. No new Sales Invoice is created per collection. Details:
+> [Sales Invoice — Installment Payment (Owing)](sales-invoice-installment-payment.md).
