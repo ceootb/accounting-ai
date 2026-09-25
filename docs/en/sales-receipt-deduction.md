@@ -50,4 +50,4 @@ rent example above). The remaining balance is still monitored via **Owing** — 
 
 > **Bottom line:** a deduction on a Sales Receipt is a **payment reduction**, not a price discount.
 > Cash received = invoice − deduction; the difference goes to the **tax/expense account by type**, and
-> the receivable stays recorded as settled. For the tax side, see [Tips: Withholding Tax (PPh 23)](tips-wht-article-23.md).
+> the receivable stays recorded as settled. For the tax side, see [Tips: Withholding Tax (PPh 23)](tips-wht-article-23.md). Payment side (we withhold): [Purchase Payment with Deduction](purchase-payment-deduction.md).

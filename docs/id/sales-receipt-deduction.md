@@ -50,4 +50,4 @@ sendiri (lihat contoh sewa di atas). Pemantauan sisa tagihan tetap lewat **Owing
 
 > **Intinya:** deduction pada Sales Receipt = **pengurang pembayaran**, bukan potongan harga. Kas yang
 > diterima = tagihan − potongan; selisihnya masuk ke **akun pajak/beban sesuai jenisnya**, dan piutang
-> tetap tercatat lunas. Terkait pajak: lihat [Tips: Jurnal Potongan PPh 23](tips-pph23-jurnal.md).
+> tetap tercatat lunas. Terkait pajak: lihat [Tips: Jurnal Potongan PPh 23](tips-pph23-jurnal.md). Sisi bayar (kita memotong): [Purchase Payment dengan Potongan](purchase-payment-deduction.md).
