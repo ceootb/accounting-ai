@@ -56,3 +56,29 @@ Other sections (Contacts, Notes, Custom Field) are **optional** and often unused
 > **Bottom line:** the parts that truly affect accounting are the **Term** (for aging), **Tax** (VAT &
 > withholding), and **Currency**. Set them once, and the customer's invoices and receivables stay
 > consistent.
+
+---
+
+## Vendor
+
+A **Vendor** is the master record for a party you **buy** from — the **mirror** of a Customer. It links
+to the **Purchase Invoice → Accounts Payable (AP) → and the AP Sub Ledger** (subsidiary book per
+vendor). Its content follows the same pattern as Customer: **address** (mandatory), **payment term**,
+**tax** (VAT & withholding PPh), and **currency**. Other parts (Contacts, Notes, Custom Field) are
+optional.
+
+> **Consistent with Customer:** what affects accounting is still the **Term**, **Tax**, and
+> **Currency**. Once correct, purchase invoices and vendor payables stay consistent automatically.
+
+## Term & Tax = reusable masters
+
+**Payment Term** and **Tax** are not retyped for every Customer or Vendor — both are **masters created
+once and reused**:
+- **Term** — e.g. *COD, Net 14, Net 30*. Created once (a *New Term* option), then just picked for the
+  next party. Avoids duplicate terms and keeps consistency (the basis for aging).
+- **Tax** — e.g. *VAT* and *withholding PPh (W/H Tax)*. Also a reusable master (a *New Tax* option). A
+  party can have more than one **independent** tax setting (e.g. VAT **and** PPh), and these may differ
+  between parties.
+
+> **Bottom line:** create the **Term/Tax master once**, then **pick** it on each Customer/Vendor — don't
+> recreate it. This keeps data clean and consistent.

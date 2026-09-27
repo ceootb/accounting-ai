@@ -56,3 +56,28 @@ Bagian lain (Kontak, Catatan, Custom Field) sifatnya **opsional** dan sering tid
 
 > **Intinya:** isi yang benar-benar berdampak ke akuntansi adalah **Termin** (untuk aging), **Pajak**
 > (PPN & PPh), dan **Mata uang**. Sekali disiapkan, faktur & piutang pelanggan itu jadi konsisten.
+
+---
+
+## Pemasok (Vendor)
+
+**Vendor** adalah master pihak yang kita **beli** darinya — **cerminan** dari Customer. Data ini
+terhubung ke **Purchase Invoice → Utang Usaha (AP) → dan Sub Ledger AP** (buku pembantu per pemasok).
+Isinya sama polanya dengan Customer: **alamat** (wajib), **termin pembayaran**, **pajak** (PPN &
+pemotongan PPh), dan **mata uang**. Bagian lain (Kontak, Catatan, Custom Field) opsional.
+
+> **Konsisten dengan Customer:** yang berdampak ke akuntansi tetap **Termin**, **Pajak**, dan **Mata
+> uang**. Setelah benar, faktur pembelian & utang pemasok otomatis konsisten.
+
+## Termin & Pajak = master yang bisa dipakai ulang
+
+**Termin (payment terms)** dan **Pajak (Tax)** bukan data yang diketik ulang tiap kali membuat Customer
+atau Vendor — keduanya **master yang dibuat sekali lalu dipakai ulang**:
+- **Termin** — mis. *COD, Net 14, Net 30*. Dibuat sekali (opsi *New Term*), lalu tinggal dipilih untuk
+  pihak berikutnya. Menghindari termin ganda & menjaga konsistensi (dasar hitung aging).
+- **Pajak** — mis. *PPN (VAT)* dan *pemotongan PPh (W/H Tax)*. Juga master reusable (opsi *New Tax*).
+  Satu pihak bisa punya lebih dari satu setelan pajak yang **berdiri sendiri** (mis. PPN **dan** PPh),
+  dan boleh berbeda antar pihak.
+
+> **Intinya:** buat **master Termin/Pajak sekali**, lalu **pilih** di tiap Customer/Vendor — jangan
+> bikin ulang. Ini menjaga data rapi dan konsisten.
