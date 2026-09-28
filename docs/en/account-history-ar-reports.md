@@ -51,3 +51,26 @@ control stays detailed. The same concept applies on the **AP side (per supplier)
 
 > **Bottom line:** one control account + a detailed Sub Ledger = a lean COA with clear per-party
 > control of receivables and payables.
+
+## 5. GL History — the dimension follows the account's function
+
+Every **posted** transaction forms a **journal**, which is recapped into the **General Ledger (GL) per
+account**. **GL History** shows the **per-account movement** from all transactions touching it — with
+**Date, Reference, Description, Debit, Credit, and Running balance** — and stays traceable back to the
+**journal → its source transaction**.
+
+The key: **don't force every account into the same structure.** Extra columns/dimensions **follow the
+account's accounting function**:
+
+| Account type | Required dimension | Purpose |
+|---|---|---|
+| **Receivable (AR)** | **Sub Ledger per Customer** | per-customer detail & balance; reconcile **AR control ↔ total Sub-GL** |
+| **Payable (AP)** | **Sub Ledger per Vendor** | per-vendor detail & balance; reconcile **AP control ↔ total Sub-GL** |
+| **Revenue** | **Department** | *Revenue by Department* → **P&L per Department** |
+| **Expense/Cost** | **Department** | *Expense by Department* → **P&L per Department** |
+| **Other accounts** | — (plain GL) | not forced to have Sub-GL/Department if the function doesn't need it |
+
+> **The principle:** the dimension follows the **accounting purpose**, not uniformity — AR/AP → **Sub
+> Ledger**; Revenue/Expense → **Department**; other accounts → **plain GL**. The report **always pulls
+> from the same journal/GL engine** (it must not produce a different balance). The result: a simple
+> display up front, with correct structure and traceability behind.

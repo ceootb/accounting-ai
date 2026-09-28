@@ -51,3 +51,26 @@ pelanggan tetap detail. Konsep yang sama berlaku di sisi **AP (per pemasok)**.
 
 > **Intinya:** satu akun kontrol + Sub Ledger yang detail = COA tetap ramping, kontrol tagihan per
 > pihak tetap jelas.
+
+## 5. GL History — dimensi mengikuti fungsi akun
+
+Setiap transaksi yang **posted** membentuk **jurnal**, lalu terekap ke **Buku Besar (GL) per akun**.
+**GL History** menampilkan **pergerakan per akun** dari semua transaksi yang menyentuhnya — dengan
+**Tanggal, Referensi, Uraian, Debit, Kredit, dan Saldo berjalan (running balance)** — dan tetap bisa
+ditelusuri balik ke **jurnal → transaksi sumbernya**.
+
+Kuncinya: **jangan menyeragamkan struktur semua akun.** Kolom/dimensi tambahan **mengikuti fungsi
+akuntansi** akun tersebut:
+
+| Jenis akun | Dimensi wajib | Gunanya |
+|---|---|---|
+| **Piutang (AR)** | **Sub Ledger per Customer** | rincian & saldo per pelanggan; rekonsiliasi **AR kontrol ↔ total Sub-GL** |
+| **Utang (AP)** | **Sub Ledger per Vendor** | rincian & saldo per pemasok; rekonsiliasi **AP kontrol ↔ total Sub-GL** |
+| **Pendapatan** | **Departemen** | *Revenue by Department* → **Laba-Rugi per Departemen** |
+| **Beban/Biaya** | **Departemen** | *Expense by Department* → **Laba-Rugi per Departemen** |
+| **Akun lain** | — (cukup GL biasa) | tidak dipaksa punya Sub-GL/Departemen bila fungsinya tak perlu |
+
+> **Prinsipnya:** dimensi mengikuti **tujuan akuntansi**, bukan keseragaman — AR/AP → **Sub Ledger**;
+> Pendapatan/Beban → **Departemen**; akun lain → **GL biasa**. Report **selalu menarik dari mesin
+> jurnal/GL yang sama** (tak boleh menghasilkan saldo berbeda). Hasilnya: tampilan sederhana di depan,
+> struktur & keterlacakan yang benar di belakang.
