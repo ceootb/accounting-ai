@@ -105,6 +105,12 @@ Dr  Beban Penyusutan - Bangunan     5.000.000
     Cr  Akumulasi Penyusutan - Bangunan   5.000.000
 ```
 
+> **Catatan (bukan angka paten):** dasar penyusutan = **Harga Perolehan − Nilai Residu** (nilai residu
+> **tidak selalu nol** — ikut kebijakan perusahaan). **Metode** penyusutan (garis lurus dll) dan **saat
+> mulai** penyusutan juga mengikuti kebijakan/aturan pajak — mis. basis fiskal Indonesia memulai
+> penyusutan **penuh di bulan perolehan** (tanpa prorata tanggal). Sistem membaca setelan tiap aset,
+> lalu menghitung & menjurnal otomatis (rinci **per aset**) lewat Period End.
+
 ---
 
 ## Intinya

@@ -106,6 +106,12 @@ Dr  Depreciation Expense - Building     5,000,000
     Cr  Accumulated Depreciation - Building   5,000,000
 ```
 
+> **Note (not fixed numbers):** the depreciation base = **Cost − Residual Value** (residual is **not
+> always zero** — it follows company policy). The depreciation **method** (straight-line, etc.) and the
+> **start point** also follow policy/tax rules — e.g. the Indonesian fiscal basis starts depreciation as
+> a **full month in the acquisition month** (no date proration). The system reads each asset's settings,
+> then computes and journals automatically (detailed **per asset**) via Period End.
+
 ---
 
 ## Bottom line
