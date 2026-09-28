@@ -81,3 +81,49 @@ atau Vendor — keduanya **master yang dibuat sekali lalu dipakai ulang**:
 
 > **Intinya:** buat **master Termin/Pajak sekali**, lalu **pilih** di tiap Customer/Vendor — jangan
 > bikin ulang. Ini menjaga data rapi dan konsisten.
+
+---
+
+## Item (Barang, Jasa, atau Biaya)
+
+**Tidak semua Item adalah barang persediaan.** Item adalah **representasi** apa pun yang dipilih di
+transaksi, dan **perlakuan akuntansinya ditentukan oleh fungsi Item + akun default (COA mapping)** yang
+diatur **saat item dibuat** — bukan sekadar karena item muncul di transaksi. Ada **tiga jenis**:
+
+**1. Item Persediaan (Inventory)** — barang yang benar-benar menjadi **stok** (mis. kopi, gula, barang
+dagangan). Akun default = **Persediaan**.
+```
+Beli:  Dr Persediaan | Cr Utang Usaha / Kas
+```
+Saat dipakai/terjual, persediaan mengikuti **costing/HPP** sesuai mekanisme sistem.
+
+**2. Item Pendapatan (Revenue)** — untuk transaksi yang **menghasilkan pendapatan**; **tidak harus**
+inventory:
+- **Produk racikan** (mis. *Minuman Kopi Racikan*) → default **Revenue – Penjualan Minuman**. Bahannya
+  (kopi/gula/susu) dibeli dulu sebagai **inventory**, lalu yang terpakai dialokasikan jadi **Direct
+  Cost / HPP** lewat *job costing* / proses costing.
+- **Jasa** (konsultasi, desain, maintenance) → default **Revenue – Pendapatan Jasa**. Item jasa **tidak
+  pernah** punya transaksi beli (perusahaan tak membeli jasa untuk dijual lagi).
+```
+Faktur jasa:  Dr Piutang Usaha | Cr Pendapatan Jasa
+```
+
+**3. Item Biaya (Expense)** — ditautkan langsung ke **akun beban** tertentu (mis. *Parkir* & *Toll* →
+**Parking Expense**). Memudahkan user yang tak menguasai COA.
+```
+Dr Beban (mis. Parking Expense) | Cr Kas / Bank
+```
+
+### Setting item sekali di awal = kontrol preventif
+
+Mapping akun pada Item adalah **kontrol pencegahan**: **admin yang paham akuntansi** menetapkannya
+**saat master item dibuat**. Setelah benar, **user operasional cukup memilih Item** → sistem mengambil
+**akun default** → **jurnal otomatis**. User tak perlu memilih COA manual tiap entry.
+
+> **Konsep kontrol:** *kesalahan dicegah di depan, bukan dikoreksi berulang di belakang.* Dengan master
+> item yang benar sejak awal, risiko salah akun/jurnal saat transaksi ditekan mendekati **nol** —
+> pengetahuan akuntansi user operasional jadi ringan, kontrol tetap di master setup.
+
+> **Perubahan mapping:** untuk item yang **sudah dipakai** bertransaksi, mengubah akun default harus
+> dikontrol. Jika perubahannya **mengubah sifat akuntansi** item, **buat item baru** dengan mapping
+> baru — supaya **histori transaksi lama tetap konsisten**.

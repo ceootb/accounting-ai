@@ -82,3 +82,49 @@ once and reused**:
 
 > **Bottom line:** create the **Term/Tax master once**, then **pick** it on each Customer/Vendor — don't
 > recreate it. This keeps data clean and consistent.
+
+---
+
+## Item (Goods, Service, or Expense)
+
+**Not every Item is an inventory good.** An Item is a **representation** of whatever is picked on a
+transaction, and its **accounting treatment is set by the Item's function + its default account (COA
+mapping)** defined **when the item is created** — not merely by appearing on a transaction. There are
+**three kinds**:
+
+**1. Inventory Item** — a good that truly becomes **stock** (e.g. coffee, sugar, merchandise). Default
+account = **Inventory**.
+```
+Purchase:  Dr Inventory | Cr Accounts Payable / Cash
+```
+When used/sold, inventory follows **costing/COGS** per the system's mechanism.
+
+**2. Revenue Item** — for transactions that **generate income**; **not necessarily** inventory:
+- **Made/mixed product** (e.g. *a barista coffee drink*) → default **Revenue – Beverage Sales**. Its
+  ingredients (coffee/sugar/milk) are first bought as **inventory**, then the portion used is allocated
+  to **Direct Cost / COGS** via **job costing**.
+- **Service** (consulting, design, maintenance) → default **Revenue – Service Income**. A service item
+  **never** has a purchase transaction (the company doesn't buy the service to resell).
+```
+Service invoice:  Dr Accounts Receivable | Cr Service Income
+```
+
+**3. Expense Item** — linked directly to a specific **expense account** (e.g. *Parking* & *Toll* →
+**Parking Expense**). This helps users who don't master the COA.
+```
+Dr Expense (e.g. Parking Expense) | Cr Cash / Bank
+```
+
+### Setting the item once = preventive control
+
+The account mapping on an Item is a **preventive control**: an **admin who understands accounting** sets
+it **when the master item is created**. Once correct, the **operational user just picks the Item** → the
+system takes the **default account** → **auto-journal**. No manual COA selection per entry.
+
+> **Control concept:** *errors are prevented up front, not repeatedly corrected later.* With correct
+> master items from the start, the risk of a wrong account/journal at transaction time drops to nearly
+> **zero** — operational users need little accounting knowledge, while control stays at master setup.
+
+> **Changing the mapping:** for an item **already used** in transactions, changing the default account
+> must be controlled. If the change **alters the item's accounting nature**, **create a new item** with
+> the new mapping — so **old transaction history stays consistent**.
