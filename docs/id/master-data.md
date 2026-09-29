@@ -127,3 +127,5 @@ Mapping akun pada Item adalah **kontrol pencegahan**: **admin yang paham akuntan
 > **Perubahan mapping:** untuk item yang **sudah dipakai** bertransaksi, mengubah akun default harus
 > dikontrol. Jika perubahannya **mengubah sifat akuntansi** item, **buat item baru** dengan mapping
 > baru — supaya **histori transaksi lama tetap konsisten**.
+
+> **Item saat dipakai di transaksi → jurnal otomatis** (per jenis item): lihat [Item di Transaksi: Mapping Akun & Auto-Jurnal](item-transaksi-auto-jurnal.md).

@@ -34,6 +34,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 
 ## Master Data
 - [Master Data (Departemen, Pelanggan, Pemasok, Item)](master-data.md) — data acuan yang disiapkan sekali & dipakai berulang; pola umum (list/data grid, filter, suspend bukan hapus, isi manual/import). **Departemen** = unit/pusat biaya untuk costing & laporan per unit (nomor+nama, Sub-Dept hierarki, status suspend). *(EN: `master-data.md`. Departemen/Customer/Vendor/Item sudah (Item: 3 jenis Inventory/Revenue/Expense + COA mapping). Termin & Pajak = master reusable.)*
+- [Item di Transaksi: Mapping Akun & Auto-Jurnal](item-transaksi-auto-jurnal.md) — per jenis item: **Inventory Part** (beli→Persediaan, jual→Pendapatan+HPP), **Non-Inventory Part** (beli→langsung **Beban**), **Service** (jual→**Pendapatan Jasa**, diskon=pengurang revenue PSAK 72). Item benar→mapping benar→auto-jurnal; beda human/master/engine error. *(EN: `item-transactions-auto-journal.md`.)*
 
 ## Laporan & Riwayat Transaksi
 - [Riwayat Transaksi per Akun & Laporan Piutang (AR / Customer)](laporan-riwayat-akun-ar.md) — **Account History** (rekap transaksi per akun, data grid + filter); laporan AR yang sering dipakai (Outstanding Invoices, Aging Summary/Detail, **AR Sub Ledger Detail**); konsep **Sub Ledger** AR/AP + **GL History** (dimensi ikut fungsi akun: AR/AP&rarr;Sub-GL, Pendapatan/Beban&rarr;Departemen, lainnya&rarr;GL biasa). *(EN: `account-history-ar-reports.md`.)*

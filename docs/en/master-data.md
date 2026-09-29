@@ -128,3 +128,5 @@ system takes the **default account** → **auto-journal**. No manual COA selecti
 > **Changing the mapping:** for an item **already used** in transactions, changing the default account
 > must be controlled. If the change **alters the item's accounting nature**, **create a new item** with
 > the new mapping — so **old transaction history stays consistent**.
+
+> **How an item drives the auto-journal in transactions** (per item type): see [Items in Transactions: Account Mapping & Auto-Journal](item-transactions-auto-journal.md).
