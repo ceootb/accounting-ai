@@ -8,6 +8,10 @@ disguise costs**, but to **design transactions that are legitimate and well-docu
 > be corrected (added back) for tax purposes** because it can't reduce taxable income — so taxable
 > income ends up higher than commercial profit.
 
+> **Compliance note (important):** *"tax strategy"* here means **legal & compliant tax planning** —
+> **always following the tax rules in force**. It is **NOT** tax avoidance/evasion, disguising
+> transactions, falsifying substance, creating fictitious costs, or dodging taxes.
+
 ## Why an expense becomes a positive fiscal correction
 
 Costs that often need attention:
@@ -23,6 +27,8 @@ Costs that often need attention:
 5. **Recording that doesn't match the transaction's substance** — the account or accounting treatment
    differs from the real substance.
 6. **Related-party transactions** — especially when the **price or terms have no defensible basis**.
+
+> In practice, the account **most often corrected** is **Other Expenses**.
 
 ## Legal tax planning — from the moment of the transaction (not disguising)
 
@@ -46,7 +52,45 @@ The way is **not** to disguise costs, but legal *tax planning* **from when the t
 
 Fiscal correction usually **waits for the year-end book close**: in the **commercial report** the cost
 **must be recognized**, but for **tax** it **must be corrected**. This is where commercial profit is
-adjusted into taxable income.
+adjusted into taxable income. Fundamentally, fiscal correction is a **reconciliation of commercial
+profit (books) → fiscal profit**, generally done during **tax computation & the annual tax return** —
+**not** when recording daily transactions.
+
+## Fiscal correction ≠ daily accounting logic
+
+Because fiscal correction differs from daily transaction logic:
+
+- **Don't** make a *"possible fiscal correction"* an **automatic** basis to change the account or journal
+  of a daily transaction.
+- **Don't** treat a potentially *non-deductible* expense as an **accounting error**.
+- **Daily accounting still follows the transaction's substance** and the applicable accounting treatment.
+- **Tax treatment is kept as a separate layer/knowledge** from the accounting engine.
+- At **tax computation / reconciliation**, commercial profit is reconciled with fiscal rules to determine
+  the **positive/negative fiscal correction**.
+
+## Three layers to keep separate
+
+> **Accounting transaction logic ≠ Tax reconciliation logic ≠ Tax planning knowledge.**
+> - **Accounting** must be correct **by substance**.
+> - **Tax treatment** must **follow the rules**.
+> - **Tax planning** only within a **legal and accountable corridor**.
+
+## Guardrails
+
+- The system **may raise a *tax flag* / reminder** when a transaction has tax consequences worth noting
+  early — **but it does not change the accounting journal automatically**, unless the *business rule* is
+  already defined.
+- **Don't** make tax-planning recommendations aimed at **hiding transactions, falsifying substance,
+  creating fictitious costs, or illegally avoiding tax obligations**.
+- If **tax rules change** or the **treatment is unclear** → mark it **confirmation required**, don't
+  assume.
+
+## Format for collecting tax-strategy knowledge
+
+Each experience is recorded as:
+
+> **Transaction type → accounting treatment → potential tax treatment → is there a fiscal difference →
+> when to watch for it → supporting documents → legal tax-planning consideration.**
 
 ---
 

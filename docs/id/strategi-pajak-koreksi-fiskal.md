@@ -8,6 +8,11 @@ menyamarkan biaya**, tetapi **merancang transaksi yang legitimate dan terdokumen
 > dikoreksi** (ditambahkan kembali) karena tidak boleh menjadi pengurang penghasilan — sehingga
 > penghasilan kena pajak menjadi lebih besar dari laba komersial.
 
+> **Catatan kepatuhan (penting):** istilah *"tax strategy"* di sini berarti **tax planning yang legal &
+> compliant** — **selalu mengikuti peraturan perpajakan yang berlaku**. **BUKAN** penghindaran/
+> penggelapan pajak, menyamarkan transaksi, memalsukan substansi, membuat biaya fiktif, atau
+> *"ngemplang pajak"*.
+
 ## Kenapa suatu biaya menjadi koreksi fiskal positif
 
 Biaya yang sering perlu diperhatikan:
@@ -24,6 +29,8 @@ Biaya yang sering perlu diperhatikan:
    substansi sebenarnya.
 6. **Transaksi dengan pihak berelasi** — terutama bila **harga atau syarat transaksinya tidak mempunyai
    dasar yang dapat dipertanggungjawabkan**.
+
+> Dalam praktik, akun yang **paling sering dikoreksi** adalah **Other Expenses**.
 
 ## Tax planning legal — sejak transaksi terjadi (bukan menyamarkan)
 
@@ -48,7 +55,46 @@ Caranya **bukan** menyamarkan biaya, tetapi *tax planning* legal **sejak transak
 
 Koreksi fiskal biasanya **menunggu tutup tahun buku**: secara **laporan komersial** biaya **harus
 diakui**, tetapi dari **sisi pajak harus dikoreksi**. Dari sinilah laba komersial disesuaikan menjadi
-penghasilan kena pajak.
+penghasilan kena pajak. Pada dasarnya koreksi fiskal adalah **rekonsiliasi laba komersial (pembukuan) →
+laba fiskal**, yang umumnya dilakukan dalam proses **tax computation & SPT Tahunan** — **bukan** saat
+mencatat transaksi harian.
+
+## Koreksi fiskal ≠ logika akuntansi harian
+
+Karena koreksi fiskal berbeda dari logika transaksi harian:
+
+- **Jangan** menjadikan *"kemungkinan koreksi fiskal"* sebagai dasar **otomatis** mengubah akun atau
+  jurnal transaksi harian.
+- **Jangan** menganggap *expense* yang berpotensi *non-deductible* sebagai transaksi yang **salah secara
+  akuntansi**.
+- **Akuntansi harian tetap mengikuti substansi transaksi** dan perlakuan akuntansi yang berlaku.
+- **Perlakuan pajak disimpan sebagai lapisan/knowledge terpisah** dari mesin akuntansi.
+- Saat **tax computation / rekonsiliasi**, laba komersial direkonsiliasi dengan ketentuan fiskal untuk
+  menentukan **koreksi fiskal positif/negatif**.
+
+## Tiga lapisan yang harus dipisah
+
+> **Accounting transaction logic ≠ Tax reconciliation logic ≠ Tax planning knowledge.**
+> - **Akuntansi** harus benar **secara substansi**.
+> - **Tax treatment** harus **sesuai peraturan**.
+> - **Tax planning** hanya dalam **koridor yang legal dan dapat dipertanggungjawabkan**.
+
+## Batasan (guardrail)
+
+- Sistem **boleh memberi *tax flag* / reminder** bila sebuah transaksi punya konsekuensi pajak yang
+  perlu diperhatikan sejak awal — **tetapi tidak mengubah jurnal akuntansi secara otomatis**, kecuali
+  *business rule*-nya memang sudah ditentukan.
+- **Jangan** membuat rekomendasi tax planning yang bertujuan **menyembunyikan transaksi, memalsukan
+  substansi, membuat biaya fiktif, atau menghindari kewajiban pajak secara ilegal**.
+- Bila **ketentuan pajak berubah** atau **treatment belum jelas** → tandai **confirmation required**,
+  jangan membuat asumsi sendiri.
+
+## Format mengumpulkan knowledge tax strategy
+
+Tiap pengalaman dicatat dengan alur:
+
+> **Jenis transaksi → accounting treatment → potential tax treatment → apakah ada fiscal difference →
+> kapan perlu diperhatikan → dokumen pendukung → legal tax-planning consideration.**
 
 ---
 
