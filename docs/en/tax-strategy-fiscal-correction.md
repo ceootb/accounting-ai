@@ -30,6 +30,28 @@ Costs that often need attention:
 
 > In practice, the account **most often corrected** is **Other Expenses**.
 
+### Concrete examples per category (frequently & almost certainly corrected)
+
+1. **No clear link to the business** — the company pays for the **owner's family vacation**, **personal
+   shopping**, or the owner's **personal installments**, but records it as a company expense. → In
+   substance it is **not** a cost to earn/maintain the company's income.
+2. **Inadequate evidence/documents** — paying **IDR 50m** for a service, but there's only a **bank
+   transfer** with no invoice, contract, or adequate proof of work. → Accounting may record the expense,
+   but during an **audit** the supporting evidence becomes a problem.
+3. **Genuinely restricted / non-deductible by tax** — a classic case: **corporate income tax (PPh
+   Badan)** itself is recorded as a tax expense in the P&L, **but is not a deduction** from taxable
+   income. Other cases must be assessed **one by one** by cost type & tax rules.
+4. **Benefit-in-kind / facility / benefit** — the company gives a certain facility to the owner/employee.
+   It is **not automatically** treated the same for tax as ordinary salary. → Assess the **facility type,
+   recipient, link to the job, and the applicable rules**.
+5. **Recording not matching substance** — buying an **asset of IDR 300m** but **expensing it entirely**
+   just to lower profit. → It should be **recognized as an asset & depreciated**; tax also has its own
+   rules.
+6. **Related-party transaction** — paying a **management fee of IDR 100m** to a company owned by a
+   shareholder, but **without** an agreement, work scope, pricing basis, or clear proof of service. → A
+   related-party transaction isn't **automatically wrong**; what matters is that the **substance,
+   fairness, and documentation are defensible**.
+
 ## Legal tax planning — from the moment of the transaction (not disguising)
 
 The way is **not** to disguise costs, but legal *tax planning* **from when the transaction happens**:

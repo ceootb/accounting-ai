@@ -32,6 +32,28 @@ Biaya yang sering perlu diperhatikan:
 
 > Dalam praktik, akun yang **paling sering dikoreksi** adalah **Other Expenses**.
 
+### Contoh nyata per kategori (yang sering & hampir pasti dikoreksi)
+
+1. **Tidak ada hubungan jelas dengan usaha** — perusahaan membayar **liburan keluarga pemilik**,
+   **belanja pribadi**, atau **cicilan pribadi** pemilik, tetapi dicatat sebagai biaya perusahaan.
+   → Secara substansi **bukan** biaya untuk memperoleh/menjaga penghasilan perusahaan.
+2. **Bukti/dokumen tidak memadai** — bayar jasa **Rp50 juta**, tetapi hanya ada **transfer bank** tanpa
+   invoice, kontrak, atau bukti pekerjaan yang memadai. → Akuntansi bisa saja mencatat *expense*, tetapi
+   saat **pemeriksaan** bukti pendukungnya jadi masalah.
+3. **Memang dibatasi / non-deductible secara pajak** — contoh klasik: **PPh Badan** sendiri dicatat
+   sebagai beban pajak di Laba-Rugi, **tetapi bukan pengurang** penghasilan kena pajak. Contoh lain
+   dilihat **satu per satu** sesuai jenis biaya & ketentuan pajaknya.
+4. **Natura / fasilitas / benefit** — perusahaan memberi fasilitas tertentu kepada pemilik/karyawan.
+   **Tidak otomatis** dianggap sama perlakuan pajaknya dengan gaji biasa. → Lihat **jenis fasilitas,
+   penerima, hubungan dengan pekerjaan, dan ketentuan** yang berlaku.
+5. **Pencatatan tidak sesuai substansi** — beli **aset Rp300 juta** tetapi **langsung dibebankan** jadi
+   *expense* hanya supaya laba lebih kecil. → Mestinya **diakui sebagai aset & disusutkan**; secara pajak
+   pun ada ketentuan tersendiri.
+6. **Transaksi pihak berelasi** — bayar **management fee Rp100 juta** ke perusahaan milik pemegang saham,
+   tetapi **tanpa** agreement, scope pekerjaan, dasar harga, atau bukti jasa yang jelas. → Bukan berarti
+   transaksi pihak berelasi **otomatis salah**; yang penting **substansi, kewajaran, dan dokumentasinya
+   dapat dipertanggungjawabkan**.
+
 ## Tax planning legal — sejak transaksi terjadi (bukan menyamarkan)
 
 Caranya **bukan** menyamarkan biaya, tetapi *tax planning* legal **sejak transaksi terjadi**:
