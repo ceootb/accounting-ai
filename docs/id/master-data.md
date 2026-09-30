@@ -99,9 +99,10 @@ Saat dipakai/terjual, persediaan mengikuti **costing/HPP** sesuai mekanisme sist
 
 **2. Item Pendapatan (Revenue)** — untuk transaksi yang **menghasilkan pendapatan**; **tidak harus**
 inventory:
-- **Produk racikan** (mis. *Minuman Kopi Racikan*) → default **Revenue – Penjualan Minuman**. Bahannya
-  (kopi/gula/susu) dibeli dulu sebagai **inventory**, lalu yang terpakai dialokasikan jadi **Direct
-  Cost / HPP** lewat *job costing* / proses costing.
+- **Produk olahan / hasil produksi** (mis. *minuman kopi hasil olahan*) → default **Revenue – Penjualan
+  Minuman**. Bahannya (kopi/gula/susu) dibeli dulu sebagai **inventory**, lalu yang terpakai dialokasikan
+  jadi **Direct Cost / HPP** lewat *job costing* / proses costing. Detail alur biayanya:
+  [Produk Olahan: Cost Flow & Job Costing](produk-olahan-job-costing.md).
 - **Jasa** (konsultasi, desain, maintenance) → default **Revenue – Pendapatan Jasa**. Item jasa **tidak
   pernah** punya transaksi beli (perusahaan tak membeli jasa untuk dijual lagi).
 ```

@@ -102,7 +102,7 @@ When used/sold, inventory follows **costing/COGS** per the system's mechanism.
 **2. Revenue Item** — for transactions that **generate income**; **not necessarily** inventory:
 - **Made/mixed product** (e.g. *a barista coffee drink*) → default **Revenue – Beverage Sales**. Its
   ingredients (coffee/sugar/milk) are first bought as **inventory**, then the portion used is allocated
-  to **Direct Cost / COGS** via **job costing**.
+  to **Direct Cost / COGS** via **job costing**. See the cost flow: [Processed Product: Cost Flow & Job Costing](processed-product-job-costing.md).
 - **Service** (consulting, design, maintenance) → default **Revenue – Service Income**. A service item
   **never** has a purchase transaction (the company doesn't buy the service to resell).
 ```
