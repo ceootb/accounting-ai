@@ -123,3 +123,5 @@ Dr  Beban Penyusutan - Bangunan     5.000.000
 > **Pelepasan aset:** saat aset dijual, prosesnya lewat **Dispose** (bukan hapus manual) — sistem
 > otomatis mengeluarkan cost, reversal akumulasi penyusutan, catat proceeds, & hitung laba/rugi.
 > Detail: [Pelepasan Aset Tetap (Disposal)](fixed-asset-disposal.md).
+
+> **Revaluasi (model revaluasi PSAK 16):** aset diukur ke **nilai wajar**; kenaikan → **Surplus Revaluasi (OCI)**, penurunan → beban/L-R. Versi PSAK/ideal: [Revaluasi Aset Tetap (PSAK 16)](revaluasi-aset-tetap-psak16.md).
