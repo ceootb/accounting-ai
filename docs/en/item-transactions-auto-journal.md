@@ -71,3 +71,5 @@ wrong, distinguish the **source**:
 > **Bottom line:** *the item type determines the mapped account, and that account determines the
 > auto-journal on purchase/sale.* Accounting control lives in the **master item** — not on the
 > transaction screen.
+
+> **Department:** it can be set on the **master item** **or** entered directly on the **Sales/Purchase Invoice**; the value **flows automatically into the journal** (`journal_line` → Department) for per-department reporting. So it need not be filled at item setup — it can be chosen at transaction time.

@@ -69,3 +69,5 @@ salah, bedakan **sumbernya**:
 
 > **Intinya:** *jenis item menentukan akun yang dipetakan, dan akun itu menentukan jurnal otomatis di
 > pembelian/penjualan.* Kontrol akuntansi ada di **master item** — bukan di layar transaksi.
+
+> **Departemen:** bisa di-set di **master item** **atau** diisi langsung saat **Sales/Purchase Invoice**; nilainya **otomatis mengalir ke jurnal** (`journal_line` → Departemen) untuk laporan per departemen. Jadi tak wajib diisi di setup item — bisa ditentukan saat transaksi.
