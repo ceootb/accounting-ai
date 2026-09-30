@@ -59,6 +59,8 @@ Setiap transaksi yang **posted** membentuk **jurnal**, lalu terekap ke **Buku Be
 **Tanggal, Referensi, Uraian, Debit, Kredit, dan Saldo berjalan (running balance)** — dan tetap bisa
 ditelusuri balik ke **jurnal → transaksi sumbernya**.
 
+> **Tujuan utamanya:** *tracking jurnal harian* dan membantu **menelusuri (*tracing*) saat ditemukan selisih/discrepancy** — GL History pada dasarnya adalah **kumpulan jurnal yang ditampilkan per akun GL**.
+
 Kuncinya: **jangan menyeragamkan struktur semua akun.** Kolom/dimensi tambahan **mengikuti fungsi
 akuntansi** akun tersebut:
 
