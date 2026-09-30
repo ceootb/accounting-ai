@@ -68,5 +68,5 @@ D. Lunasi Other Liability: Dr Other Liability         | Cr Bank
 > *"bayar hutang = AP Vendor"*. Cek dulu: liability itu **Hutang Usaha (linked Vendor)** → Purchase
 > Payment; atau **Other Liability (tanpa Vendor/AP)** → Other Payment.
 
-> **Cerminannya — Other Deposit:** penerimaan Kas/Bank **langsung ke GL** (bukan *settlement* AR):
-> `Dr Kas/Bank | Cr akun GL`. *(Detail Other Deposit menyusul.)*
+> **Cerminannya — [Other Deposit](other-deposit-cash-bank.md):** penerimaan Kas/Bank **langsung ke GL** (bukan *settlement* AR):
+> `Dr Kas/Bank | Cr akun GL` (akun lawan by substansi; bukan selalu Other Income).

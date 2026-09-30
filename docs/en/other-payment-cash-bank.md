@@ -68,5 +68,5 @@ D. Settle Other Liability: Dr Other Liability           | Cr Bank
 > assume *"paying a debt = AP Vendor"*. Check first: is the liability **Accounts Payable (Vendor-linked)**
 > → Purchase Payment; or an **Other Liability (no Vendor/AP)** → Other Payment.
 
-> **Its mirror — Other Deposit:** a direct Cash/Bank **inflow to a GL account** (not an AR *settlement*):
-> `Dr Cash/Bank | Cr GL account`. *(Other Deposit details to follow.)*
+> **Its mirror — [Other Deposit](other-deposit-cash-bank.md):** a direct Cash/Bank **inflow to a GL account** (not an AR *settlement*):
+> `Dr Cash/Bank | Cr GL account` (counter account by substance; not always Other Income).
