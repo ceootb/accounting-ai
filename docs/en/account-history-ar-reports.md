@@ -59,6 +59,9 @@ account**. **GL History** shows the **per-account movement** from all transactio
 **Date, Reference, Description, Debit, Credit, and Running balance** — and stays traceable back to the
 **journal → its source transaction**.
 
+> **Its main purpose:** *daily journal tracking* and helping **trace when a discrepancy is found** — GL
+> History is essentially a **collection of journal entries shown per GL account**.
+
 The key: **don't force every account into the same structure.** Extra columns/dimensions **follow the
 account's accounting function**:
 
