@@ -37,6 +37,9 @@ Versi Inggris ada di [`docs/en/`](../en/).
 - [Item di Transaksi: Mapping Akun & Auto-Jurnal](item-transaksi-auto-jurnal.md) — per jenis item: **Inventory Part** (beli→Persediaan, jual→Pendapatan+HPP), **Non-Inventory Part** (beli→langsung **Beban**), **Service** (jual→**Pendapatan Jasa**, diskon=pengurang revenue PSAK 72). Item benar→mapping benar→auto-jurnal; beda human/master/engine error. *(EN: `item-transactions-auto-journal.md`.)*
 - [Produk Olahan: PSAK vs Praktik Perusahaan](produk-olahan-job-costing.md) — **2 versi berlabel** (jangan dicampur): **A. PSAK/Ideal** (bahan Inventory Part → Persediaan → Job Costing/Direct Cost → **HPP** saat dijual) vs **B. Praktik perusahaan tanpa inventory tracking** (bahan Non-Inventory Part → **langsung Direct Cost saat beli** → dijual **Revenue saja, tanpa HPP inventory**). + tabel perbandingan; jangan generalisasi. *(EN: `processed-product-job-costing.md`.)*
 
+## Kas & Bank
+- [Other Payment (Pengeluaran Kas/Bank Langsung ke GL)](other-payment-cash-bank.md) — pengeluaran Kas/Bank **langsung ke akun GL**, **bukan** settlement SI/PI (`Dr Beban/Aset/Liabilitas | Cr Kas/Bank`). **Pisah AR/AP wajib**: AR→Sales Receipt, AP→Purchase Payment, lainnya→Other Payment. *"Bayar hutang" ≠ selalu Purchase Payment* (Other Liability non-vendor → Other Payment). Account No = semua akun kecuali AP ber-Sub-GL (tanpa kolom Sub GL). *(EN: `other-payment-cash-bank.md`. Other Deposit menyusul.)*
+
 ## Laporan & Riwayat Transaksi
 - [Riwayat Transaksi per Akun & Laporan Piutang (AR / Customer)](laporan-riwayat-akun-ar.md) — **Account History** (rekap transaksi per akun, data grid + filter); laporan AR yang sering dipakai (Outstanding Invoices, Aging Summary/Detail, **AR Sub Ledger Detail**); konsep **Sub Ledger** AR/AP + **GL History** (dimensi ikut fungsi akun: AR/AP&rarr;Sub-GL, Pendapatan/Beban&rarr;Departemen, lainnya&rarr;GL biasa). *(EN: `account-history-ar-reports.md`.)*
 
