@@ -96,6 +96,33 @@ Tiap pengalaman dicatat dengan alur:
 > **Jenis transaksi → accounting treatment → potential tax treatment → apakah ada fiscal difference →
 > kapan perlu diperhatikan → dokumen pendukung → legal tax-planning consideration.**
 
+## Other Expenses & rekonsiliasi pajak
+
+Dalam praktik, **Other Expenses** sering perlu perhatian khusus saat **tax reconciliation**, karena akun
+ini dapat menampung pengeluaran yang **tidak berhubungan langsung** dengan kegiatan operasional yang
+menghasilkan penghasilan, atau yang **perlakuan fiskalnya berbeda** dari perlakuan komersial.
+
+> **Jangan menyimpulkan** seluruh Other Expenses **otomatis *deductible*** atau **otomatis
+> *non-deductible*.** Periksa **substansi tiap transaksi** dan **ketentuan pajaknya**.
+
+Kategori yang perlu diperiksa:
+- pengeluaran yang bersifat **pribadi / non-business**;
+- pengeluaran **tanpa bukti/dokumentasi memadai** (sering: **tidak ada *official receipt***, tidak dapat
+  dipertanggungjawabkan);
+- pengeluaran yang **menurut ketentuan pajak tidak dapat menjadi pengurang**;
+- **pembayaran/pemberian kepada pihak tertentu yang secara hukum/peraturan tidak diperbolehkan** atau
+  tidak dapat dipertanggungjawabkan.
+
+> **Batas etika (tegas):** kategori terakhir **BUKAN** *tax-planning opportunity*. Sistem **tidak boleh**
+> mengajarkan cara **menyamarkannya** dalam pembukuan. Bila ditemukan pembayaran yang **ilegal atau tidak
+> dapat dipertanggungjawabkan**, ia **harus dibedakan dari** *legitimate business expense*, dan **tidak**
+> boleh ada instruksi untuk **menyembunyikan substansinya**.
+
+**Prinsip finance practitioner:** perusahaan boleh punya pengeluaran yang **secara komersial harus
+ditanggung**, tetapi itu **tidak** berarti setiap pengeluaran **otomatis *deductible*** secara fiskal.
+Akuntansi tetap mencatat transaksi **sesuai substansi & bukti** yang tersedia; **dampak fiskalnya
+ditentukan kemudian** dalam *tax reconciliation* sesuai peraturan yang berlaku.
+
 ---
 
 *Catatan: halaman ini adalah **prinsip & pendekatan** (dari praktik akuntan), bukan pengganti

@@ -92,6 +92,31 @@ Each experience is recorded as:
 > **Transaction type → accounting treatment → potential tax treatment → is there a fiscal difference →
 > when to watch for it → supporting documents → legal tax-planning consideration.**
 
+## Other Expenses & tax reconciliation
+
+In practice, **Other Expenses** often needs special attention at **tax reconciliation**, because this
+account can hold spending with **no direct link** to the income-generating operations, or whose **fiscal
+treatment differs** from the commercial treatment.
+
+> **Don't conclude** that all Other Expenses are **automatically deductible** or **automatically
+> non-deductible.** Check the **substance of each transaction** and its **tax rules**.
+
+Categories to check:
+- spending that is **personal / non-business**;
+- spending **without adequate evidence/documentation** (often: **no official receipt**, unaccountable);
+- spending that, **per the tax rules, cannot be a deduction**;
+- **payments/gifts to certain parties that are legally/regulatorily not allowed** or unaccountable.
+
+> **Ethical boundary (firm):** the last category is **NOT** a *tax-planning opportunity*. The system
+> **must not** teach how to **disguise** it in the books. If an **illegal or unaccountable** payment is
+> found, it **must be distinguished from** a *legitimate business expense*, and there must be **no**
+> instruction to **hide its substance**.
+
+**Finance-practitioner principle:** a company may have spending it **must bear commercially**, but that
+does **not** mean every expense is **automatically deductible** for tax. Accounting still records the
+transaction **by substance & available evidence**; its **fiscal impact is determined later** in tax
+reconciliation, per the applicable rules.
+
 ---
 
 *Note: this page is a **principle & approach** (from an accountant's practice), not a substitute for
