@@ -49,6 +49,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 
 ## Strategi Pajak (Legal)
 - [Strategi Pajak Legal & Koreksi Fiskal](strategi-pajak-koreksi-fiskal.md) — mulai dari **kenapa** biaya jadi **koreksi fiskal positif** (bukan cari-cari biaya); 6 kategori biaya rawan; **tax planning legal sejak transaksi** (bukan menyamarkan): akun sesuai substansi, bukti lengkap, pisah perusahaan/pribadi, cek ketentuan sebelum transaksi, dokumentasi alasan bisnis. Koreksi fiskal saat tutup tahun. *(EN: `tax-strategy-fiscal-correction.md`.)*
+- [Studi Kasus Pajak: Kendaraan Operasional Dibawa Pulang](studi-kasus-pajak-kendaraan-operasional.md) — *tax case/judgment*, bukan aturan otomatis. Dasar: **KEP-220/PJ./2002** (sedan pegawai tertentu = 50%) & **PMK 66/2023** (natura/kenikmatan, 1 Jul 2023, contoh fasilitas kendaraan direksi bisa 100%). Jangan simplifikasi (dibawa pulang→50%/direktur→100%); pakai **FACTS→SUBSTANCE→REGULATION→DOCUMENTATION→TREATMENT** + 14 pertanyaan; bedakan accounting/fiscal/reconciliation; substansi & argumentasi PIC penting. *(EN: `tax-case-operational-vehicle.md`.)*
 
 ## Studi Kasus (Pengendalian Internal / Temuan Audit)
 6. [Studi Kasus Pengendalian Internal](studi-kasus-pengendalian-internal.md) —
