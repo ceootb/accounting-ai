@@ -46,6 +46,9 @@ Versi Inggris ada di [`docs/en/`](../en/).
 - [Purchase Payment dengan Potongan (Deduction)](purchase-payment-deduction.md) — sisi **AP** (kita **memotong**): semua potongan PPh → **Utang Pajak** (PPh 23/21/final sewa Ps.4(2)), disetor ke negara. Kontras dgn Sales Receipt (dipotong → aset/beban). Contoh jurnal. *(EN: `purchase-payment-deduction.md`.)*
 - [Alokasi Satu Pembayaran/Penerimaan ke Beberapa Invoice (1-to-many)](alokasi-pembayaran-banyak-invoice.md) — 1 **Purchase Payment** bisa bayar beberapa **PI**; 1 **Sales Receipt** untuk beberapa **SI** (vendor/customer sama), dengan **alokasi** per invoice (total ≤ nilai transaksi) + status lunas/sebagian + **tertelusur**. Gabung dgn cicilan → many-to-many, acuan **Owing**. *(EN: `payment-allocation-multiple-invoices.md`.)*
 
+## Strategi Pajak (Legal)
+- [Strategi Pajak Legal & Koreksi Fiskal](strategi-pajak-koreksi-fiskal.md) — mulai dari **kenapa** biaya jadi **koreksi fiskal positif** (bukan cari-cari biaya); 6 kategori biaya rawan; **tax planning legal sejak transaksi** (bukan menyamarkan): akun sesuai substansi, bukti lengkap, pisah perusahaan/pribadi, cek ketentuan sebelum transaksi, dokumentasi alasan bisnis. Koreksi fiskal saat tutup tahun. *(EN: `tax-strategy-fiscal-correction.md`.)*
+
 ## Studi Kasus (Pengendalian Internal / Temuan Audit)
 6. [Studi Kasus Pengendalian Internal](studi-kasus-pengendalian-internal.md) —
    - #1 Kas kecil imprest membengkak & bon gantung
@@ -57,7 +60,7 @@ Versi Inggris ada di [`docs/en/`](../en/).
 `accounting_process.jsonl` · `financial_statements.jsonl` · `coa_structure.jsonl` ·
 `purchase_module.jsonl` · `sales_module.jsonl` · `setup_module.jsonl` ·
 `general_ledger_jv.jsonl` · `fixed_asset_module.jsonl` · `bank_reconciliation.jsonl` ·
-`internal_control_cases.jsonl`
+`internal_control_cases.jsonl` · `tax_strategy.jsonl`
 
 ## Menyusul (pending)
 - **Master Data: Vendor & Item** (melengkapi Departemen & Pelanggan).
