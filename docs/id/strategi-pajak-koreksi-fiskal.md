@@ -94,6 +94,35 @@ Karena koreksi fiskal berbeda dari logika transaksi harian:
 - Saat **tax computation / rekonsiliasi**, laba komersial direkonsiliasi dengan ketentuan fiskal untuk
   menentukan **koreksi fiskal positif/negatif**.
 
+## Tidak ada jurnal koreksi di pembukuan komersial
+
+Koreksi fiskal **tidak** berarti membuat jurnal koreksi pada pembukuan/laporan komersial. Alurnya:
+
+> **Transaksi → Jurnal Akuntansi → Buku Besar → Laporan Keuangan Komersial.**
+> Lalu untuk pajak: **Laba Komersial → *Tax Reconciliation* / *Fiscal Working Paper* → Koreksi Fiskal
+> Positif/Negatif → Laba Fiskal → Perhitungan PPh Badan.**
+
+**Contoh:** biaya komersial **Rp100 juta**, tetapi secara fiskal hanya **Rp50 juta** yang *deductible*:
+- **Laporan komersial** tetap menampilkan **expense Rp100 juta** (sesuai *accounting treatment*).
+- **TIDAK** dibuat jurnal `Dr/Cr "Koreksi Fiskal" Rp50 juta`.
+- Di *tax reconciliation*, Rp50 juta yang tak bisa dikurangkan menjadi **koreksi fiskal positif Rp50
+  juta** → **laba fiskal lebih tinggi** dari laba komersial.
+
+**Jangan pernah** otomatis membuat: jurnal koreksi fiskal; *journal entry* tambahan hanya untuk
+menaikkan laba fiskal; perubahan *expense* di GL komersial; atau perubahan Laba-Rugi komersial hanya
+karena suatu biaya *non-deductible*.
+
+> **Fiscal correction ≠ accounting journal correction.** Koreksi fiskal adalah *tax adjustment* di *tax
+> computation/reconciliation*, **bukan** koreksi atas kebenaran transaksi di laporan komersial.
+
+**Bedakan:**
+- **Accounting error** — bila pembukuan **salah secara akuntansi**, bisa perlu *correcting journal*.
+- **Fiscal difference** — pembukuan komersial **benar**, tetapi **perlakuan pajaknya berbeda**;
+  penyesuaian dilakukan di *tax reconciliation* (bukan mengubah jurnal komersial).
+
+> **Prinsip utama:** *Books record the accounting facts. Tax working paper reconciles those facts to tax
+> rules.*
+
 ## Tiga lapisan yang harus dipisah
 
 > **Accounting transaction logic ≠ Tax reconciliation logic ≠ Tax planning knowledge.**

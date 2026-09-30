@@ -90,6 +90,38 @@ Because fiscal correction differs from daily transaction logic:
 - At **tax computation / reconciliation**, commercial profit is reconciled with fiscal rules to determine
   the **positive/negative fiscal correction**.
 
+## No correcting journal in the commercial books
+
+A fiscal correction does **not** mean posting a correcting journal in the commercial books/statements.
+The flow:
+
+> **Transaction → Accounting Journal → General Ledger → Commercial Financial Statements.**
+> Then for tax: **Commercial Profit → *Tax Reconciliation* / *Fiscal Working Paper* → Positive/Negative
+> Fiscal Correction → Fiscal Profit → Corporate Income Tax computation.**
+
+**Example:** a commercial cost of **IDR 100m**, but only **IDR 50m** is fiscally *deductible*:
+- The **commercial statement** still shows **expense IDR 100m** (per the accounting treatment).
+- **NO** journal `Dr/Cr "Fiscal Correction" IDR 50m` is made.
+- In *tax reconciliation*, the IDR 50m non-deductible becomes a **positive fiscal correction of IDR 50m**
+  → **fiscal profit is higher** than commercial profit.
+
+**Never** automatically create: a fiscal-correction journal; an extra journal entry just to raise fiscal
+profit; a change to the commercial GL expense; or a change to the commercial P&L just because a cost is
+*non-deductible*.
+
+> **Fiscal correction ≠ accounting journal correction.** A fiscal correction is a *tax adjustment* in the
+> *tax computation/reconciliation*, **not** a correction to the truth of the transaction in the commercial
+> report.
+
+**Distinguish:**
+- **Accounting error** — if the bookkeeping is **wrong in accounting terms**, it may need a *correcting
+  journal*.
+- **Fiscal difference** — the commercial books are **correct**, but the **tax treatment differs**; the
+  adjustment is made in the *tax reconciliation* (not by changing the commercial journal).
+
+> **Main principle:** *Books record the accounting facts. The tax working paper reconciles those facts to
+> tax rules.*
+
 ## Three layers to keep separate
 
 > **Accounting transaction logic ≠ Tax reconciliation logic ≠ Tax planning knowledge.**
