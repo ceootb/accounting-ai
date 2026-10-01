@@ -174,6 +174,48 @@ ditanggung**, tetapi itu **tidak** berarti setiap pengeluaran **otomatis *deduct
 Akuntansi tetap mencatat transaksi **sesuai substansi & bukti** yang tersedia; **dampak fiskalnya
 ditentukan kemudian** dalam *tax reconciliation* sesuai peraturan yang berlaku.
 
+## Contoh akun yang sering muncul di koreksi fiskal
+
+**Sering jadi koreksi fiskal POSITIF** (dalam praktik): Biaya **Tunjangan Sosial Karyawan** (*social
+expense*); **Rupa-rupa Pajak** — *W/H Tax Final*, *Tax Expense/Penalty*, *Tax Expense/Others*;
+**Sumbangan** — *Donation*, *Membership Due*, *GA/Retribution & Others*; **Pajak Jasa Giro** (*tax of
+interest*); **Other Expenses**; **PPh Badan tahunan (PPh 29)**.
+
+**Bisa muncul sebagai koreksi fiskal NEGATIF:** Pendapatan usaha lain-lain yang punya perlakuan pajak
+tersendiri; **Pendapatan Bunga Bank**; **selisih kurs / *unrealized income*** yang perlakuan fiskalnya
+berbeda; pendapatan lain yang secara fiskal sudah **final / objek pajak tersendiri**.
+
+> Koreksi fiskal **positif** = biaya dikeluarkan dari perhitungan fiskal → **laba fiskal naik → PPh lebih
+> besar**. Jadi koreksi positif **bukan** strategi efisiensi pajak.
+
+## Menangani permintaan koreksi (langkah praktis)
+
+Bila auditor/*tax reviewer* meminta koreksi — **jangan otomatis terima, jangan otomatis tolak**:
+1. **Tanyakan alasan & dasar** koreksinya.
+2. **Periksa substansi** transaksi & fakta penggunaannya.
+3. **Cocokkan dengan ketentuan** pajak yang berlaku.
+4. Jika ketentuan **jelas** memang tak bisa dibebankan fiskal → **ikuti** (apalagi bila **nilainya tidak
+   material** → *just do the koreksi fiskal*, tak perlu argumentasi berlebihan).
+5. Jika dasar koreksi **masih butuh interpretasi/ambigu DAN nilainya material** → **argumentasi**
+   berdasarkan fakta transaksi, dokumen pendukung, & dasar aturan yang relevan.
+6. Tujuan argumentasi = **mempertahankan biaya yang memang berdasar**, bukan sekadar menghindari pajak.
+7. Jika **aturan sudah jelas, jangan memaksakan argumentasi** hanya demi mengurangi pajak — dalam
+   pemeriksaan, satu isu bisa **membuka temuan lain yang lebih luas**.
+
+## Pola *tax reasoning* (untuk sistem)
+
+> **Jangan** pakai pola: *"akun ini biasanya dikoreksi → berarti selalu harus dikoreksi."*
+> **Pakai:** *"akun ini sering jadi objek koreksi → tanyakan alasan → pahami substansi → cek fakta → cek
+> dasar aturan → tentukan perlakuan fiskal."*
+
+Bedakan: biaya yang **jelas tidak deductible**; biaya yang **deductible dengan syarat tertentu**; dan
+biaya yang perlakuan fiskalnya **masih butuh argumentasi** berbasis fakta & ketentuan.
+
+> **Tax efficiency** = efisiensi pajak yang **legal & berbasis ketentuan**, **bukan** memaksakan biaya
+> agar *deductible*. **Aturan jelas → ikuti aturan; ada ruang interpretasi wajar → argumentasi profesional
+> dengan fakta, dokumen, & dasar aturan.** Koreksi fiskal = rekonsiliasi; **bukan** menghapus/mengubah
+> jurnal komersial.
+
 ---
 
 *Catatan: halaman ini adalah **prinsip & pendekatan** (dari praktik akuntan), bukan pengganti

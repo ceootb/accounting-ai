@@ -171,6 +171,47 @@ does **not** mean every expense is **automatically deductible** for tax. Account
 transaction **by substance & available evidence**; its **fiscal impact is determined later** in tax
 reconciliation, per the applicable rules.
 
+## Accounts that often appear in fiscal correction
+
+**Often a POSITIVE fiscal correction** (in practice): **Employee Social Expense**; **Sundry Taxes** —
+*W/H Tax Final*, *Tax Expense/Penalty*, *Tax Expense/Others*; **Donations** — *Donation*, *Membership
+Due*, *GA/Retribution & Others*; **Tax on bank-interest (jasa giro)**; **Other Expenses**; **annual
+corporate income tax (PPh 29)**.
+
+**May appear as a NEGATIVE fiscal correction:** other operating income with its own tax treatment; **bank
+interest income**; **FX differences / unrealized income** with a different fiscal treatment; other income
+already **final / a separate tax object**.
+
+> A **positive** fiscal correction = the cost is removed from the fiscal computation → **fiscal profit
+> rises → more income tax**. So a positive correction is **not** a tax-efficiency strategy.
+
+## Handling a correction request (practical steps)
+
+If an auditor/tax reviewer asks for a correction — **don't auto-accept, don't auto-reject**:
+1. **Ask the reason & basis** for the correction.
+2. **Check the substance** of the transaction & how it was actually used.
+3. **Match it to the applicable** tax rules.
+4. If the rule **clearly** says it can't be fiscally expensed → **follow it** (especially if the **amount
+   is not material** → *just do the fiscal correction*, no need for excessive argument).
+5. If the basis **still needs interpretation/is ambiguous AND the amount is material** → **argue** based on
+   the transaction facts, supporting documents, & relevant rules.
+6. The purpose of arguing = **to defend a cost that genuinely has a basis**, not merely to avoid tax.
+7. If the **rule is already clear, don't force an argument** just to reduce tax — in an audit, one issue
+   can **open up other, broader findings**.
+
+## Tax-reasoning pattern (for the system)
+
+> **Don't** use: *"this account is usually corrected → it must always be corrected."*
+> **Use:** *"this account is often an object of correction → ask the reason → understand the substance →
+> check the facts → check the rule basis → determine the fiscal treatment."*
+
+Distinguish: a cost that is **clearly non-deductible**; one that is **deductible under certain
+conditions**; and one whose fiscal treatment **still needs argument** based on facts & rules.
+
+> **Tax efficiency** = **legal, rule-based** tax efficiency, **not** forcing a cost to be deductible. **Rule
+> clear → follow it; reasonable interpretation room → argue professionally with facts, documents & the rule
+> basis.** Fiscal correction = reconciliation; **not** deleting/changing the commercial journal.
+
 ---
 
 *Note: this page is a **principle & approach** (from an accountant's practice), not a substitute for
