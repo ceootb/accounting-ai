@@ -40,6 +40,10 @@ source voucher.
 > **An AP account's GL History mirrors an AR account's.** Same entry point & format; the only
 > difference is a **Vendor** column (instead of **Customer**) as the sub-GL. Reconciliation: **AP control ↔
 > total Vendor Sub-GL**.
+>
+> **An Others account's GL History** (outside AR/AP/Revenue/Expense) also mirrors it, but **without** a
+> sub-GL (Customer/Vendor) **or** a Department column — it shows as **plain GL**: Date, Source Type, Source
+> No, Account No/Name, Description, Debit, Credit (+ balance). The entry point & drill-down to source stay the same.
 
 ## 5. Report purpose
 

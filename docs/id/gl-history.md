@@ -40,6 +40,10 @@ sumber yang tepat.
 >
 > **GL History akun AP = cerminan GL History akun AR.** Pintu masuk & format **sama**; bedanya hanya
 > kolom **Vendor** (menggantikan **Customer**) sebagai sub-GL. Rekonsiliasi: **AP kontrol ↔ total Sub-GL Vendor**.
+>
+> **GL History akun Others** (di luar AR/AP/Pendapatan/Beban) = cerminan juga, **tanpa** kolom sub-GL
+> (Customer/Vendor) **maupun** Department — tampil sebagai **GL biasa**: Tanggal, Source Type, Source No,
+> Account No/Name, Description, Debit, Credit (+ saldo). Pintu masuk & drill-down ke source tetap sama.
 
 ## 5. Tujuan report
 
