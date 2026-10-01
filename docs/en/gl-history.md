@@ -36,6 +36,10 @@ source voucher.
 
 > Example (SS): the GL History of **Salaries & Wages Expense** shows a **Department** on each transaction —
 > so it can be traced **by account and by Department** at once.
+>
+> **An AP account's GL History mirrors an AR account's.** Same entry point & format; the only
+> difference is a **Vendor** column (instead of **Customer**) as the sub-GL. Reconciliation: **AP control ↔
+> total Vendor Sub-GL**.
 
 ## 5. Report purpose
 

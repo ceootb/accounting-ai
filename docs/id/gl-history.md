@@ -37,6 +37,9 @@ sumber yang tepat.
 
 > Contoh (SS): GL History akun **Salaries & Wages Expense** menampilkan **Department** tiap transaksi —
 > jadi bisa ditelusuri **per akun sekaligus per Department**.
+>
+> **GL History akun AP = cerminan GL History akun AR.** Pintu masuk & format **sama**; bedanya hanya
+> kolom **Vendor** (menggantikan **Customer**) sebagai sub-GL. Rekonsiliasi: **AP kontrol ↔ total Sub-GL Vendor**.
 
 ## 5. Tujuan report
 
